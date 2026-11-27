@@ -1,9 +1,9 @@
 # Progress
 
 ## Current state
-- **Phase:** 9 (PERSONA) starting
-- **Last finished:** Phase 8 (BODY)
-- **Next:** PERSONA: speak recorder + baseline compare, daily counters, connections, compose (Buffer + fallbacks), ideas, X follows, market intel, presence, analytics
+- **Phase:** 10 (integrations) starting
+- **Last finished:** Phase 9 (PERSONA)
+- **Next:** GitHub, Google Calendar (OAuth + events + push), Buffer, public stats, cron, Settings page with integration status/test/disconnect
 - **Blockers:** none (all secrets mocked via local mode; see NEEDS-FROM-DHARMA.md)
 
 ## How to resume
@@ -47,3 +47,6 @@ Fixed: `vercel.json` was invalid JSON since Phase 1; rewritten, with a separate 
 ### Phase 8: BODY (2026-11-27)
 Rule-based body logic (tested): A/B rotation, pre-fill from last time, progression hints (top of range → smallest jump, else +1 rep), PR detection, weight-rate hints (<0.25 kg/wk for 2 weeks → +200-300 kcal; >0.5 → ease off), deload every 5th week, never-miss-twice with next-day makeup.
 Tabs: Workout (log after the session, editable templates incl. new Upper/Lower), Schedule (gym days/time, week view, miss flags, deload), Weigh-in (graph with 12-week band, editable targets), Diet (rings, one-tap meals marked est., manual entry), Water (no default target until set), Progress (measurements, private compressed photos in IndexedDB → private bucket with signed URLs, month compare), Library, Analytics.
+
+### Phase 9: PERSONA (2026-11-27)
+Speak (MediaRecorder with per-browser MIME: Opus/WebM 32 kbps or MP4/AAC on iOS; 2-min countdown; 100 fixed prompts; self-rating restarts/fillers/switches/pace; baseline + day 30/60/90 redo with side-by-side playback; private storage), Daily counters (+1 buttons, extroversion ladder), Connections (tiers, sent→accepted→talked, follow-ups 2-3 days after accepted feed Today, message rules, unverified flag, paging/search), Compose (LinkedIn/X side by side, X URL-aware counter, rule hints, Buffer queue when connected, X intent + LinkedIn copy-and-open fallbacks, post log), Ideas flywheel kanban, X Follows, Market Intel (weekly top-skills tally), Presence ticks + Harvey card, Library, Analytics (+ restarts trend).
