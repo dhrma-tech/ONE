@@ -344,13 +344,13 @@ Exit: CI-equivalent commands pass locally; first push to `origin main`.
 Exit: `/ui` renders all components; full-width at 1440/1920; dock at 390.
 
 ### Phase 3: Data layer
-- [ ] `supabase/migrations/0001_init.sql` (all tables, triggers, RLS, indexes), `0002_views.sql`, `0003_storage.sql`; `docs/SCHEMA.md`
-- [ ] Validate migrations against real Postgres (Docker `postgres:15` with a stub `auth` schema) in a script `pnpm db:check`
-- [ ] Dexie schema mirroring tables + `outbox`, `meta`, `blobs`, `sync_log`
-- [ ] repo (put/patch/remove/softDelete), hooks, ids, IST date utils
-- [ ] Supabase client + magic-link auth + `/login`, `/auth/callback`; local mode
-- [ ] sync engine (push/pull/LWW/conflict log) + tests with fake-indexeddb and a mocked Supabase
-- [ ] first-run seeding from `src/seed` (brief 17) into Dexie (idempotent, versioned)
+- [x] `supabase/migrations/0001_init.sql` (all tables, triggers, RLS, indexes), `0002_views.sql`, `0003_storage.sql`; `docs/SCHEMA.md`
+- [x] Validate migrations against real Postgres (PGlite (Docker daemon not running) with stub `auth`/`storage` schemas) in a script `pnpm db:check`
+- [x] Dexie schema mirroring tables + `outbox`, `meta`, `blobs`, `sync_log`
+- [x] repo (put/patch/remove/softDelete), hooks, ids, IST date utils
+- [x] Supabase client + magic-link auth + `/login`, `/auth/callback`; local mode
+- [x] sync engine (push/pull/LWW/conflict log) + tests with fake-indexeddb and a mocked Supabase
+- [x] first-run seeding from `src/seed` (brief 17) into Dexie (idempotent, versioned)
 Exit: unit tests for repo/sync pass; app boots in local mode with seed data.
 
 ### Phase 4: Home (mock integrations)
