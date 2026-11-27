@@ -387,7 +387,7 @@ Exit: 5 manifests valid, SW precache, offline shell, outbox replays; Playwright 
 ### Phase 13: Notion import scripts [x]
 Exit: dry-run prints counts + first 5 rows from fixture exports; real mode upserts via service role.
 
-### Phase 14: Portfolio widget
+### Phase 14: Portfolio widget [x]
 Exit: `/api/public-stats` returns only flagged stats; DHARMA branch `feat/live-from-one` pushed with the widget.
 
 ### Phase 15: Art + motion + a11y + performance pass

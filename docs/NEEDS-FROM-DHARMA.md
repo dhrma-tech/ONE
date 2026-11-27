@@ -25,6 +25,9 @@ Everything below is mocked or behind a flag. The app works without it (local mod
 - [ ] **Licence:** ONE is GPL-3.0 because it includes BOBBY. Keep GPL-3.0, or relicense BOBBY (you own it) and make ONE MIT? Default: GPL-3.0.
 - [ ] **DBATU grade table:** the default grade-point table is editable in College › Marks. Verify it against your current DBATU rules.
 
+## Portfolio
+- [ ] Review and merge **dhrma-tech/DHARMA** branch `feat/live-from-one` (https://github.com/dhrma-tech/DHARMA/pull/new/feat/live-from-one). Then set `NEXT_PUBLIC_ONE_URL` (your ONE URL) in the portfolio's Vercel env and `PORTFOLIO_ORIGIN` in ONE's. Switch on the stats you want public in ONE › Settings › Public stats (all off by default).
+
 ## Data
 - [ ] **Notion export**: export these 4 pages as **Markdown & CSV, include subpages** into `scripts/import/notion/input/` (gitignored): LinkedIn Outreach Tracker, X Follow List, Website Ideas, Hackathon List. Then `pnpm import:notion --dry-run`, then without `--dry-run`.
   - Faster alternative: ask Claude in the claude.ai chat (it has Notion + Supabase connectors) to copy the rows into the tables described in `docs/SCHEMA.md` once the Supabase project exists.
