@@ -373,12 +373,12 @@ Each: every sub-page from §6 with data reads/writes, empty states with dry copy
 Exit per phase: manual run-through of every tab at 1440 and 390, tests green.
 
 ### Phase 10: Integrations (real, behind settings)
-- [ ] API router + dev middleware + auth verification + crypto + api_cache
-- [ ] GitHub, LeetCode, Chess.com, YouTube, news, link-title, Google OAuth + events + push, Buffer, cron
-- [ ] Settings › Integrations status/test/disconnect
+- [x] API router + dev middleware + auth verification + crypto + api_cache
+- [x] GitHub, LeetCode, Chess.com, YouTube, news, link-title, Google OAuth + events + push, Buffer, cron
+- [x] Settings › Integrations status/test/disconnect
 Exit: each route unit-tested with mocked `fetch`; graceful failure paths verified.
 
-### Phase 11: Nightly review + weekly review + Obsidian mirror
+### Phase 11: Nightly review + weekly review + Obsidian mirror [x]
 Exit: review auto-fill from all sources; weekly review screen saves `weekly_grades`; mirror writes files (tested with an in-memory FS handle).
 
 ### Phase 12: PWA ×5 + offline

@@ -8,7 +8,6 @@ import { SCOPE } from "./scope";
 import { ui } from "./data/ui";
 import { useAuth } from "./data/supabase";
 import { LOCAL_MODE } from "./env";
-import Placeholder from "./pages/Placeholder";
 
 const StyleGuide = lazy(() => import("./pages/StyleGuide"));
 const Login = lazy(() => import("./pages/Login"));
@@ -17,6 +16,8 @@ const Career = lazy(() => import("./pages/career/Career"));
 const Mind = lazy(() => import("./pages/mind/Mind"));
 const Body = lazy(() => import("./pages/body/Body"));
 const Persona = lazy(() => import("./pages/persona/Persona"));
+const Settings = lazy(() => import("./pages/settings/Settings"));
+const WeeklyReview = lazy(() => import("./pages/WeeklyReview"));
 
 const KEY_HANDLERS = { onFocus: () => focus.start({}) };
 function Keys() {
@@ -46,7 +47,8 @@ function AppRoutes() {
         <Route path="mind/*" element={<Mind />} />
         <Route path="body/*" element={<Body />} />
         <Route path="persona/*" element={<Persona />} />
-        <Route path="settings/*" element={<Placeholder scene="settings" title="Settings" />} />
+        <Route path="settings/*" element={<Settings />} />
+        <Route path="review/week" element={<WeeklyReview />} />
         <Route path="auth/callback" element={<Navigate to="/" replace />} />
         <Route path="ui" element={<StyleGuide />} />
         <Route path="*" element={<Navigate to="/" replace />} />

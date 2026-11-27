@@ -1,9 +1,9 @@
 # Progress
 
 ## Current state
-- **Phase:** 10 (integrations) starting
-- **Last finished:** Phase 9 (PERSONA)
-- **Next:** GitHub, Google Calendar (OAuth + events + push), Buffer, public stats, cron, Settings page with integration status/test/disconnect
+- **Phase:** 12 (PWA ×5 + offline) starting
+- **Last finished:** Phases 10-11 (integrations, settings, weekly review, Obsidian mirror)
+- **Next:** 5 manifests + icons, root service worker (precache, nav fallback per scope, API SWR), offline check, Playwright e2e
 - **Blockers:** none (all secrets mocked via local mode; see NEEDS-FROM-DHARMA.md)
 
 ## How to resume
@@ -50,3 +50,7 @@ Tabs: Workout (log after the session, editable templates incl. new Upper/Lower),
 
 ### Phase 9: PERSONA (2026-11-27)
 Speak (MediaRecorder with per-browser MIME: Opus/WebM 32 kbps or MP4/AAC on iOS; 2-min countdown; 100 fixed prompts; self-rating restarts/fillers/switches/pace; baseline + day 30/60/90 redo with side-by-side playback; private storage), Daily counters (+1 buttons, extroversion ladder), Connections (tiers, sent→accepted→talked, follow-ups 2-3 days after accepted feed Today, message rules, unverified flag, paging/search), Compose (LinkedIn/X side by side, X URL-aware counter, rule hints, Buffer queue when connected, X intent + LinkedIn copy-and-open fallbacks, post log), Ideas flywheel kanban, X Follows, Market Intel (weekly top-skills tally), Presence ticks + Harvey card, Library, Analytics (+ restarts trend).
+
+### Phases 10-11: integrations, Settings, weekly review, Obsidian (2026-11-27)
+Server (single function): AES-256-GCM secrets + HMAC-signed OAuth state, PostgREST admin helper, GitHub (GraphQL calendar + REST pushes by IST day), Google Calendar (OAuth code flow with refresh token stored encrypted, today's events across calendars, push to a dedicated "ONE" calendar with deterministic event ids and stale-event cleanup; only the 11:30 PM review has a reminder; invalid_grant → "reconnect"), Buffer (GraphQL createPost addToQueue, channel lookup), /api/public-stats (flagged-only via SQL function, CORS for the portfolio origin, cached), daily cron (GitHub/LeetCode/Chess.com snapshots, keeps Supabase awake), /api/config (booleans only). All unit-tested with mocks; everything returns 409 when not configured and the UI falls back.
+Client: Settings (profile + photo, usernames, appearance incl. accent overrides and font size, integrations with status/test/disconnect, public-stat switches + preview, modules, every target, JSON export/import with merge, sync status + log, account), calendar event builder + daily re-push, derived public stats, Sunday weekly review page (/review/week), Obsidian mirror (File System Access handle in IndexedDB, permission re-request, Tauri bridge hook, journal/weekly/notes/reading/books/posts markdown, auto after the nightly review).
