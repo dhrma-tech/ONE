@@ -1,9 +1,9 @@
 # Progress
 
 ## Current state
-- **Phase:** 8 (BODY) starting
-- **Last finished:** Phase 7 (MIND)
-- **Next:** BODY: workout log with pre-fill + progression hints + PRs, schedule/never-miss-twice/deload, weigh-in graph + rate hints, diet + meal templates, water, progress (measurements + private photos), library, analytics
+- **Phase:** 9 (PERSONA) starting
+- **Last finished:** Phase 8 (BODY)
+- **Next:** PERSONA: speak recorder + baseline compare, daily counters, connections, compose (Buffer + fallbacks), ideas, X follows, market intel, presence, analytics
 - **Blockers:** none (all secrets mocked via local mode; see NEEDS-FROM-DHARMA.md)
 
 ## How to resume
@@ -43,3 +43,7 @@ Server routes live in dev: /api/video, /api/news, /api/link-title (SSRF-guarded)
 BOBBY copied into `packages/chess` (GPL-3.0, workspace package `@one/chess`), built to `/chess-app/` and loaded in a same-origin iframe only on /mind/chess. Added `src/one-bridge.ts` (theme from ONE, Dexie hooks report game/puzzle/lesson events to ONE's `chess_events`, "Review on Bobby" for Chess.com PGNs) and `one-theme.css` (pure black + MIND accent). Asset script now fetches python-chess from PyPI with Node (no python3 needed). Verified: Bobby loads with Pyodide + Stockfish, no console errors, dark theme.
 MIND tabs: Chess (+ Chess.com stats, rating trend, recent games via /api/chesscom with polite UA + cache), Meditate (presets, 4-4-6 breathing circle, generated WebAudio bell, no-UI mode, streak), Library, Focus (phone-free block, stuck protocol, editable stuck ladder, phone rules), Memory (SM-2, max 5 new/day), Reading shelf (sessions + lessons), locked Cube/Math/Palace behind Settings › Modules, Analytics (rapid trend).
 Fixed: `vercel.json` was invalid JSON since Phase 1; rewritten, with a separate CSP for /chess-app (Pyodide needs eval).
+
+### Phase 8: BODY (2026-11-27)
+Rule-based body logic (tested): A/B rotation, pre-fill from last time, progression hints (top of range → smallest jump, else +1 rep), PR detection, weight-rate hints (<0.25 kg/wk for 2 weeks → +200-300 kcal; >0.5 → ease off), deload every 5th week, never-miss-twice with next-day makeup.
+Tabs: Workout (log after the session, editable templates incl. new Upper/Lower), Schedule (gym days/time, week view, miss flags, deload), Weigh-in (graph with 12-week band, editable targets), Diet (rings, one-tap meals marked est., manual entry), Water (no default target until set), Progress (measurements, private compressed photos in IndexedDB → private bucket with signed URLs, month compare), Library, Analytics.
