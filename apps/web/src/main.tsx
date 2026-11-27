@@ -17,3 +17,10 @@ createRoot(document.getElementById("root")!).render(
     <App />
   </StrictMode>,
 );
+
+// One root service worker for all 5 apps (production only).
+if ("serviceWorker" in navigator && import.meta.env.PROD) {
+  addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js", { scope: "/" }).catch(() => undefined);
+  });
+}

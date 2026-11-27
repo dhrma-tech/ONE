@@ -18,12 +18,16 @@ async function call<T>(method: string, path: string, body?: unknown): Promise<T>
     body: body !== undefined ? JSON.stringify(body) : undefined,
   });
   let j: unknown = null;
+  let parsed = false;
   try {
     j = await r.json();
+    parsed = true;
   } catch {
-    /* empty body */
+    /* empty or non-JSON body */
   }
   if (!r.ok) throw new ApiError(r.status, (j as { error?: string } | null)?.error ?? `http_${r.status}`);
+  // A 200 that isn't JSON means there is no API here (e.g. static preview): treat as unavailable.
+  if (!parsed || j === null) throw new ApiError(503, "api_unavailable");
   return j as T;
 }
 

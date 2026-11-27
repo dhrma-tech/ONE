@@ -27,3 +27,4 @@ packages/chess/site/public/pyodide/
 packages/chess/site/public/engine/
 packages/chess/site/public/py/
 packages/chess/site/public/data/
+dev-dist/

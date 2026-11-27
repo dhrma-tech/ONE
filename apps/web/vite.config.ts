@@ -1,5 +1,6 @@
 import { defineConfig, type Connect, type Plugin, type ViteDevServer } from "vite";
 import react from "@vitejs/plugin-react";
+import { VitePWA } from "vite-plugin-pwa";
 import { resolve, join, extname, normalize } from "node:path";
 import { existsSync, readFileSync, statSync } from "node:fs";
 
@@ -67,7 +68,23 @@ function devApi(): Plugin {
 }
 
 export default defineConfig({
-  plugins: [react(), devApi()],
+  plugins: [
+    react(),
+    devApi(),
+    VitePWA({
+      strategies: "injectManifest",
+      srcDir: "src",
+      filename: "sw.ts",
+      injectRegister: false,
+      manifest: false,
+      injectManifest: {
+        globPatterns: ["**/*.{js,css,html,woff2,svg,png,webmanifest}"],
+        globIgnores: ["chess-app/**", "packs/**", "**/icon-512.png", "**/icon-maskable-512.png", "**/*cyrillic*", "**/*greek*", "**/*vietnamese*"],
+        maximumFileSizeToCacheInBytes: 3_000_000,
+      },
+      devOptions: { enabled: false },
+    }),
+  ],
   resolve: { alias: { "@": resolve(__dirname, "src") } },
   server: { host: "127.0.0.1", port: 5173, strictPort: true },
   build: {

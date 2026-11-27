@@ -1,0 +1,40 @@
+{
+  "id": "/body/?app=body",
+  "name": "ONE Body",
+  "short_name": "Body",
+  "description": "Body: gym, diet, water, weigh-ins.",
+  "start_url": "/body/?app=body",
+  "scope": "/body/",
+  "display": "standalone",
+  "display_override": [
+    "standalone"
+  ],
+  "orientation": "any",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "categories": [
+    "productivity",
+    "education",
+    "health"
+  ],
+  "icons": [
+    {
+      "src": "/body/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/body/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/body/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -381,7 +381,7 @@ Exit: each route unit-tested with mocked `fetch`; graceful failure paths verifie
 ### Phase 11: Nightly review + weekly review + Obsidian mirror [x]
 Exit: review auto-fill from all sources; weekly review screen saves `weekly_grades`; mirror writes files (tested with an in-memory FS handle).
 
-### Phase 12: PWA ×5 + offline
+### Phase 12: PWA ×5 + offline [x]
 Exit: 5 manifests valid, SW precache, offline shell, outbox replays; Playwright checks manifests per route.
 
 ### Phase 13: Notion import scripts
