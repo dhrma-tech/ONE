@@ -1,7 +1,7 @@
 // Private media (progress photos, speaking recordings, PYQ PDFs): saved to IndexedDB first,
 // uploaded by sync to a PRIVATE Supabase bucket under "<user_id>/<object>", read back with short-lived signed URLs.
 import { db } from "@/data/db";
-import { supabase, auth } from "@/data/supabase";
+import { getSupabase, auth } from "@/data/supabase";
 
 export type Bucket = "progress-photos" | "recordings" | "pyq";
 
@@ -25,6 +25,7 @@ export async function blobUrl(bucket: Bucket, object: string): Promise<string | 
     return url;
   }
   const uid = auth.get().userId;
+  const supabase = await getSupabase();
   if (!supabase || !uid) return null;
   const { data } = await supabase.storage.from(bucket).createSignedUrl(`${uid}/${object}`, 600);
   if (!data?.signedUrl) return null;
@@ -35,6 +36,7 @@ export async function blobUrl(bucket: Bucket, object: string): Promise<string | 
 export async function deleteBlob(bucket: Bucket, object: string): Promise<void> {
   await db.blobs.delete(localKey(bucket, object));
   const uid = auth.get().userId;
+  const supabase = await getSupabase();
   if (supabase && uid) await supabase.storage.from(bucket).remove([`${uid}/${object}`]);
 }
 

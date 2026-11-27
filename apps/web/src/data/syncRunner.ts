@@ -2,7 +2,8 @@
 // and 1.5 s after local writes. No-op in local mode.
 import { useSyncExternalStore } from "react";
 import type { SupabaseClient } from "@supabase/supabase-js";
-import { supabase, auth } from "./supabase";
+import { getSupabase, auth } from "./supabase";
+import { LOCAL_MODE } from "@/env";
 import { onLocalWrite } from "./repo";
 import { syncOnce, type RemoteApi, type SyncResult } from "./sync";
 import type { TableName } from "./schema";
@@ -33,7 +34,7 @@ interface SyncState {
   last?: SyncResult;
   lastAt?: string;
 }
-let state: SyncState = { status: supabase ? "signed-out" : "local" };
+let state: SyncState = { status: LOCAL_MODE ? "local" : "signed-out" };
 const subs = new Set<() => void>();
 const set = (p: Partial<SyncState>) => {
   state = { ...state, ...p };
@@ -51,6 +52,7 @@ export const useSyncState = () =>
 let running = false;
 let again = false;
 export async function syncNow(): Promise<void> {
+  const supabase = await getSupabase();
   if (!supabase) return;
   const uid = auth.get().userId;
   if (!uid) return set({ status: "signed-out" });
@@ -77,7 +79,7 @@ export async function syncNow(): Promise<void> {
 
 let started = false;
 export function startSync() {
-  if (started || !supabase) return;
+  if (started || LOCAL_MODE) return;
   started = true;
   let t: ReturnType<typeof setTimeout> | undefined;
   onLocalWrite(() => {

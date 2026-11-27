@@ -261,7 +261,7 @@ button.chip:hover {
 .chip.on {
   color: var(--accent);
   border-color: color-mix(in srgb, var(--accent) 50%, transparent);
-  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
 }
 .chip .dot {
   width: 6px;

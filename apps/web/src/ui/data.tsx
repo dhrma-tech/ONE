@@ -168,7 +168,16 @@ export function ContributionGrid({
       data-seen={seen ? 1 : 0}
       style={{ "--cell": `${cell}px`, "--cell-gap": `${gap}px` } as CSSProperties}
     >
-      <div className="cg-scroll">
+      <div
+        className="cg-scroll"
+        tabIndex={0}
+        role="region"
+        aria-label={`${label} grid, scroll horizontally`}
+        ref={(el) => {
+          // Phones: start at the most recent weeks.
+          if (el && el.scrollLeft === 0 && el.scrollWidth > el.clientWidth) el.scrollLeft = el.scrollWidth;
+        }}
+      >
         <div className="cg-months" style={{ position: "relative", height: 12, width: weeks * (cell + gap) }} aria-hidden>
           {months.map((m) => (
             <span key={m.col} style={{ position: "absolute", left: m.col * (cell + gap) }}>
@@ -176,14 +185,14 @@ export function ContributionGrid({
             </span>
           ))}
         </div>
-        <div className="cg-grid" role="grid" aria-label={`${label}: ${active} active days`}>
+        <div className="cg-grid" role="img" aria-label={`${label}: ${active} active days in the last ${weeks} weeks`}>
           {cells.map((c, i) => {
             const text = `${pretty(c.date)}: ${c.note ?? (c.level ? `level ${c.level}` : "nothing logged")}`;
             return (
               <div
                 key={c.date}
-                role="gridcell"
-                aria-label={c.future ? undefined : text}
+                aria-hidden
+                title={c.future ? undefined : text}
                 className={`cg-cell l${c.level}${c.future ? " future" : ""}${c.date === t ? " today" : ""}`}
                 style={{ "--i": Math.min(i, 300) } as CSSProperties}
                 onMouseEnter={(e) => {
@@ -207,6 +216,14 @@ export function ContributionGrid({
           More
         </span>
       </div>
+      <ul className="sr-only" aria-label={`${label}: last 7 days`}>
+        {cells
+          .filter((c) => !c.future)
+          .slice(-7)
+          .map((c) => (
+            <li key={c.date}>{`${pretty(c.date)}: ${c.note ?? (c.level ? `level ${c.level}` : "nothing logged")}`}</li>
+          ))}
+      </ul>
       {tip ? (
         <div className="cg-tip" style={{ left: tip.x, top: tip.y, transform: "translate(-50%, -100%)" }} role="tooltip">
           {tip.text}

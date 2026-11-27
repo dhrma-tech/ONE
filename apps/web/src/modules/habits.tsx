@@ -10,6 +10,7 @@ const DAYS = ["S", "M", "T", "W", "T", "F", "S"];
 export function HabitsEditor({ section }: { section: string }) {
   const habits = useLiveQuery(async () => (await db.t("habits").toArray()).filter((h) => !h.deleted_at && h.section === section).sort((a, b) => a.order_no - b.order_no), [section]);
   const [title, setTitle] = useState("");
+  if (!habits) return <div className="skeleton" style={{ minHeight: 260 }} aria-busy="true" />;
   return (
     <div className="stack">
       <ul className="list">

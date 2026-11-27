@@ -390,7 +390,7 @@ Exit: dry-run prints counts + first 5 rows from fixture exports; real mode upser
 ### Phase 14: Portfolio widget [x]
 Exit: `/api/public-stats` returns only flagged stats; DHARMA branch `feat/live-from-one` pushed with the widget.
 
-### Phase 15: Art + motion + a11y + performance pass
+### Phase 15: Art + motion + a11y + performance pass [x]
 Exit: 6 original scenes; axe checks clean; Lighthouse ≥ 90 targets recorded in TESTING.md.
 
 ### Phase 16: Tauri desktop

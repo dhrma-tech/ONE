@@ -34,8 +34,9 @@ export function Rail() {
   const { theme } = useUI();
   return (
     <aside className="rail" aria-label="Main">
-      <Link to={SCOPE === "master" ? "/" : `/${SCOPE}`} className="rail-logo" aria-label="ONE home">
-        1
+      <Link to={SCOPE === "master" ? "/" : `/${SCOPE}`} className="rail-logo">
+        <span aria-hidden>1</span>
+        <span className="sr-only">ONE home</span>
       </Link>
       <nav className="rail-nav">
         {visibleAreas().map((a) => (
@@ -73,7 +74,7 @@ export function Dock() {
 
 export function PageFallback() {
   return (
-    <div className="stack" aria-busy="true" style={{ padding: 24 }}>
+    <div className="stack" aria-busy="true" style={{ padding: 24, minHeight: "100vh" }}>
       <span className="micro">Loading…</span>
     </div>
   );

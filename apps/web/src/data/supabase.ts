@@ -1,13 +1,8 @@
-import { createClient, type SupabaseClient, type Session } from "@supabase/supabase-js";
+// Supabase client, loaded lazily (dynamic import) so first paint and local mode don't pay for the SDK.
+import type { Session, SupabaseClient } from "@supabase/supabase-js";
 import { useSyncExternalStore } from "react";
 import { env, LOCAL_MODE } from "@/env";
 import { setRepoUser } from "./repo";
-
-export const supabase: SupabaseClient | null = LOCAL_MODE
-  ? null
-  : createClient(env.supabaseUrl, env.supabaseAnonKey, {
-      auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, flowType: "pkce" },
-    });
 
 interface AuthState {
   ready: boolean;
@@ -24,28 +19,43 @@ const set = (s: Session | null) => {
   subs.forEach((f) => f());
 };
 
-if (supabase) {
-  supabase.auth.getSession().then(({ data }) => set(data.session));
-  supabase.auth.onAuthStateChange((_e, s) => set(s));
+let loading: Promise<SupabaseClient | null> | null = null;
+
+/** The Supabase client, or null in local mode. Created once, on first use. */
+export function getSupabase(): Promise<SupabaseClient | null> {
+  if (LOCAL_MODE) return Promise.resolve(null);
+  loading ??= import("@supabase/supabase-js").then(({ createClient }) => {
+    const c = createClient(env.supabaseUrl, env.supabaseAnonKey, {
+      auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, flowType: "pkce" },
+    });
+    void c.auth.getSession().then(({ data }) => set(data.session));
+    c.auth.onAuthStateChange((_e, s) => set(s));
+    return c;
+  });
+  return loading;
 }
+
+if (!LOCAL_MODE && typeof window !== "undefined") void getSupabase();
 
 export const auth = {
   get: () => state,
   async signIn(email: string, firstTime: boolean): Promise<string | null> {
-    if (!supabase) return "Local mode: no login needed.";
-    const { error } = await supabase.auth.signInWithOtp({
+    const sb = await getSupabase();
+    if (!sb) return "Local mode: no login needed.";
+    const { error } = await sb.auth.signInWithOtp({
       email,
       options: { emailRedirectTo: `${location.origin}/auth/callback`, shouldCreateUser: firstTime },
     });
     return error ? error.message : null;
   },
   async signOut() {
-    await supabase?.auth.signOut();
+    await (await getSupabase())?.auth.signOut();
   },
   /** Bearer token for /api calls (empty in local mode). */
   async token(): Promise<string> {
-    if (!supabase) return "";
-    const { data } = await supabase.auth.getSession();
+    const sb = await getSupabase();
+    if (!sb) return "";
+    const { data } = await sb.auth.getSession();
     return data.session?.access_token ?? "";
   },
 };

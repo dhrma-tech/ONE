@@ -385,3 +385,7 @@
 .notes-panel .list li {
   align-items: flex-start;
 }
+
+.tab-fallback {
+  min-height: 70vh;
+}

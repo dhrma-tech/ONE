@@ -242,7 +242,7 @@ export function PathEditor({ section, lanes }: { section: SectionId; lanes: { id
   const p = usePath(section);
   const [adding, setAdding] = useState<string | null>(null);
   const [title, setTitle] = useState("");
-  if (!p) return <p className="micro">Loading…</p>;
+  if (!p) return <div className="skeleton" style={{ minHeight: 900 }} aria-busy="true" />;
   return (
     <div className={lanes.length > 1 ? "cols-2" : "stack"} style={{ alignItems: "start" }}>
       {lanes.map((lane) => {

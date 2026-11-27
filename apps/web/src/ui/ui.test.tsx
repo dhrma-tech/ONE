@@ -10,10 +10,10 @@ describe("ContributionGrid", () => {
       { date: addDays(today(), -1), level: 2 as const },
     ];
     render(<ContributionGrid days={days} label="Master" />);
-    const grid = screen.getByRole("grid");
-    expect(grid).toHaveAttribute("aria-label", "Master: 2 active days");
-    expect(screen.getAllByRole("gridcell")).toHaveLength(53 * 7);
-    expect(screen.getByLabelText(/4 sections done/)).toHaveClass("l4", "today");
+    expect(screen.getByRole("img", { name: "Master: 2 active days in the last 53 weeks" })).toBeInTheDocument();
+    expect(document.querySelectorAll(".cg-cell")).toHaveLength(53 * 7);
+    expect(document.querySelector(".cg-cell.today")).toHaveClass("l4");
+    expect(screen.getByText(/4 sections done/)).toBeInTheDocument(); // screen-reader list of the last 7 days
   });
 });
 

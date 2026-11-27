@@ -1,9 +1,9 @@
 # Progress
 
 ## Current state
-- **Phase:** 15 (art + motion + a11y + performance pass) starting
-- **Last finished:** Phase 14 (portfolio widget)
-- **Next:** axe/Lighthouse checks, contrast, focus, bundle size, banner polish
+- **Phase:** 16 (Tauri desktop) next
+- **Last finished:** Phase 15 (a11y + performance pass)
+- **Next:** Phase 16 Tauri desktop (install rustup; build blocked → log in NEEDS), then Phase 17 deploy docs + final QA
 - **Blockers:** none (all secrets mocked via local mode; see NEEDS-FROM-DHARMA.md)
 
 ## How to resume
@@ -65,3 +65,6 @@ Original pixel icons (192/512/maskable/apple-touch + SVG) and 5 manifests genera
 ONE side: `GET /api/public-stats` (flagged stats only, versioned `{v:1, updated_at, stats}`, cached `s-maxage=300`, CORS only for `PORTFOLIO_ORIGIN`), Settings › Public stats switches + preview, derived stats (streak, level, current focus, 12-week grid) kept fresh daily.
 DHARMA repo: branch **`feat/live-from-one`** (commit d100ec2, not merged): `components/LiveFromOne.tsx` (client fetch, 6 s timeout, hides on any failure) inside the Now section in the portfolio's own style (mono label, chips, mini grid in its accent), `lib/oneStats.ts` parser + `tests/one-stats.test.ts`, CSP connect-src allows `NEXT_PUBLIC_ONE_URL`. Portfolio checks: tsc, 33 tests, next lint all green.
 Deploy steps for Dharma: merge the branch, set `NEXT_PUBLIC_ONE_URL` in the portfolio's Vercel project, set `PORTFOLIO_ORIGIN=https://dharma-phi.vercel.app` in ONE's Vercel project, then switch stats on in ONE › Settings › Public stats.
+
+### Phase 15: a11y + performance (2026-11-27)
+axe-core e2e (`e2e/a11y.spec.ts`, WCAG 2.1 A/AA) on 11 routes × 2 themes × desktop/phone: all pass. Fixes: light-theme destructive #c0262d and Career accent #8f5300 (AA on small text), lighter chip tint, sr-only rail logo label, contribution grid as role=img + sr-only last-7-days list, focusable scrolling grid (starts at today on phones). Performance: Supabase SDK lazy-loaded (main bundle 190 → 134 KB gz), pixel fonts preloaded, local Suspense in section layouts + skeletons to stop layout shift. Lighthouse (mobile, simulated 4G): Home 94, Career path 91, Mind 95, Body 95, Persona 93, Settings 96; desktop 99-100; a11y 98, best practices 96-100. Full suite: 99 unit + 66 e2e passing.

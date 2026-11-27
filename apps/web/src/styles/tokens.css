@@ -71,7 +71,7 @@
   --border-strong: #cfc7d2;
   --input: #eae4eb;
   --ring: #b0a7b2;
-  --destructive: #ee3533;
+  --destructive: #c0262d; /* darker than the reference #ee3533 for AA on small text */
   --success: #218041;
   --warning: #9a5a00;
   --footer: #efe8f0;
@@ -98,7 +98,7 @@
   --neo-knob: 3px 4px 7px #6251664d, -3px -3px 6px #fffffffa, inset 0 1px 1px #fffffffa;
   --neo-knob-bg: linear-gradient(145deg, #fffeff, #f6f0f8);
 
-  --accent-career: #9a5a00;
+  --accent-career: #8f5300;
   --accent-mind: #6a3fd1;
   --accent-body: #b8322a;
   --accent-persona: #0b6aa8;
