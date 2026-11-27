@@ -1,0 +1,54 @@
+{
+ "id": "scholars-mate",
+ "title": "Scholar's mate: the f7 attack",
+ "section": "Mating patterns",
+ "order": 25,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4",
+   "prompt": "The f7 pawn is protected only by the black king at the start. A queen and bishop attacking it together can give a quick mate. Here Black forgot to defend.",
+   "correct": [],
+   "options": null,
+   "explanation": "The f7 pawn is protected only by the black king at the start. A queen and bishop attacking it together can give a quick mate. Here Black forgot to defend.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4",
+   "prompt": "Checkmate in one.",
+   "correct": [
+    "h5f7"
+   ],
+   "options": null,
+   "explanation": "Qxf7#: the bishop on c4 protects the queen.",
+   "hint": "Take on f7 with the queen."
+  },
+  {
+   "type": "square",
+   "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4",
+   "prompt": "Click the weak square that White attacks twice.",
+   "correct": [
+    "f7"
+   ],
+   "options": null,
+   "explanation": "f7 (f2 for White) is the weakest square early in the game.",
+   "hint": "It is next to the black king."
+  },
+  {
+   "type": "quiz",
+   "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4",
+   "prompt": "Which white piece protects the queen when it lands on f7?",
+   "correct": [
+    "Bishop on c4"
+   ],
+   "options": [
+    "Bishop on c4",
+    "Knight",
+    "King"
+   ],
+   "explanation": "The bishop on c4 looks straight at f7.",
+   "hint": "Follow the diagonal from c4."
+  }
+ ]
+}

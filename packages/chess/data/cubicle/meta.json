@@ -1,0 +1,37 @@
+{
+ "built": "2026-11-24T12:49:29Z",
+ "videos": 185,
+ "channels": 27,
+ "nodes": 51,
+ "sections": {
+  "start": 8,
+  "tactics": 11,
+  "calc": 2,
+  "strategy": 4,
+  "open-e4": 2,
+  "open-d4": 6,
+  "open-flank": 2,
+  "def-e4": 14,
+  "def-d4": 3,
+  "gambits": 8,
+  "open-study": 6,
+  "middlegame": 4,
+  "endgames": 5,
+  "analysis": 27,
+  "gameplay": 19,
+  "news": 57,
+  "improve": 7,
+  "speed": 0,
+  "legends": 0
+ },
+ "keyless": true,
+ "shortfalls": [
+  "YT_API_KEY not set: durations, languages, embeddable/public flags, likes and chapters are unknown (d is null, language is a title heuristic); the engagement bar is replaced by membership of the channel's long-form upload feed; upload feeds expose only the latest 15 videos per channel, so older evergreen videos are missing; named playlists cannot be searched by title.",
+  "7 trusted channels could not be resolved to a channel id from fetched evidence and were dropped: John Bartholomew, Aman Hambleton, Hanging Pawns, Chess Dojo, Remote Chess Academy, ChessBase India, Grand Chess Tour",
+  "Playlists not expanded: Master Class Speedrun, Opening Theory Speedrun, Chess Fundamentals, Climbing the Rating Ladder, Building Habits",
+  "Only 185 videos (< 500 required).",
+  "Sections below floor: start 8/40, tactics 11/70, calc 2/20, strategy 4/60, open-e4 2/20, open-d4 6/20, open-flank 2/20, def-e4 14/20, def-d4 3/20, gambits 8/20, open-study 6/20, middlegame 4/20, endgames 5/60, analysis 27/50, gameplay 19/50, improve 7/40, speed 0/20, legends 0/20",
+  "98 taxonomy nodes have no videos.",
+  "22 videos have an unknown publish date (freshness 0.6, counted as not-since-2021 by the validator)."
+ ]
+}

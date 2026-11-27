@@ -1,0 +1,66 @@
+{
+ "id": "mate-in-one-drill",
+ "title": "Mate in one: practice",
+ "section": "Mating patterns",
+ "order": 28,
+ "steps": [
+  {
+   "type": "move",
+   "fen": "6k1/5ppp/8/8/8/8/8/R5K1 w - - 0 1",
+   "prompt": "Checkmate in one.",
+   "correct": [
+    "a1a8"
+   ],
+   "options": null,
+   "explanation": "Ra8#: a back-rank mate.",
+   "hint": "The black king is trapped behind its pawns."
+  },
+  {
+   "type": "move",
+   "fen": "rnbqkbnr/ppppp2p/8/5pp1/4P3/8/PPPP1PPP/RNBQKBNR w KQkq g6 0 3",
+   "prompt": "Checkmate in one.",
+   "correct": [
+    "d1h5"
+   ],
+   "options": null,
+   "explanation": "Qh5#: the same trap as Fool's mate, with colours reversed.",
+   "hint": "The e8-h5 diagonal is open."
+  },
+  {
+   "type": "move",
+   "fen": "6k1/5p1p/6pB/8/8/8/8/3R2K1 w - - 0 1",
+   "prompt": "Checkmate in one.",
+   "correct": [
+    "d1d8"
+   ],
+   "options": null,
+   "explanation": "Rd8#: the bishop on h6 covers g7.",
+   "hint": "Use the open d-file."
+  },
+  {
+   "type": "move",
+   "fen": "7k/5Q2/6K1/8/8/8/8/8 w - - 0 1",
+   "prompt": "Checkmate in one.",
+   "correct": [
+    "f7e8",
+    "f7f8",
+    "f7g7",
+    "f7h7"
+   ],
+   "options": null,
+   "explanation": "Qg7#: the queen is protected by your king.",
+   "hint": "Put the queen right next to the king, protected."
+  },
+  {
+   "type": "move",
+   "fen": "k7/8/2K5/8/8/8/8/1Q6 w - - 0 1",
+   "prompt": "Checkmate in one, and be careful not to stalemate.",
+   "correct": [
+    "b1b7"
+   ],
+   "options": null,
+   "explanation": "Qb7#. Qb6 would be stalemate: always check that you are giving check.",
+   "hint": "The king on c6 protects b7."
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+ "id": "endgame-rook-bridge",
+ "title": "Rook endings: building a bridge",
+ "section": "Endgames",
+ "order": 57,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "1K1k4/1P6/8/8/8/8/r7/5R2 w - - 0 1",
+   "prompt": "With a pawn on the 7th and your king on the promotion rank, the extra pawn wins with a technique called the bridge: use your rook to shelter your king from rook checks.",
+   "correct": [],
+   "options": null,
+   "explanation": "With a pawn on the 7th and your king on the promotion rank, the extra pawn wins with a technique called the bridge: use your rook to shelter your king from rook checks.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "1K1k4/1P6/8/8/8/8/r7/5R2 w - - 0 1",
+   "prompt": "White to move and win: start building the bridge by placing the rook on the 4th rank.",
+   "correct": [
+    "f1f4"
+   ],
+   "options": null,
+   "explanation": "Rf4 prepares ...Rb4, shielding your king so the pawn can promote.",
+   "hint": "Bring the rook to the fourth rank."
+  },
+  {
+   "type": "quiz",
+   "fen": "1K1k4/1P6/8/8/8/8/r7/5R2 w - - 0 1",
+   "prompt": "What does the black rook try to do?",
+   "correct": [
+    "Give endless checks to the white king"
+   ],
+   "options": [
+    "Give endless checks to the white king",
+    "Capture the pawn on b7 only"
+   ],
+   "explanation": "That is why the bridge is needed: it blocks checks and lets the king hide.",
+   "hint": "Think about perpetual checks."
+  },
+  {
+   "type": "quiz",
+   "fen": "1K1k4/1P6/8/8/8/8/r7/5R2 w - - 0 1",
+   "prompt": "Is a rook behind a passed pawn usually good?",
+   "correct": [
+    "Yes"
+   ],
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "explanation": "A rook behind the pawn supports it from far away and gains strength as the pawn advances.",
+   "hint": "Behind it, not in front."
+  },
+  {
+   "type": "info",
+   "fen": "1K1k4/1P6/8/8/8/8/r7/5R2 w - - 0 1",
+   "prompt": "Takeaway: in rook endgames, activity and king safety matter more than material for a long time. Memorise the bridge and you will convert wins many times.",
+   "correct": [],
+   "options": null,
+   "explanation": "Takeaway: in rook endgames, activity and king safety matter more than material for a long time. Memorise the bridge and you will convert wins many times.",
+   "hint": "Read, then continue."
+  }
+ ]
+}

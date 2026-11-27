@@ -1,0 +1,60 @@
+{
+ "id": "trade-when-ahead",
+ "title": "When to trade pieces",
+ "section": "Strategy",
+ "order": 51,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "4k3/pp3ppp/8/8/8/8/PP3PPP/2R1K2R w K - 0 1",
+   "prompt": "When you are ahead in material, trade pieces (not pawns): the fewer pieces left, the bigger your extra material becomes. When you are behind, avoid trades and keep pieces on to make threats.",
+   "correct": [],
+   "options": null,
+   "explanation": "When you are ahead in material, trade pieces (not pawns): the fewer pieces left, the bigger your extra material becomes. When you are behind, avoid trades and keep pieces on to make threats.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/pp3ppp/8/8/8/8/PP3PPP/2R1K2R w K - 0 1",
+   "prompt": "You are a rook ahead. Should you offer trades?",
+   "correct": [
+    "Yes, trade pieces"
+   ],
+   "options": [
+    "Yes, trade pieces",
+    "No, avoid all trades"
+   ],
+   "explanation": "A rook up with few pieces left is an easy win.",
+   "hint": "Simplify when ahead."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/pp3ppp/8/8/8/8/PP3PPP/4K3 w - - 0 1",
+   "prompt": "You are a piece down. What should you avoid?",
+   "correct": [
+    "Trading pieces"
+   ],
+   "options": [
+    "Trading pieces",
+    "Making threats",
+    "Keeping your queen"
+   ],
+   "explanation": "Every trade brings you closer to a lost endgame. Keep pieces on and look for chances.",
+   "hint": "Do the opposite of the side that is ahead."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
+   "prompt": "Which trade is usually good for you?",
+   "correct": [
+    "Trading your bad piece for their good piece"
+   ],
+   "options": [
+    "Trading your bad piece for their good piece",
+    "Trading your good piece for their bad piece"
+   ],
+   "explanation": "Swap off your problems and their best attackers.",
+   "hint": "Think about piece quality, not only points."
+  }
+ ]
+}

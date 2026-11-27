@@ -1,0 +1,67 @@
+{
+ "id": "endgame-rule-of-square",
+ "title": "The rule of the square",
+ "section": "Endgames",
+ "order": 54,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "7K/8/3k4/8/P7/8/8/8 w - - 0 1",
+   "prompt": "Can a king catch a runaway pawn? Draw a square whose side equals the pawn's distance to the promotion square. If the king is inside the square (or can step into it), it catches the pawn.",
+   "correct": [],
+   "options": null,
+   "explanation": "Can a king catch a runaway pawn? Draw a square whose side equals the pawn's distance to the promotion square. If the king is inside the square (or can step into it), it catches the pawn.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "quiz",
+   "fen": "7K/8/8/8/P7/8/8/6k1 w - - 0 1",
+   "prompt": "White pawn a4 needs four moves to promote. The black king is on g1. Does the pawn promote safely?",
+   "correct": [
+    "Yes"
+   ],
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "explanation": "The square runs from a4 to d4 to d8 to a8; the king on g1 is far outside it.",
+   "hint": "Is the king inside the a4-d8 square?"
+  },
+  {
+   "type": "quiz",
+   "fen": "7K/8/3k4/8/P7/8/8/8 w - - 0 1",
+   "prompt": "Now the black king is on d6, inside the square. Can it stop the pawn?",
+   "correct": [
+    "Yes"
+   ],
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "explanation": "The king reaches the pawn's path in time (Kc5 or Kc6 catches it), so the position is a draw.",
+   "hint": "It is inside the square."
+  },
+  {
+   "type": "move",
+   "fen": "7K/8/8/8/P7/8/8/6k1 w - - 0 1",
+   "prompt": "Push the pawn toward promotion.",
+   "correct": [
+    "a4a5"
+   ],
+   "options": null,
+   "explanation": "Every step the pawn takes, the king can only chase from afar, and it cannot catch up.",
+   "hint": "Keep marching: a4-a5."
+  },
+  {
+   "type": "square",
+   "fen": "7K/8/8/8/P7/8/8/6k1 w - - 0 1",
+   "prompt": "Tap the promotion square of the white pawn.",
+   "correct": [
+    "a8"
+   ],
+   "options": null,
+   "explanation": "The pawn promotes on a8; count the moves from a4 to a8.",
+   "hint": "It is the far end of the a-file."
+  }
+ ]
+}

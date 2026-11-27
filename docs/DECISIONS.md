@@ -23,3 +23,5 @@
 | 2026-11-27 | Library candidates ship as small static "packs" (top 6 per Cubicle topic, all 180 Bobby chess videos) imported into the Inbox on demand. | The full Cubicle catalogue (6,647 videos, 2 MB) is too big to ship; nothing is approved automatically. |
 | 2026-11-27 | App scope (master vs section app) comes from the launch URL `?app=<section>` (persisted per window in sessionStorage), not from which HTML entry served the page. | Reloading /career/... inside the master app must not turn it into the Career-only app. |
 | 2026-11-27 | Practical pass rule = 40% overall (CA 60 + ESE 40). Theory = 40/100 and ≥ 20/60 ESE. Default grade table is DBATU-style 10-point (AA 91+ … DD 40+, FF). | Brief gives theory rules only; table is editable and flagged in NEEDS. |
+| 2026-11-27 | /chess-app/ gets its own CSP with `'unsafe-eval'` + `'wasm-unsafe-eval'`; the rest of ONE keeps a strict CSP. | Pyodide needs eval; scoping it to the isolated iframe keeps the main app strict. |
+| 2026-11-27 | Bobby's chess events (game finished, puzzle attempt, lesson done) count for the MIND done rule via `chess_events`. | Bobby keeps its own IndexedDB; ONE only needs activity signals. |

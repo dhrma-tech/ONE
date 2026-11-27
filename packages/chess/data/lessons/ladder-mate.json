@@ -1,0 +1,66 @@
+{
+ "id": "ladder-mate",
+ "title": "The ladder mate with two rooks",
+ "section": "Basic mates",
+ "order": 23,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "8/8/8/4k3/8/8/R7/1R4K1 w - - 0 1",
+   "prompt": "Two rooks mate easily without help from the king. One rook cuts off a row, the other gives check from the next row. Step by step, like climbing a ladder, the king is pushed to the edge.",
+   "correct": [],
+   "options": null,
+   "explanation": "Two rooks mate easily without help from the king. One rook cuts off a row, the other gives check from the next row. Step by step, like climbing a ladder, the king is pushed to the edge.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "8/8/8/4k3/8/8/R7/1R4K1 w - - 0 1",
+   "prompt": "Cut the king off: put a rook on the 4th rank.",
+   "correct": [
+    "b1b4",
+    "a2a4"
+   ],
+   "options": null,
+   "explanation": "The king is now stuck on ranks 5 to 8.",
+   "hint": "Move a rook to the row just below the king."
+  },
+  {
+   "type": "move",
+   "fen": "8/8/8/4k3/1R6/8/R7/6K1 w - - 0 1",
+   "prompt": "Now check from the 5th rank to push the king up.",
+   "correct": [
+    "a2a5"
+   ],
+   "options": null,
+   "explanation": "Ra5+ forces the king to the 6th rank. Keep alternating the rooks.",
+   "hint": "The other rook gives the check."
+  },
+  {
+   "type": "move",
+   "fen": "6k1/R7/8/8/8/8/8/1R4K1 w - - 0 1",
+   "prompt": "Finish it: checkmate in one.",
+   "correct": [
+    "b1b8"
+   ],
+   "options": null,
+   "explanation": "Rb8#: one rook holds the 7th rank, the other checks on the 8th.",
+   "hint": "Check on the back rank."
+  },
+  {
+   "type": "quiz",
+   "fen": "8/8/8/4k3/8/8/R7/1R4K1 w - - 0 1",
+   "prompt": "Why do we keep the rooks far away from the enemy king?",
+   "correct": [
+    "So the king cannot attack them"
+   ],
+   "options": [
+    "So the king cannot attack them",
+    "So they look nicer",
+    "Because rooks cannot move close"
+   ],
+   "explanation": "If the king gets next to an unprotected rook it can take it. Keep the rooks at a distance.",
+   "hint": "What can a king capture?"
+  }
+ ]
+}

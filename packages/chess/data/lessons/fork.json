@@ -1,0 +1,68 @@
+{
+ "id": "fork",
+ "title": "The fork",
+ "section": "Tactics",
+ "order": 31,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "r3k3/8/8/3N4/8/8/8/4K3 w - - 0 1",
+   "prompt": "A fork is one piece attacking two or more enemy pieces at once. Knights are especially good at it because their attack pattern is hard to see.",
+   "correct": [],
+   "options": null,
+   "explanation": "A fork is one piece attacking two or more enemy pieces at once. Knights are especially good at it because their attack pattern is hard to see.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "r3k3/8/8/3N4/8/8/8/4K3 w - - 0 1",
+   "prompt": "Fork the king and rook with your knight.",
+   "correct": [
+    "d5c7"
+   ],
+   "options": null,
+   "explanation": "Nc7+ attacks the king on e8 and the rook on a8. The king must move, then the knight takes the rook.",
+   "hint": "Find a square from which the knight sees both e8 and a8."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/2n1r3/8/3P4/8/3R2K1 w - - 0 1",
+   "prompt": "Fork the knight and the rook with a pawn.",
+   "correct": [
+    "d3d4"
+   ],
+   "options": null,
+   "explanation": "The pawn on d4 attacks c5 and e5. It is guarded by the rook, so nothing can take it.",
+   "hint": "Move the pawn so it attacks both pieces."
+  },
+  {
+   "type": "quiz",
+   "fen": "r3k3/8/8/3N4/8/8/8/4K3 w - - 0 1",
+   "prompt": "Which piece type can fork a king and a rook but cannot be captured by a distant king?",
+   "correct": [
+    "Knight"
+   ],
+   "options": [
+    "Knight",
+    "Bishop",
+    "Pawn"
+   ],
+   "explanation": "A knight check cannot be blocked, and a rook far away cannot take it back.",
+   "hint": "It is the piece that jumps."
+  },
+  {
+   "type": "quiz",
+   "fen": "r3k3/8/8/3N4/8/8/8/4K3 w - - 0 1",
+   "prompt": "What should you check before forking?",
+   "correct": [
+    "That the forking piece cannot be captured"
+   ],
+   "options": [
+    "That the forking piece cannot be captured",
+    "That it is Black's move"
+   ],
+   "explanation": "A fork only works if the forking piece survives. Look for protection first.",
+   "hint": "Safety of your own piece."
+  }
+ ]
+}

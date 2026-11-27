@@ -1,9 +1,9 @@
 # Progress
 
 ## Current state
-- **Phase:** 7 (MIND) starting
-- **Last finished:** Phase 6 (CAREER)
-- **Next:** MIND: Bobby chess integration (iframe + bridge), Chess.com stats, Meditate, Library, Focus training, Memory (SM-2), Reading shelf, locked modules, Analytics
+- **Phase:** 8 (BODY) starting
+- **Last finished:** Phase 7 (MIND)
+- **Next:** BODY: workout log with pre-fill + progression hints + PRs, schedule/never-miss-twice/deload, weigh-in graph + rate hints, diet + meal templates, water, progress (measurements + private photos), library, analytics
 - **Blockers:** none (all secrets mocked via local mode; see NEEDS-FROM-DHARMA.md)
 
 ## How to resume
@@ -38,3 +38,8 @@ Tests: 47 passing.
 ### Phase 6: CAREER (2026-11-27)
 All 9 tabs: Path (two lanes, collapsible stages, gates, Block 1 timer, daily-structure habits, target title, exam mode, AI rules), Library, Practice (LeetCode card with stale badge + problem log), Build (projects kanban, GitHub grid, website ideas, hackathons), News (hard cap 10/day by quotas, save to Reading), Reading (title fetch, takeaway required → Ideas bank), Notes (markdown, 3/7/30/90 review, post draft, flashcard), College (semesters/archive, units with Cracked XP, PYQ bank with manual unit tags + most asked, study links, submissions, exams countdown, 4-day milestone generator, marks with pass/fail warnings, SGPA/CGPA, editable grade table), Analytics.
 Server routes live in dev: /api/video, /api/news, /api/link-title (SSRF-guarded), /api/leetcode (cached). Fixed scope detection (section apps now keyed by launch URL `?app=`).
+
+### Phase 7: MIND (2026-11-27)
+BOBBY copied into `packages/chess` (GPL-3.0, workspace package `@one/chess`), built to `/chess-app/` and loaded in a same-origin iframe only on /mind/chess. Added `src/one-bridge.ts` (theme from ONE, Dexie hooks report game/puzzle/lesson events to ONE's `chess_events`, "Review on Bobby" for Chess.com PGNs) and `one-theme.css` (pure black + MIND accent). Asset script now fetches python-chess from PyPI with Node (no python3 needed). Verified: Bobby loads with Pyodide + Stockfish, no console errors, dark theme.
+MIND tabs: Chess (+ Chess.com stats, rating trend, recent games via /api/chesscom with polite UA + cache), Meditate (presets, 4-4-6 breathing circle, generated WebAudio bell, no-UI mode, streak), Library, Focus (phone-free block, stuck protocol, editable stuck ladder, phone rules), Memory (SM-2, max 5 new/day), Reading shelf (sessions + lessons), locked Cube/Math/Palace behind Settings › Modules, Analytics (rapid trend).
+Fixed: `vercel.json` was invalid JSON since Phase 1; rewritten, with a separate CSP for /chess-app (Pyodide needs eval).

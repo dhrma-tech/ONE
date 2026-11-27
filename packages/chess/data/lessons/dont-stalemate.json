@@ -1,0 +1,58 @@
+{
+ "id": "dont-stalemate",
+ "title": "Winning without stalemate",
+ "section": "Good habits",
+ "order": 61,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "k7/8/2K5/8/8/8/8/1Q6 w - - 0 1",
+   "prompt": "When you are far ahead, the only way to throw away the win is stalemate. Before every move near the end, check that the enemy king still has a legal move or is in check.",
+   "correct": [],
+   "options": null,
+   "explanation": "When you are far ahead, the only way to throw away the win is stalemate. Before every move near the end, check that the enemy king still has a legal move or is in check.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "quiz",
+   "fen": "k7/8/1QK5/8/8/8/8/8 b - - 0 1",
+   "prompt": "White just played Qb6. Black to move. What happened?",
+   "correct": [
+    "Stalemate: a draw"
+   ],
+   "options": [
+    "Stalemate: a draw",
+    "Checkmate",
+    "Black is in check"
+   ],
+   "explanation": "The black king is not in check and has no legal move. Half a point thrown away!",
+   "hint": "Count Black's legal moves."
+  },
+  {
+   "type": "move",
+   "fen": "k7/8/2K5/8/8/8/8/1Q6 w - - 0 1",
+   "prompt": "Give checkmate instead.",
+   "correct": [
+    "b1b7"
+   ],
+   "options": null,
+   "explanation": "Qb7#: check, and no escape. That is the difference from stalemate.",
+   "hint": "Your king protects b7."
+  },
+  {
+   "type": "quiz",
+   "fen": "k7/8/2K5/8/8/8/8/1Q6 w - - 0 1",
+   "prompt": "What is the safest habit when the enemy king is almost trapped?",
+   "correct": [
+    "Make sure it always has a square until you give mate"
+   ],
+   "options": [
+    "Make sure it always has a square until you give mate",
+    "Take all its squares quickly",
+    "Move the queen next to it"
+   ],
+   "explanation": "Leave one square, bring your king closer, then mate.",
+   "hint": "Avoid taking every square without check."
+  }
+ ]
+}

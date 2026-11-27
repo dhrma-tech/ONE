@@ -1,0 +1,56 @@
+{
+ "id": "make-a-plan",
+ "title": "Making a plan",
+ "section": "Strategy",
+ "order": 46,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+   "prompt": "When there are no tactics, make a plan. Ask: what is my worst piece? Where are the weak squares? Which side of the board should I play on?",
+   "correct": [],
+   "options": null,
+   "explanation": "When there are no tactics, make a plan. Ask: what is my worst piece? Where are the weak squares? Which side of the board should I play on?",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "quiz",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+   "prompt": "Which question is the best start for a plan?",
+   "correct": [
+    "What is my worst piece?"
+   ],
+   "options": [
+    "What is my worst piece?",
+    "How can I move my queen?",
+    "Which pawn can I push fastest?"
+   ],
+   "explanation": "Improving your worst piece is a simple, strong plan.",
+   "hint": "Think about piece activity."
+  },
+  {
+   "type": "quiz",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+   "prompt": "Your pieces are better on the kingside. Where should you usually play?",
+   "correct": [
+    "On the kingside"
+   ],
+   "options": [
+    "On the kingside",
+    "On the queenside",
+    "It doesn't matter"
+   ],
+   "explanation": "Play where you are stronger: that is where attacks succeed.",
+   "hint": "Use your strength."
+  },
+  {
+   "type": "info",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+   "prompt": "A good plan is small and concrete: 'bring my knight to d5', 'double rooks on the open file', 'attack the weak pawn on c6'. Then check each move for tactics before you play it.",
+   "correct": [],
+   "options": null,
+   "explanation": "A good plan is small and concrete: 'bring my knight to d5', 'double rooks on the open file', 'attack the weak pawn on c6'. Then check each move for tactics before you play it.",
+   "hint": "Read, then continue."
+  }
+ ]
+}

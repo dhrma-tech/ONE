@@ -1,0 +1,57 @@
+{
+ "id": "double-check",
+ "title": "Double check",
+ "section": "Tactics",
+ "order": 35,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "3qkb2/5p2/8/8/4N3/8/8/4R1K1 w - - 0 1",
+   "prompt": "A double check is a check from two pieces at once. You cannot block or capture two checkers with one move, so the king must move.",
+   "correct": [],
+   "options": null,
+   "explanation": "A double check is a check from two pieces at once. You cannot block or capture two checkers with one move, so the king must move.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "3qkb2/5p2/8/8/4N3/8/8/4R1K1 w - - 0 1",
+   "prompt": "Deliver checkmate with a double check.",
+   "correct": [
+    "e4f6"
+   ],
+   "options": null,
+   "explanation": "Nf6 checks the king and uncovers the rook's check along the e-file. The king has no safe square, so it is mate.",
+   "hint": "Move the knight to a square that attacks e8."
+  },
+  {
+   "type": "quiz",
+   "fen": "3qkb2/5p2/8/8/4N3/8/8/4R1K1 w - - 0 1",
+   "prompt": "How can you respond to a double check?",
+   "correct": [
+    "Move the king"
+   ],
+   "options": [
+    "Move the king",
+    "Capture one checker",
+    "Block one check"
+   ],
+   "explanation": "Only a king move can answer two checks at once.",
+   "hint": "One reply cannot handle two attackers."
+  },
+  {
+   "type": "quiz",
+   "fen": "3qkb2/5p2/8/8/4N3/8/8/4R1K1 w - - 0 1",
+   "prompt": "A double check is usually created by...",
+   "correct": [
+    "A discovered check where the moving piece also checks"
+   ],
+   "options": [
+    "A discovered check where the moving piece also checks",
+    "Two knight moves"
+   ],
+   "explanation": "The front piece gives check itself while uncovering the back piece's check.",
+   "hint": "Related to the discovered attack."
+  }
+ ]
+}

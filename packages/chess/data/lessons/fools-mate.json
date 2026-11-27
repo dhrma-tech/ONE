@@ -1,0 +1,58 @@
+{
+ "id": "fools-mate",
+ "title": "Fool's mate: the fastest mate",
+ "section": "Mating patterns",
+ "order": 24,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "rnbqkbnr/pppp1ppp/8/4p3/6P1/5P2/PPPPP2P/RNBQKBNR b KQkq g3 0 2",
+   "prompt": "Fool's mate is the shortest possible game. White pushed the f- and g-pawns and opened the line from h4 to the king. Never weaken the squares around your king early.",
+   "correct": [],
+   "options": null,
+   "explanation": "Fool's mate is the shortest possible game. White pushed the f- and g-pawns and opened the line from h4 to the king. Never weaken the squares around your king early.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "rnbqkbnr/pppp1ppp/8/4p3/6P1/5P2/PPPPP2P/RNBQKBNR b KQkq g3 0 2",
+   "prompt": "Black to move: checkmate in one.",
+   "correct": [
+    "d8h4"
+   ],
+   "options": null,
+   "explanation": "Qh4#: the king is trapped by its own pieces.",
+   "hint": "The diagonal from d8 to h4 to e1 is open."
+  },
+  {
+   "type": "quiz",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Which early pawn moves weaken White's king the most?",
+   "correct": [
+    "f3 and g4"
+   ],
+   "options": [
+    "f3 and g4",
+    "e4 and d4",
+    "c4 and Nc3"
+   ],
+   "explanation": "The f- and g-pawns shield the king. Moving them early opens lines toward it.",
+   "hint": "Look at the pawns next to the king."
+  },
+  {
+   "type": "quiz",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "What is the main lesson of Fool's mate?",
+   "correct": [
+    "Develop pieces and keep the king safe"
+   ],
+   "options": [
+    "Develop pieces and keep the king safe",
+    "Always attack with the queen",
+    "Push all your pawns"
+   ],
+   "explanation": "Good openings develop knights and bishops and protect the king.",
+   "hint": "What went wrong for White?"
+  }
+ ]
+}

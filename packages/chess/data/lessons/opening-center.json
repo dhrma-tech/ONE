@@ -1,0 +1,72 @@
+{
+ "id": "opening-center",
+ "title": "Fight for the centre",
+ "section": "Openings",
+ "order": 39,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "In the opening, pieces placed near the centre control more squares. The four central squares are d4, d5, e4 and e5.",
+   "correct": [],
+   "options": null,
+   "explanation": "In the opening, pieces placed near the centre control more squares. The four central squares are d4, d5, e4 and e5.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "square",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Tap one of the four central squares.",
+   "correct": [
+    "d4",
+    "d5",
+    "e4",
+    "e5"
+   ],
+   "options": null,
+   "explanation": "d4, e4, d5 and e5 are the centre. Pieces there reach both sides of the board quickly.",
+   "hint": "They are the middle four squares."
+  },
+  {
+   "type": "move",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Make a first move that claims the centre.",
+   "correct": [
+    "e2e4",
+    "d2d4"
+   ],
+   "options": null,
+   "explanation": "Pawns on e4 or d4 take central space and open lines for your bishop and queen.",
+   "hint": "Push a central pawn two squares."
+  },
+  {
+   "type": "move",
+   "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+   "prompt": "Black to move. Fight for the centre too.",
+   "correct": [
+    "e7e5",
+    "d7d5",
+    "c7c5",
+    "e7e6",
+    "c7c6"
+   ],
+   "options": null,
+   "explanation": "Each of these challenges White's central pawn directly or prepares to.",
+   "hint": "Push a pawn on the c, d or e file."
+  },
+  {
+   "type": "quiz",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Why are knights on the edge of the board weaker?",
+   "correct": [
+    "They attack fewer squares"
+   ],
+   "options": [
+    "They attack fewer squares",
+    "They cannot move"
+   ],
+   "explanation": "A knight in the corner reaches two squares, in the centre eight.",
+   "hint": "Count the squares it attacks."
+  }
+ ]
+}

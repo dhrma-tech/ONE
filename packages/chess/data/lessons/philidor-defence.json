@@ -1,0 +1,54 @@
+{
+ "id": "philidor-defence",
+ "title": "Philidor: holding a rook endgame",
+ "section": "Endgames",
+ "order": 58,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "4k3/8/8/4PK2/8/8/r7/7R b - - 0 1",
+   "prompt": "A rook and pawn against a rook is often a draw. In the Philidor defence the defending rook guards the 6th rank (its 3rd rank) so the enemy king cannot come forward.",
+   "correct": [],
+   "options": null,
+   "explanation": "A rook and pawn against a rook is often a draw. In the Philidor defence the defending rook guards the 6th rank (its 3rd rank) so the enemy king cannot come forward.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/4PK2/8/8/r7/7R b - - 0 1",
+   "prompt": "Black to move. Guard the 6th rank with your rook.",
+   "correct": [
+    "a2a6"
+   ],
+   "options": null,
+   "explanation": "Ra6: the white king cannot step to the 6th rank.",
+   "hint": "Move the rook up the a-file."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/r3P3/5K2/8/8/8/7R b - - 0 1",
+   "prompt": "The pawn moved to e6, so the king has no hiding squares in front. Now check from behind.",
+   "correct": [
+    "a6a1"
+   ],
+   "options": null,
+   "explanation": "Ra1: endless checks from behind, and the game is a draw.",
+   "hint": "Drop the rook all the way down."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/r3P3/5K2/8/8/8/7R b - - 0 1",
+   "prompt": "Why can Black now check from behind?",
+   "correct": [
+    "The pawn no longer shields the white king"
+   ],
+   "options": [
+    "The pawn no longer shields the white king",
+    "Rooks always check from behind",
+    "White has no rook"
+   ],
+   "explanation": "Once the pawn is on the 6th, the king can't hide in front of it.",
+   "hint": "What did e6 take away from White?"
+  }
+ ]
+}

@@ -1,0 +1,397 @@
+{
+ "sources": [
+  {
+   "label": "GitHub list: hkirat/awesome-chess",
+   "type": "github",
+   "url": "https://github.com/hkirat/awesome-chess",
+   "status": "ok",
+   "videos": 6,
+   "channel_ids": 0,
+   "handles": 0,
+   "playlists": 0
+  },
+  {
+   "label": "GitHub list: atamano/awesome-chess",
+   "type": "github",
+   "url": "https://github.com/atamano/awesome-chess",
+   "status": "ok",
+   "videos": 0,
+   "channel_ids": 0,
+   "handles": 35,
+   "playlists": 0
+  },
+  {
+   "label": "GitHub list: anubhavsrivastava/awesome-chess",
+   "type": "github",
+   "url": "https://github.com/anubhavsrivastava/awesome-chess",
+   "status": "ok",
+   "videos": 0,
+   "channel_ids": 1,
+   "handles": 0,
+   "playlists": 0
+  },
+  {
+   "label": "GitHub list: zach-garfinkel/Chessboard-Puzzle",
+   "type": "github",
+   "url": "https://github.com/zach-garfinkel/Chessboard-Puzzle",
+   "status": "ok",
+   "videos": 1,
+   "channel_ids": 0,
+   "handles": 0,
+   "playlists": 0
+  },
+  {
+   "label": "Lichess blog: 16 best chess YouTube channels",
+   "type": "lichess",
+   "url": "https://lichess.org/@/nikhildixit/blog/16-best-chess-youtube-channels/rRQeubRw",
+   "status": "ok",
+   "videos": 0,
+   "channel_ids": 0,
+   "handles": 0,
+   "playlists": 0
+  },
+  {
+   "label": "Lichess blog: 11 best chess YouTube channels part 2",
+   "type": "lichess",
+   "url": "https://lichess.org/ublog/PCJCyO2e/redirect",
+   "status": "ok",
+   "videos": 1,
+   "channel_ids": 0,
+   "handles": 0,
+   "playlists": 1
+  },
+  {
+   "label": "Lichess blog: chess YouTuber ranking 2025",
+   "type": "lichess",
+   "url": "https://lichess.org/@/TotalNoob69/blog/chess-youtuber-ranking-2025/dWDoiOOY",
+   "status": "ok",
+   "videos": 0,
+   "channel_ids": 0,
+   "handles": 10,
+   "playlists": 0
+  },
+  {
+   "label": "Lichess forum: best chess youtuber for actual studying",
+   "type": "lichess",
+   "url": "https://lichess.org/forum/general-chess-discussion/best-chess-youtuber-for-actual-studying",
+   "status": "ok",
+   "videos": 0,
+   "channel_ids": 0,
+   "handles": 4,
+   "playlists": 0
+  },
+  {
+   "label": "Lichess forum: what youtube channel for learning",
+   "type": "lichess",
+   "url": "https://lichess.org/forum/general-chess-discussion/what-youtube-channel-for-learning",
+   "status": "ok",
+   "videos": 0,
+   "channel_ids": 0,
+   "handles": 0,
+   "playlists": 0
+  },
+  {
+   "label": "Lichess forum: recommend a youtube chess channel",
+   "type": "lichess",
+   "url": "https://lichess.org/forum/general-chess-discussion/recommend-a-youtube-chess-channel",
+   "status": "ok",
+   "videos": 0,
+   "channel_ids": 1,
+   "handles": 0,
+   "playlists": 0
+  },
+  {
+   "label": "Lichess forum: best place to learn chess from",
+   "type": "lichess",
+   "url": "https://lichess.org/forum/general-chess-discussion/what-is-the-best-place-to-learn-chess-from",
+   "status": "ok",
+   "videos": 0,
+   "channel_ids": 0,
+   "handles": 0,
+   "playlists": 0
+  },
+  {
+   "label": "Lichess forum: chess website for a beginner",
+   "type": "lichess",
+   "url": "https://lichess.org/forum/general-chess-discussion/what-chess-website-would-you-recommend-to-a-beginner",
+   "status": "ok",
+   "videos": 0,
+   "channel_ids": 0,
+   "handles": 0,
+   "playlists": 0
+  },
+  {
+   "label": "Lichess video library",
+   "type": "lichess",
+   "url": "https://lichess.org/video",
+   "status": "ok",
+   "videos": 2505,
+   "pages": 150
+  },
+  {
+   "label": "The Daily Star: YouTube channels for your chess journey",
+   "type": "web",
+   "url": "https://www.thedailystar.net/shout/news/youtube-channels-help-you-your-chess-journey-3275316",
+   "status": "ok",
+   "videos": 0,
+   "channel_ids": 1,
+   "handles": 0,
+   "playlists": 0
+  },
+  {
+   "label": "Beacons: top chess youtubers",
+   "type": "web",
+   "url": "https://beacons.ai/i/blog/chess-youtubers",
+   "status": "ok",
+   "videos": 0,
+   "channel_ids": 0,
+   "handles": 0,
+   "playlists": 0
+  },
+  {
+   "label": "Chessable blog",
+   "type": "web",
+   "url": "https://www.chessable.com/blog/",
+   "status": "ok",
+   "videos": 0,
+   "channel_ids": 1,
+   "handles": 0,
+   "playlists": 0
+  },
+  {
+   "label": "Hacker News (Algolia API)",
+   "type": "hn",
+   "url": "https://hn.algolia.com/api/v1/search",
+   "status": "ok",
+   "videos": 309,
+   "comments": 287
+  },
+  {
+   "label": "Wikipedia chess articles (MediaWiki API)",
+   "type": "wikipedia",
+   "url": "https://en.wikipedia.org/w/api.php",
+   "status": "ok",
+   "videos": 117,
+   "articles_with_videos": 59
+  }
+ ],
+ "built_sources": true,
+ "channels": [
+  {
+   "name": "Daniel Naroditsky",
+   "tier": 1,
+   "handle": "DanielNaroditskyGM",
+   "id": "UCHP9CdeguNUI-_nBv_UXBhw",
+   "how": "wikidata:Q5218240"
+  },
+  {
+   "name": "Ben Finegold",
+   "tier": 1,
+   "handle": "GMBenjaminFinegold",
+   "id": "UC6EnFbK-P5q0zeaqI5yobKg",
+   "how": "wikipedia:Ben Finegold"
+  },
+  {
+   "name": "PowerPlay Chess (Daniel King)",
+   "tier": 1,
+   "handle": "PowerPlayChess",
+   "id": "UCMBATpFb--uLNAODOVWvCTA",
+   "how": "rss-user:PowerPlayChess"
+  },
+  {
+   "name": "GothamChess",
+   "tier": 2,
+   "handle": "GothamChess",
+   "id": "UCQHX6ViZmPsWiYSFAyS0a3Q",
+   "how": "wikidata:Q27530896"
+  },
+  {
+   "name": "agadmator",
+   "tier": 2,
+   "handle": "agadmator",
+   "id": "UCL5YbN5WLFD8dLIegT5QAbA",
+   "how": "wikidata:Q68486725"
+  },
+  {
+   "name": "Chess.com",
+   "tier": 2,
+   "handle": "chess",
+   "id": "UC5kS0l76kC0xOzMPtOmSFGw",
+   "how": "wikidata:Q16829376"
+  },
+  {
+   "name": "Lichess",
+   "tier": 2,
+   "handle": "lichess",
+   "id": "UCr6RfQga70yMM9-nuzAYTsA",
+   "how": "wikidata:Q19831807"
+  },
+  {
+   "name": "Saint Louis Chess Club",
+   "tier": 2,
+   "handle": "STLChessClub",
+   "id": "UCM-ONC2bCHytG2mYtKDmIeA",
+   "how": "wikidata:Q17084738"
+  },
+  {
+   "name": "Hikaru (GMHikaru)",
+   "tier": 2,
+   "handle": "GMHikaru",
+   "id": "UCweCc7bSMX5J4jEH7HFImng",
+   "how": "wikidata:Q337223"
+  },
+  {
+   "name": "Eric Rosen",
+   "tier": 2,
+   "handle": "EricRosen",
+   "id": "UCXy10-NEFGxQ3b4NVrzHw1Q",
+   "how": "wikidata:Q27530857"
+  },
+  {
+   "name": "ChessNetwork",
+   "tier": 2,
+   "handle": "ChessNetwork",
+   "id": "UCCDOQrpqLqKVcTCKzqarxLg",
+   "how": "rss-user:ChessNetwork"
+  },
+  {
+   "name": "Chessbrah",
+   "tier": 2,
+   "handle": "chessbrah",
+   "id": "UCvXxdkt1d8Uu08NAQP2IUTw",
+   "how": "rss-user:chessbrah"
+  },
+  {
+   "name": "Anna Cramling",
+   "tier": 2,
+   "handle": "AnnaCramling",
+   "id": "UCOVfq3NNYjlYCz1iou69FwQ",
+   "how": "wikidata:Q104539456"
+  },
+  {
+   "name": "Magnus Carlsen",
+   "tier": 2,
+   "handle": "themagnuscarlsen",
+   "id": "UCbdcpQ5uPPymv7Ea0nnFfOw",
+   "how": "wikidata:Q106807"
+  },
+  {
+   "name": "Chessable",
+   "tier": 2,
+   "handle": "Chessable",
+   "id": "UCxVGiP4dl19wwGJlCy3_u8g",
+   "how": "source:Chessable blog"
+  },
+  {
+   "name": "Kingscrusher",
+   "tier": 2,
+   "handle": "kingscrusher",
+   "id": "UCDUDDmslypVXYoUsZafHSUQ",
+   "how": "source:Lichess forum: recommend a youtube chess channel"
+  },
+  {
+   "name": "chess24",
+   "tier": 2,
+   "handle": "chess24",
+   "id": "UCp-0glYRgyP-7NslPCs65pA",
+   "how": "rss-user:chess24"
+  },
+  {
+   "name": "BotezLive",
+   "tier": 2,
+   "handle": "BotezLive",
+   "id": "UCAn8NrZ-J4CRfwodajqFYoQ",
+   "how": "wikipedia:Alexandra Botez"
+  },
+  {
+   "name": "FIDE",
+   "tier": 2,
+   "handle": "FIDE",
+   "id": "UC9B47GnzCRFHTT1BIBWvStQ",
+   "how": "wikidata:Q102178"
+  },
+  {
+   "name": "Tata Steel Chess",
+   "tier": 2,
+   "handle": "TataSteelChess",
+   "id": "UClqa8ak-g_8qQkqRZ8ImaSw",
+   "how": "rss-user:TataSteelChess"
+  },
+  {
+   "name": "Norway Chess",
+   "tier": 2,
+   "handle": "NorwayChess",
+   "id": "UCX_tAmRRY4yniFKRMZ4h1hg",
+   "how": "rss-user:NorwayChess"
+  }
+ ],
+ "unresolved_channels": [
+  {
+   "name": "John Bartholomew",
+   "tier": 1,
+   "reason": "UCFh6FCMsTdnfEA_N7rdIBnw (source:GitHub list: anubhavsrivastava/awesome-chess) is 'Chess Traps'; UCDUDDmslypVXYoUsZafHSUQ (source:Lichess forum: recommend a youtube chess channel) is 'kingscrusher'; UCKSJ5rTXq-pYgAmAOhVS_zQ (source:The Daily Star: YouTube channels for your chess journey) is 'The Daily Star'; UCxVGiP4dl19wwGJlCy3_u8g (source:Chessable blog) is 'Chessable'"
+  },
+  {
+   "name": "Aman Hambleton",
+   "tier": 1,
+   "reason": "UCFh6FCMsTdnfEA_N7rdIBnw (source:GitHub list: anubhavsrivastava/awesome-chess) is 'Chess Traps'; UCDUDDmslypVXYoUsZafHSUQ (source:Lichess forum: recommend a youtube chess channel) is 'kingscrusher'; UCKSJ5rTXq-pYgAmAOhVS_zQ (source:The Daily Star: YouTube channels for your chess journey) is 'The Daily Star'; UCxVGiP4dl19wwGJlCy3_u8g (source:Chessable blog) is 'Chessable'"
+  },
+  {
+   "name": "Hanging Pawns",
+   "tier": 1,
+   "reason": "UCFh6FCMsTdnfEA_N7rdIBnw (source:GitHub list: anubhavsrivastava/awesome-chess) is 'Chess Traps'; UCDUDDmslypVXYoUsZafHSUQ (source:Lichess forum: recommend a youtube chess channel) is 'kingscrusher'; UCKSJ5rTXq-pYgAmAOhVS_zQ (source:The Daily Star: YouTube channels for your chess journey) is 'The Daily Star'; UCxVGiP4dl19wwGJlCy3_u8g (source:Chessable blog) is 'Chessable'"
+  },
+  {
+   "name": "Chess Dojo",
+   "tier": 1,
+   "reason": "UCFh6FCMsTdnfEA_N7rdIBnw (source:GitHub list: anubhavsrivastava/awesome-chess) is 'Chess Traps'; UCDUDDmslypVXYoUsZafHSUQ (source:Lichess forum: recommend a youtube chess channel) is 'kingscrusher'; UCKSJ5rTXq-pYgAmAOhVS_zQ (source:The Daily Star: YouTube channels for your chess journey) is 'The Daily Star'; UCxVGiP4dl19wwGJlCy3_u8g (source:Chessable blog) is 'Chessable'"
+  },
+  {
+   "name": "Remote Chess Academy",
+   "tier": 1,
+   "reason": "UCFh6FCMsTdnfEA_N7rdIBnw (source:GitHub list: anubhavsrivastava/awesome-chess) is 'Chess Traps'; UCDUDDmslypVXYoUsZafHSUQ (source:Lichess forum: recommend a youtube chess channel) is 'kingscrusher'; UCKSJ5rTXq-pYgAmAOhVS_zQ (source:The Daily Star: YouTube channels for your chess journey) is 'The Daily Star'; UCxVGiP4dl19wwGJlCy3_u8g (source:Chessable blog) is 'Chessable'"
+  },
+  {
+   "name": "ChessBase India",
+   "tier": 2,
+   "reason": "UCFh6FCMsTdnfEA_N7rdIBnw (source:GitHub list: anubhavsrivastava/awesome-chess) is 'Chess Traps'; UCDUDDmslypVXYoUsZafHSUQ (source:Lichess forum: recommend a youtube chess channel) is 'kingscrusher'; UCKSJ5rTXq-pYgAmAOhVS_zQ (source:The Daily Star: YouTube channels for your chess journey) is 'The Daily Star'; UCxVGiP4dl19wwGJlCy3_u8g (source:Chessable blog) is 'Chessable'"
+  },
+  {
+   "name": "Grand Chess Tour",
+   "tier": 2,
+   "reason": "UCFh6FCMsTdnfEA_N7rdIBnw (source:GitHub list: anubhavsrivastava/awesome-chess) is 'Chess Traps'; UCDUDDmslypVXYoUsZafHSUQ (source:Lichess forum: recommend a youtube chess channel) is 'kingscrusher'; UCKSJ5rTXq-pYgAmAOhVS_zQ (source:The Daily Star: YouTube channels for your chess journey) is 'The Daily Star'; UCxVGiP4dl19wwGJlCy3_u8g (source:Chessable blog) is 'Chessable'"
+  },
+  {
+   "name": "playlist: Master Class Speedrun",
+   "tier": 1,
+   "reason": "no playlist id in any fetched source; key-less cannot search by title"
+  },
+  {
+   "name": "playlist: Opening Theory Speedrun",
+   "tier": 1,
+   "reason": "no playlist id in any fetched source; key-less cannot search by title"
+  },
+  {
+   "name": "playlist: Chess Fundamentals",
+   "tier": 1,
+   "reason": "no playlist id in any fetched source; key-less cannot search by title"
+  },
+  {
+   "name": "playlist: Climbing the Rating Ladder",
+   "tier": 1,
+   "reason": "no playlist id in any fetched source; key-less cannot search by title"
+  },
+  {
+   "name": "playlist: Building Habits",
+   "tier": 1,
+   "reason": "no playlist id in any fetched source; key-less cannot search by title"
+  }
+ ],
+ "playlists": [],
+ "tier_weights": {
+  "1": 2.0,
+  "2": 1.2,
+  "3": 0.6
+ },
+ "tier_rule": "tier 1 = instruction-heavy channels; tier 2 = large general/event channels; tier 3 = any other channel with >= 3 vouched videos (assigned at scoring time)"
+}

@@ -1,0 +1,76 @@
+{
+ "id": "rook-moves",
+ "title": "How the rook moves",
+ "section": "Basics",
+ "order": 3,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "4k3/8/8/8/3R2p1/8/8/4K3 w - - 0 1",
+   "prompt": "The rook moves any number of squares in a straight line: along a rank or along a file. It cannot jump over pieces.",
+   "correct": [],
+   "options": null,
+   "explanation": "The rook moves any number of squares in a straight line: along a rank or along a file. It cannot jump over pieces.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "square",
+   "fen": "4k3/8/8/8/3R2p1/8/8/4K3 w - - 0 1",
+   "prompt": "Tap any square the white rook on d4 can move to.",
+   "correct": [
+    "a4",
+    "b4",
+    "c4",
+    "d1",
+    "d2",
+    "d3",
+    "d5",
+    "d6",
+    "d7",
+    "d8",
+    "e4",
+    "f4",
+    "g4"
+   ],
+   "options": null,
+   "explanation": "The rook slides along the d-file and the 4th rank until it meets a piece. It may stop on an enemy piece to capture it.",
+   "hint": "Only straight lines, never diagonals."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/8/3R2p1/8/8/4K3 w - - 0 1",
+   "prompt": "Capture the black pawn on g4 with your rook.",
+   "correct": [
+    "d4g4"
+   ],
+   "options": null,
+   "explanation": "To capture, move onto the enemy piece's square. The captured piece leaves the board.",
+   "hint": "Slide along the 4th rank."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/8/3R2p1/8/8/4K3 w - - 0 1",
+   "prompt": "Can a rook move diagonally?",
+   "correct": [
+    "No"
+   ],
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "explanation": "Rooks go straight only. Diagonals belong to bishops.",
+   "hint": "Think of the rook's tower shape: straight lines."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/8/8/8/8/R3K3 w - - 0 1",
+   "prompt": "Give check by moving the rook to the 8th rank.",
+   "correct": [
+    "a1a8"
+   ],
+   "options": null,
+   "explanation": "From a8 the rook attacks along the whole 8th rank, so the black king on e8 is in check.",
+   "hint": "Go straight up the a-file."
+  }
+ ]
+}

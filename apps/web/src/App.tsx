@@ -14,6 +14,7 @@ const StyleGuide = lazy(() => import("./pages/StyleGuide"));
 const Login = lazy(() => import("./pages/Login"));
 const Home = lazy(() => import("./pages/home/Home"));
 const Career = lazy(() => import("./pages/career/Career"));
+const Mind = lazy(() => import("./pages/mind/Mind"));
 
 const KEY_HANDLERS = { onFocus: () => focus.start({}) };
 function Keys() {
@@ -40,7 +41,7 @@ function AppRoutes() {
       <Route element={<Shell />}>
         <Route index element={SCOPE === "master" ? <Home /> : <Navigate to={`/${SCOPE}`} replace />} />
         <Route path="career/*" element={<Career />} />
-        <Route path="mind/*" element={<Placeholder scene="mind" title="Mind" />} />
+        <Route path="mind/*" element={<Mind />} />
         <Route path="body/*" element={<Placeholder scene="body" title="Body" />} />
         <Route path="persona/*" element={<Placeholder scene="persona" title="Persona" />} />
         <Route path="settings/*" element={<Placeholder scene="settings" title="Settings" />} />

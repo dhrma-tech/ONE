@@ -1,0 +1,67 @@
+{
+ "id": "checkmate",
+ "title": "Checkmate",
+ "section": "Check and mate",
+ "order": 17,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "7k/8/6K1/8/8/8/8/R7 w - - 0 1",
+   "prompt": "Checkmate: the king is in check and cannot capture, block or escape. The game ends and the mated side loses.",
+   "correct": [],
+   "options": null,
+   "explanation": "Checkmate: the king is in check and cannot capture, block or escape. The game ends and the mated side loses.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "7k/8/6K1/8/8/8/8/R7 w - - 0 1",
+   "prompt": "Deliver checkmate in one move.",
+   "correct": [
+    "a1a8"
+   ],
+   "options": null,
+   "explanation": "The rook checks on the 8th rank; your king covers g7 and h7 so the black king has no escape.",
+   "hint": "Use the rook on the back rank."
+  },
+  {
+   "type": "move",
+   "fen": "rnbqkbnr/pppp1ppp/8/4p3/6P1/5P2/PPPPP2P/RNBQKBNR b KQkq - 0 2",
+   "prompt": "Black to move. Find checkmate in one.",
+   "correct": [
+    "d8h4"
+   ],
+   "options": null,
+   "explanation": "This is the famous fool's mate: after f3 and g4 the long diagonal to the white king is open.",
+   "hint": "The queen can reach h4."
+  },
+  {
+   "type": "quiz",
+   "fen": "7k/8/6K1/8/8/8/8/R7 w - - 0 1",
+   "prompt": "After checkmate, does the mated king have any legal move?",
+   "correct": [
+    "No"
+   ],
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "explanation": "If it had one, it would just be check.",
+   "hint": "Mate means no way out."
+  },
+  {
+   "type": "quiz",
+   "fen": "7k/8/6K1/8/8/8/8/R7 w - - 0 1",
+   "prompt": "Is a king ever actually captured in chess?",
+   "correct": [
+    "No"
+   ],
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "explanation": "The game ends at checkmate, before a capture would happen.",
+   "hint": "Mate comes first."
+  }
+ ]
+}

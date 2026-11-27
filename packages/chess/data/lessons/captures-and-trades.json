@@ -1,0 +1,63 @@
+{
+ "id": "captures-and-trades",
+ "title": "Captures and trades",
+ "section": "Basics",
+ "order": 11,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "4k3/8/8/3q4/8/8/3R4/4K3 w - - 0 1",
+   "prompt": "To capture, move your piece onto an enemy piece. It is removed from the board. Pieces that nobody protects can be taken for free.",
+   "correct": [],
+   "options": null,
+   "explanation": "To capture, move your piece onto an enemy piece. It is removed from the board. Pieces that nobody protects can be taken for free.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/3q4/8/8/3R4/4K3 w - - 0 1",
+   "prompt": "The black queen is unprotected. Win it.",
+   "correct": [
+    "d2d5"
+   ],
+   "options": null,
+   "explanation": "Rxd5: you win a queen (9 points) for nothing.",
+   "hint": "Your rook moves straight up the d-file."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
+   "prompt": "Your knight takes a pawn, then a pawn takes your knight. What happened?",
+   "correct": [
+    "You lost 2 points"
+   ],
+   "options": [
+    "You lost 2 points",
+    "You won 2 points",
+    "It was an even trade"
+   ],
+   "explanation": "You gave a knight (3) for a pawn (1). Always check if the piece you take is protected.",
+   "hint": "Compare 3 with 1."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/4p3/3n4/8/3R2b1/8/8/4K3 w - - 0 1",
+   "prompt": "Your rook can take the knight or the bishop. Pick the capture that really wins material.",
+   "correct": [
+    "d4g4"
+   ],
+   "options": null,
+   "explanation": "Rxg4 wins a free bishop. Rxd6 would lose the rook to exd6: 5 for 3.",
+   "hint": "Which piece has no defender? The pawn on e7 protects d6."
+  },
+  {
+   "type": "info",
+   "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
+   "prompt": "A trade is when both sides take pieces of the same value, like knight for knight. Trades are good when you are ahead in material, and to swap off the opponent's best piece.",
+   "correct": [],
+   "options": null,
+   "explanation": "A trade is when both sides take pieces of the same value, like knight for knight. Trades are good when you are ahead in material, and to swap off the opponent's best piece.",
+   "hint": "Read, then continue."
+  }
+ ]
+}

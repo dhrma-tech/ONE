@@ -1,0 +1,66 @@
+{
+ "id": "escape-check",
+ "title": "Three ways out of check",
+ "section": "Check and mate",
+ "order": 16,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "4r1k1/8/8/8/8/8/4q3/3BK3 w - - 0 1",
+   "prompt": "When you are in check you must get out of it at once. There are only three ways: capture the checking piece, block the check, or move the king.",
+   "correct": [],
+   "options": null,
+   "explanation": "When you are in check you must get out of it at once. There are only three ways: capture the checking piece, block the check, or move the king.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "4r1k1/8/8/8/8/8/4q3/3BK3 w - - 0 1",
+   "prompt": "The queen checks your king and the king cannot take it. Capture it.",
+   "correct": [
+    "d1e2"
+   ],
+   "options": null,
+   "explanation": "Bxe2: capturing the checking piece is often the best way out.",
+   "hint": "Your bishop on d1 touches e2 diagonally."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/8/4r3/8/3B4/4K3 w - - 0 1",
+   "prompt": "The rook checks along the e-file. Block it with your bishop.",
+   "correct": [
+    "d2e3"
+   ],
+   "options": null,
+   "explanation": "Be3 puts a piece between the rook and your king.",
+   "hint": "Put the bishop on the e-file between them."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/8/8/8/8/r3K3 w - - 0 1",
+   "prompt": "You cannot capture or block this check. Move your king to safety.",
+   "correct": [
+    "e1d2",
+    "e1e2",
+    "e1f2"
+   ],
+   "options": null,
+   "explanation": "Any king move off the first rank escapes the rook.",
+   "hint": "Step up off the 1st rank."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/8/8/3n4/8/4K3 w - - 0 1",
+   "prompt": "A knight gives check. Can you block a knight check?",
+   "correct": [
+    "No"
+   ],
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "explanation": "Knights jump, so their checks cannot be blocked. Capture the knight or move the king.",
+   "hint": "Is there any square between a knight and its target?"
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "id": "opening-principles-review",
+ "title": "Opening principles: review",
+ "section": "Openings",
+ "order": 44,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+   "prompt": "The opening golden rules: control the centre, develop knights and bishops, castle early, connect your rooks, and don't move the same piece twice without a reason.",
+   "correct": [],
+   "options": null,
+   "explanation": "The opening golden rules: control the centre, develop knights and bishops, castle early, connect your rooks, and don't move the same piece twice without a reason.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+   "prompt": "Make a good opening move: develop a piece or fight for the centre.",
+   "correct": [
+    "f1c4",
+    "f1b5",
+    "b1c3",
+    "d2d4"
+   ],
+   "options": null,
+   "explanation": "Good! Bc4, Bb5, Nc3 and d4 all follow the principles.",
+   "hint": "Develop a bishop or knight, or play d4."
+  },
+  {
+   "type": "quiz",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+   "prompt": "Which move breaks the opening principles?",
+   "correct": [
+    "h4"
+   ],
+   "options": [
+    "h4",
+    "Bc4",
+    "Nc3"
+   ],
+   "explanation": "h4 does nothing for the centre or development, and weakens the king's side.",
+   "hint": "Which move doesn't develop or fight for the centre?"
+  },
+  {
+   "type": "quiz",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+   "prompt": "Which pieces should you usually develop first?",
+   "correct": [
+    "Knights and bishops"
+   ],
+   "options": [
+    "Knights and bishops",
+    "Queen and rooks",
+    "King"
+   ],
+   "explanation": "Minor pieces come out first; rooks and queen join later.",
+   "hint": "The minor pieces."
+  },
+  {
+   "type": "quiz",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+   "prompt": "When are your rooks 'connected'?",
+   "correct": [
+    "When no pieces stand between them on the back rank"
+   ],
+   "options": [
+    "When no pieces stand between them on the back rank",
+    "When they are on the same file",
+    "When they protect the king"
+   ],
+   "explanation": "After you develop your minor pieces, castle and move the queen, the rooks can see each other.",
+   "hint": "Look at the back rank."
+  }
+ ]
+}

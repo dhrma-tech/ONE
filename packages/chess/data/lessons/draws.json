@@ -1,0 +1,74 @@
+{
+ "id": "draws",
+ "title": "How games end in a draw",
+ "section": "Check and mate",
+ "order": 19,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "8/8/4k3/8/8/3BK3/8/8 w - - 0 1",
+   "prompt": "A game is drawn by stalemate, by agreement, by the same position three times (threefold repetition), after 50 moves each with no capture or pawn move, or when no one has enough pieces left to checkmate.",
+   "correct": [],
+   "options": null,
+   "explanation": "A game is drawn by stalemate, by agreement, by the same position three times (threefold repetition), after 50 moves each with no capture or pawn move, or when no one has enough pieces left to checkmate.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "quiz",
+   "fen": "8/8/4k3/8/8/3BK3/8/8 w - - 0 1",
+   "prompt": "King and bishop against a lone king. Can White checkmate?",
+   "correct": [
+    "No"
+   ],
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "explanation": "A single bishop (or a single knight) cannot force checkmate: the game is a draw.",
+   "hint": "Try to picture a mate with only one bishop."
+  },
+  {
+   "type": "quiz",
+   "fen": "8/8/4k3/8/8/4K3/8/3R4 w - - 0 1",
+   "prompt": "King and rook against a lone king. Can White checkmate?",
+   "correct": [
+    "Yes"
+   ],
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "explanation": "King and rook (or queen) always win against a lone king. You will learn how in Basic mates.",
+   "hint": "Rooks are strong enough."
+  },
+  {
+   "type": "quiz",
+   "fen": "8/8/4k3/8/8/4K3/8/3NN3 w - - 0 1",
+   "prompt": "Two knights against a lone king. Can White force checkmate?",
+   "correct": [
+    "No"
+   ],
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "explanation": "Surprisingly, two knights cannot force mate if the defender plays well.",
+   "hint": "This is one of chess's famous exceptions."
+  },
+  {
+   "type": "quiz",
+   "fen": "8/8/4k3/8/8/4K3/8/8 w - - 0 1",
+   "prompt": "What is threefold repetition?",
+   "correct": [
+    "The same position appears three times"
+   ],
+   "options": [
+    "The same position appears three times",
+    "The same piece moves three times",
+    "Three checks in a row"
+   ],
+   "explanation": "If the same position happens three times, either player can claim a draw. When you are losing, a never-ending series of checks (perpetual check) can save the game this way.",
+   "hint": "It is about positions."
+  }
+ ]
+}

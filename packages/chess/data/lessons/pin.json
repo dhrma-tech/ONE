@@ -1,0 +1,67 @@
+{
+ "id": "pin",
+ "title": "The pin",
+ "section": "Tactics",
+ "order": 32,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "4k3/8/2n5/8/8/8/8/4KB2 w - - 0 1",
+   "prompt": "A pin attacks a piece that cannot move without exposing something more valuable behind it. If the piece behind is the king, the pin is absolute and the pinned piece cannot legally move.",
+   "correct": [],
+   "options": null,
+   "explanation": "A pin attacks a piece that cannot move without exposing something more valuable behind it. If the piece behind is the king, the pin is absolute and the pinned piece cannot legally move.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/2n5/8/8/8/8/4KB2 w - - 0 1",
+   "prompt": "Pin the knight to the king with your bishop.",
+   "correct": [
+    "f1b5"
+   ],
+   "options": null,
+   "explanation": "Bb5 attacks the knight on c6, and the king on e8 stands right behind it on the same diagonal.",
+   "hint": "Find the diagonal that runs through c6 to e8."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/2n5/1B6/8/8/8/4K3 b - - 0 1",
+   "prompt": "The black knight is pinned. Can it move?",
+   "correct": [
+    "No, it is illegal"
+   ],
+   "options": [
+    "No, it is illegal",
+    "Yes, any time"
+   ],
+   "explanation": "Moving it would leave the black king in check from the bishop.",
+   "hint": "What would it expose?"
+  },
+  {
+   "type": "move",
+   "fen": "4k3/1p6/2n5/1B6/3P4/8/8/4K3 w - - 0 1",
+   "prompt": "Attack the pinned knight with a pawn.",
+   "correct": [
+    "d4d5"
+   ],
+   "options": null,
+   "explanation": "The knight cannot run, so it is attacked by pawn and bishop and has no defender.",
+   "hint": "Push the pawn so it attacks c6."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/2n5/8/8/8/8/4KB2 w - - 0 1",
+   "prompt": "A pin to a piece that is not the king (like a queen) is called...",
+   "correct": [
+    "A relative pin"
+   ],
+   "options": [
+    "A relative pin",
+    "A discovered check"
+   ],
+   "explanation": "The pinned piece may legally move, but it would lose the more valuable piece behind.",
+   "hint": "It is not absolute."
+  }
+ ]
+}

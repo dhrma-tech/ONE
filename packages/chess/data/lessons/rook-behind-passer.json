@@ -1,0 +1,58 @@
+{
+ "id": "rook-behind-passer",
+ "title": "Rooks behind passed pawns",
+ "section": "Endgames",
+ "order": 56,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "8/8/3k4/8/P7/8/8/2R3K1 w - - 0 1",
+   "prompt": "Rooks belong behind passed pawns, yours or your opponent's. Behind your pawn, the rook supports it more and more as it advances.",
+   "correct": [],
+   "options": null,
+   "explanation": "Rooks belong behind passed pawns, yours or your opponent's. Behind your pawn, the rook supports it more and more as it advances.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "8/8/3k4/8/P7/8/8/2R3K1 w - - 0 1",
+   "prompt": "Put your rook behind your passed a-pawn.",
+   "correct": [
+    "c1a1"
+   ],
+   "options": null,
+   "explanation": "Ra1: as the pawn advances, the rook's support grows.",
+   "hint": "The rook goes to the a-file, below the pawn."
+  },
+  {
+   "type": "quiz",
+   "fen": "8/8/3k4/8/P7/8/8/R5K1 w - - 0 1",
+   "prompt": "Why is a rook in front of its own pawn usually worse?",
+   "correct": [
+    "It blocks the pawn and gets stuck"
+   ],
+   "options": [
+    "It blocks the pawn and gets stuck",
+    "It cannot give check",
+    "It is easier to trade"
+   ],
+   "explanation": "A rook in front of its pawn becomes a passive blocker.",
+   "hint": "What does the pawn need?"
+  },
+  {
+   "type": "quiz",
+   "fen": "8/8/3k4/8/P7/8/8/R5K1 w - - 0 1",
+   "prompt": "Where should a rook defend against an enemy passed pawn?",
+   "correct": [
+    "Behind it"
+   ],
+   "options": [
+    "Behind it",
+    "In front of it, far away",
+    "Next to its own king"
+   ],
+   "explanation": "From behind, the rook attacks the pawn more as it advances.",
+   "hint": "Same rule for both sides."
+  }
+ ]
+}

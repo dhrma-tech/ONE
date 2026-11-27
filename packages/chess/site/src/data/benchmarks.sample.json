@@ -1,0 +1,139 @@
+{
+ "_note": "SAMPLE benchmarks from a small test run of scripts/build_benchmarks.py (a few hundred games per band). Replaced automatically when data/benchmarks.json exists.",
+ "600-800": {
+  "acpl": {
+   "opening": 79.3,
+   "middle": 88.7,
+   "end": 63.1
+  },
+  "blunder_rate": 0.0659,
+  "mistake_rate": 0.0574,
+  "inaccuracy_rate": 0.0768,
+  "common_themes_missed": [
+   "other_tactic",
+   "hanging_piece",
+   "check_tactic",
+   "fork"
+  ],
+  "games": 28
+ },
+ "800-1000": {
+  "acpl": {
+   "opening": 73.7,
+   "middle": 97.7,
+   "end": 58.3
+  },
+  "blunder_rate": 0.0733,
+  "mistake_rate": 0.0632,
+  "inaccuracy_rate": 0.0859,
+  "common_themes_missed": [
+   "other_tactic",
+   "hanging_piece",
+   "check_tactic",
+   "fork"
+  ],
+  "games": 121
+ },
+ "1000-1200": {
+  "acpl": {
+   "opening": 52.0,
+   "middle": 93.3,
+   "end": 50.2
+  },
+  "blunder_rate": 0.0606,
+  "mistake_rate": 0.0607,
+  "inaccuracy_rate": 0.0877,
+  "common_themes_missed": [
+   "other_tactic",
+   "hanging_piece",
+   "check_tactic",
+   "fork"
+  ],
+  "games": 193
+ },
+ "1200-1400": {
+  "acpl": {
+   "opening": 53.7,
+   "middle": 93.5,
+   "end": 45.8
+  },
+  "blunder_rate": 0.0646,
+  "mistake_rate": 0.0616,
+  "inaccuracy_rate": 0.0817,
+  "common_themes_missed": [
+   "other_tactic",
+   "hanging_piece",
+   "check_tactic",
+   "fork"
+  ],
+  "games": 244
+ },
+ "1400-1600": {
+  "acpl": {
+   "opening": 40.6,
+   "middle": 88.1,
+   "end": 54.9
+  },
+  "blunder_rate": 0.0528,
+  "mistake_rate": 0.0619,
+  "inaccuracy_rate": 0.0933,
+  "common_themes_missed": [
+   "other_tactic",
+   "hanging_piece",
+   "check_tactic",
+   "fork"
+  ],
+  "games": 312
+ },
+ "1600-1800": {
+  "acpl": {
+   "opening": 32.4,
+   "middle": 82.2,
+   "end": 47.9
+  },
+  "blunder_rate": 0.0505,
+  "mistake_rate": 0.0623,
+  "inaccuracy_rate": 0.0883,
+  "common_themes_missed": [
+   "other_tactic",
+   "hanging_piece",
+   "check_tactic",
+   "fork"
+  ],
+  "games": 267
+ },
+ "1800-2000": {
+  "acpl": {
+   "opening": 28.8,
+   "middle": 73.4,
+   "end": 44.2
+  },
+  "blunder_rate": 0.0386,
+  "mistake_rate": 0.0563,
+  "inaccuracy_rate": 0.0899,
+  "common_themes_missed": [
+   "other_tactic",
+   "hanging_piece",
+   "check_tactic",
+   "fork"
+  ],
+  "games": 210
+ },
+ "2000+": {
+  "acpl": {
+   "opening": 18.6,
+   "middle": 66.9,
+   "end": 33.7
+  },
+  "blunder_rate": 0.0351,
+  "mistake_rate": 0.0483,
+  "inaccuracy_rate": 0.0813,
+  "common_themes_missed": [
+   "other_tactic",
+   "hanging_piece",
+   "check_tactic",
+   "fork"
+  ],
+  "games": 263
+ }
+}

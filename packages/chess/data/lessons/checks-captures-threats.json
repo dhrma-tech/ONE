@@ -1,0 +1,54 @@
+{
+ "id": "checks-captures-threats",
+ "title": "Checks, captures, threats",
+ "section": "Good habits",
+ "order": 59,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1",
+   "prompt": "Every move, first look at all checks, then all captures, then all threats, for both sides. Strong players do this automatically. It finds tactics and stops blunders.",
+   "correct": [],
+   "options": null,
+   "explanation": "Every move, first look at all checks, then all captures, then all threats, for both sides. Strong players do this automatically. It finds tactics and stops blunders.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1",
+   "prompt": "Look at checks first. Is there a winning one?",
+   "correct": [
+    "e1e8"
+   ],
+   "options": null,
+   "explanation": "Re8#: looking at checks first found the mate.",
+   "hint": "Your rook can check on the back rank."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/2b5/8/8/8/2R1K3 w - - 0 1",
+   "prompt": "No checks win here. Now look at captures.",
+   "correct": [
+    "c1c5"
+   ],
+   "options": null,
+   "explanation": "Rxc5 wins a free bishop.",
+   "hint": "Which black piece is attacked and undefended?"
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/2b5/8/8/8/2R1K3 w - - 0 1",
+   "prompt": "Why check your opponent's checks and captures too?",
+   "correct": [
+    "To see what they threaten before you move"
+   ],
+   "options": [
+    "To see what they threaten before you move",
+    "To waste time",
+    "It's not needed"
+   ],
+   "explanation": "Your move must answer their threats as well.",
+   "hint": "Chess has two players."
+  }
+ ]
+}

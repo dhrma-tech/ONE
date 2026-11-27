@@ -1,6 +1,7 @@
 import { defineConfig, type Connect, type Plugin, type ViteDevServer } from "vite";
 import react from "@vitejs/plugin-react";
-import { resolve } from "node:path";
+import { resolve, join, extname, normalize } from "node:path";
+import { existsSync, readFileSync, statSync } from "node:fs";
 
 export const SECTIONS = ["career", "mind", "body", "persona"] as const;
 
@@ -14,6 +15,26 @@ function sectionFallback(): Connect.NextHandleFunction {
       if (s && !url.startsWith(`/${s}/index.html`)) req.url = `/${s}/index.html`;
     }
     next();
+  };
+}
+
+const CHESS_DIST = resolve(__dirname, "../../packages/chess/site/dist");
+const MIME: Record<string, string> = { ".html": "text/html", ".js": "text/javascript", ".mjs": "text/javascript", ".css": "text/css", ".json": "application/json", ".wasm": "application/wasm", ".png": "image/png", ".svg": "image/svg+xml", ".woff2": "font/woff2", ".zip": "application/zip", ".py": "text/plain", ".txt": "text/plain", ".webmanifest": "application/manifest+json" };
+
+/** Serves the built Bobby chess app at /chess-app/ in dev and preview (run pnpm build:chess once). */
+function chessStatic(): Connect.NextHandleFunction {
+  return (req, res, next) => {
+    const url = (req.url ?? "").split("?")[0];
+    if (!url.startsWith("/chess-app")) return next();
+    let rel = decodeURIComponent(url.slice("/chess-app".length)) || "/";
+    if (rel.endsWith("/")) rel += "index.html";
+    const file = normalize(join(CHESS_DIST, rel));
+    if (!file.startsWith(CHESS_DIST) || !existsSync(file) || !statSync(file).isFile()) {
+      res.statusCode = 404;
+      return res.end(existsSync(CHESS_DIST) ? "not found" : "Chess app not built. Run: pnpm build:chess");
+    }
+    res.setHeader("content-type", MIME[extname(file)] ?? "application/octet-stream");
+    res.end(readFileSync(file));
   };
 }
 
@@ -35,6 +56,7 @@ function devApi(): Plugin {
   return {
     name: "one-dev-api",
     configureServer(server) {
+      server.middlewares.use(chessStatic());
       server.middlewares.use(sectionFallback());
       mount(server);
     },

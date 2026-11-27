@@ -1,0 +1,68 @@
+{
+ "id": "hanging-pieces",
+ "title": "Hanging pieces",
+ "section": "Tactics",
+ "order": 29,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "4k3/8/8/3b4/8/2N5/8/4K3 w - - 0 1",
+   "prompt": "A hanging piece is one that can be captured for free because nothing defends it. Before every move, look for your opponent's hanging pieces and make sure yours are safe.",
+   "correct": [],
+   "options": null,
+   "explanation": "A hanging piece is one that can be captured for free because nothing defends it. Before every move, look for your opponent's hanging pieces and make sure yours are safe.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/3b4/8/2N5/8/4K3 w - - 0 1",
+   "prompt": "Capture the undefended bishop.",
+   "correct": [
+    "c3d5"
+   ],
+   "options": null,
+   "explanation": "The bishop on d5 has no defender, so Nxd5 wins a piece for free.",
+   "hint": "Use the knight."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/4p3/8/8/2N5/8/4K3 w - - 0 1",
+   "prompt": "Which knight move leaves the knight hanging to a pawn?",
+   "correct": [
+    "c3d5"
+   ],
+   "options": [
+    "c3d5",
+    "c3e4",
+    "c3b1"
+   ],
+   "explanation": "The pawn on e6 attacks d5, so the knight would be captured.",
+   "hint": "Which square does the e6 pawn attack?"
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/8/1q6/8/8/1R2K3 w - - 0 1",
+   "prompt": "Capture the loose queen.",
+   "correct": [
+    "b1b4"
+   ],
+   "options": null,
+   "explanation": "The queen on b4 is undefended, and a rook takes it.",
+   "hint": "The queen stands on your rook's file."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/3b4/8/2N5/8/4K3 w - - 0 1",
+   "prompt": "Before moving, the first question to ask is...",
+   "correct": [
+    "What does my opponent threaten?"
+   ],
+   "options": [
+    "What does my opponent threaten?",
+    "Which piece looks nicest?"
+   ],
+   "explanation": "Checking threats first catches most blunders.",
+   "hint": "Safety first."
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "id": "famous-openings",
+ "title": "Famous openings",
+ "section": "Openings",
+ "order": 45,
+ "steps": [
+  {
+   "type": "quiz",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+   "prompt": "1.e4 e5 2.Nf3 Nc6 3.Bc4. Which opening is this?",
+   "correct": [
+    "Italian Game"
+   ],
+   "options": [
+    "Italian Game",
+    "Ruy Lopez",
+    "Sicilian Defence"
+   ],
+   "explanation": "The Italian Game: the bishop goes to c4 and aims at f7.",
+   "hint": "Bishop on c4."
+  },
+  {
+   "type": "quiz",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+   "prompt": "1.e4 e5 2.Nf3 Nc6 3.Bb5. Which opening is this?",
+   "correct": [
+    "Ruy Lopez"
+   ],
+   "options": [
+    "Ruy Lopez",
+    "Italian Game",
+    "French Defence"
+   ],
+   "explanation": "The Ruy Lopez (Spanish Game) puts pressure on the knight that defends e5.",
+   "hint": "Bishop on b5."
+  },
+  {
+   "type": "move",
+   "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3 0 1",
+   "prompt": "Play the Sicilian Defence: answer e4 with the c-pawn.",
+   "correct": [
+    "c7c5"
+   ],
+   "options": null,
+   "explanation": "1...c5 is the Sicilian, the most popular reply to e4 at master level.",
+   "hint": "Move the c-pawn two squares."
+  },
+  {
+   "type": "quiz",
+   "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq c6 0 2",
+   "prompt": "Why does Black play ...c5 in the Sicilian?",
+   "correct": [
+    "To fight for d4 from the side"
+   ],
+   "options": [
+    "To fight for d4 from the side",
+    "To attack the king",
+    "To free the queen"
+   ],
+   "explanation": "c5 controls d4 without copying White's moves, leading to unbalanced games.",
+   "hint": "Which centre square does c5 hit?"
+  },
+  {
+   "type": "quiz",
+   "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq c3 0 2",
+   "prompt": "1.d4 d5 2.c4. Which opening is this?",
+   "correct": [
+    "Queen's Gambit"
+   ],
+   "options": [
+    "Queen's Gambit",
+    "London System",
+    "King's Gambit"
+   ],
+   "explanation": "In the Queen's Gambit White offers the c-pawn to pull Black's d-pawn from the centre.",
+   "hint": "Pawn sacrifice on the queen's side."
+  },
+  {
+   "type": "info",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Don't memorise long lines yet. Know the ideas of one opening with White and one answer each to 1.e4 and 1.d4, and follow the principles when your opponent leaves the book.",
+   "correct": [],
+   "options": null,
+   "explanation": "Don't memorise long lines yet. Know the ideas of one opening with White and one answer each to 1.e4 and 1.d4, and follow the principles when your opponent leaves the book.",
+   "hint": "Read, then continue."
+  }
+ ]
+}

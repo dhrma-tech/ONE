@@ -1,0 +1,57 @@
+{
+ "id": "opposition",
+ "title": "The opposition",
+ "section": "Endgames",
+ "order": 53,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "8/8/4k3/8/8/4K3/4P3/8 w - - 0 1",
+   "prompt": "Two kings facing each other with one square between them are 'in opposition'. The side that does NOT have to move has the opposition, and the other king must give way.",
+   "correct": [],
+   "options": null,
+   "explanation": "Two kings facing each other with one square between them are 'in opposition'. The side that does NOT have to move has the opposition, and the other king must give way.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "8/8/4k3/8/8/4K3/4P3/8 w - - 0 1",
+   "prompt": "Take the opposition so your king can lead the pawn.",
+   "correct": [
+    "e3e4"
+   ],
+   "options": null,
+   "explanation": "Ke4: the kings face each other with one square between, and Black must move aside.",
+   "hint": "Put your king directly in front of the black king with one square between."
+  },
+  {
+   "type": "quiz",
+   "fen": "8/8/4k3/8/4K3/8/4P3/8 b - - 0 1",
+   "prompt": "Black to move. Who has the opposition?",
+   "correct": [
+    "White"
+   ],
+   "options": [
+    "White",
+    "Black"
+   ],
+   "explanation": "Black must move and give ground: White has the opposition.",
+   "hint": "Who has to move?"
+  },
+  {
+   "type": "quiz",
+   "fen": "8/8/4k3/8/4K3/8/4P3/8 b - - 0 1",
+   "prompt": "In king and pawn endings, where should the king usually stand?",
+   "correct": [
+    "In front of its pawn"
+   ],
+   "options": [
+    "In front of its pawn",
+    "Behind its pawn",
+    "In the corner"
+   ],
+   "explanation": "The king leads the pawn and fights for the squares in front of it.",
+   "hint": "Lead from the front."
+  }
+ ]
+}

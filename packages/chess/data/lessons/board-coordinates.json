@@ -1,0 +1,76 @@
+{
+ "id": "board-coordinates",
+ "title": "Squares and coordinates",
+ "section": "Basics",
+ "order": 2,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Every square has a name. The letter is the column (called a file, a to h, left to right for White). The number is the row (called a rank, 1 to 8, starting from White's side).",
+   "correct": [],
+   "options": null,
+   "explanation": "Every square has a name. The letter is the column (called a file, a to h, left to right for White). The number is the row (called a rank, 1 to 8, starting from White's side).",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "square",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Click the square e4.",
+   "correct": [
+    "e4"
+   ],
+   "options": null,
+   "explanation": "e4: the e-file, 4th rank. It is one of the four centre squares.",
+   "hint": "Find the e-file first, then count up to the 4th row."
+  },
+  {
+   "type": "square",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Click the square d5.",
+   "correct": [
+    "d5"
+   ],
+   "options": null,
+   "explanation": "d5 is another centre square. The centre is d4, e4, d5 and e5.",
+   "hint": "d is the file just left of e. Then go up to rank 5."
+  },
+  {
+   "type": "square",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Where does the white king start? Click its square.",
+   "correct": [
+    "e1"
+   ],
+   "options": null,
+   "explanation": "The white king starts on e1, the black king on e8.",
+   "hint": "The king stands on the e-file, on White's back rank."
+  },
+  {
+   "type": "quiz",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Which square does the white queen start on?",
+   "correct": [
+    "d1"
+   ],
+   "options": [
+    "d1",
+    "e1",
+    "d8"
+   ],
+   "explanation": "The queen starts on her own colour: the white queen on the light square d1.",
+   "hint": "Queen on her colour: white queen, light square."
+  },
+  {
+   "type": "square",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Click the corner square h8.",
+   "correct": [
+    "h8"
+   ],
+   "options": null,
+   "explanation": "h8 is Black's right-hand corner, where a black rook starts.",
+   "hint": "The top-right corner from White's side."
+  }
+ ]
+}

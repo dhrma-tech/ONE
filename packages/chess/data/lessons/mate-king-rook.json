@@ -1,0 +1,64 @@
+{
+ "id": "mate-king-rook",
+ "title": "Mate with king and rook",
+ "section": "Basic mates",
+ "order": 22,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "8/8/k7/2K5/8/8/8/3R4 w - - 0 1",
+   "prompt": "With a rook, push the enemy king to the edge by cutting off ranks or files, bring your king opposite it, then give the final check along the edge.",
+   "correct": [],
+   "options": null,
+   "explanation": "With a rook, push the enemy king to the edge by cutting off ranks or files, bring your king opposite it, then give the final check along the edge.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "7k/8/6K1/8/8/8/8/R7 w - - 0 1",
+   "prompt": "Mate in one: use the rook on the back rank.",
+   "correct": [
+    "a1a8"
+   ],
+   "options": null,
+   "explanation": "The rook checks along the 8th rank while your king on g6 covers g7 and h7.",
+   "hint": "Slide the rook to the 8th rank."
+  },
+  {
+   "type": "move",
+   "fen": "6k1/8/5K2/3R4/8/8/8/8 w - - 0 1",
+   "prompt": "Mate in two. A waiting move with the rook: find it.",
+   "correct": [
+    "d5h5"
+   ],
+   "options": null,
+   "explanation": "Rh5 keeps the king cut off from the h-file and prepares Rh8 mate.",
+   "hint": "Put the rook far away on the same rank, on the h-file."
+  },
+  {
+   "type": "move",
+   "fen": "8/8/k7/2K5/8/8/8/3R4 w - - 0 1",
+   "prompt": "Mate in two. Cut the king off along the d-file and shrink its box.",
+   "correct": [
+    "d1d7"
+   ],
+   "options": null,
+   "explanation": "Rd7 takes the 7th rank away, so after any king move the rook gives mate on the a-file or back rank.",
+   "hint": "Cut off the king with a rook on the 7th rank."
+  },
+  {
+   "type": "quiz",
+   "fen": "8/8/k7/2K5/8/8/8/3R4 w - - 0 1",
+   "prompt": "Where must the final check usually be given?",
+   "correct": [
+    "On the edge of the board"
+   ],
+   "options": [
+    "On the edge of the board",
+    "In the centre"
+   ],
+   "explanation": "On the edge the king has fewer escape squares, so the rook's check is mate.",
+   "hint": "The king is driven toward the edge first."
+  }
+ ]
+}

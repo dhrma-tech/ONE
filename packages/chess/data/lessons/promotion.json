@@ -1,0 +1,68 @@
+{
+ "id": "promotion",
+ "title": "Promotion",
+ "section": "Special moves",
+ "order": 14,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "8/4P1k1/8/8/8/8/8/4K3 w - - 0 1",
+   "prompt": "When a pawn reaches the far rank it must become a queen, rook, bishop or knight of its own colour.",
+   "correct": [],
+   "options": null,
+   "explanation": "When a pawn reaches the far rank it must become a queen, rook, bishop or knight of its own colour.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "8/4P1k1/8/8/8/8/8/4K3 w - - 0 1",
+   "prompt": "Promote the pawn to a queen.",
+   "correct": [
+    "e7e8q"
+   ],
+   "options": null,
+   "explanation": "The new queen is added to the board. You can have several queens.",
+   "hint": "Push the pawn to e8 and choose a queen."
+  },
+  {
+   "type": "quiz",
+   "fen": "8/4P1k1/8/8/8/8/8/4K3 w - - 0 1",
+   "prompt": "Which piece is the best choice almost every time?",
+   "correct": [
+    "Queen"
+   ],
+   "options": [
+    "Queen",
+    "Bishop",
+    "Pawn"
+   ],
+   "explanation": "The queen is strongest. Choosing a knight or rook instead is rare and only for tactics or to avoid stalemate.",
+   "hint": "The most powerful piece."
+  },
+  {
+   "type": "move",
+   "fen": "3r4/4P3/8/8/8/8/8/k3K3 w - - 0 1",
+   "prompt": "Promote while capturing the rook on d8.",
+   "correct": [
+    "e7d8q"
+   ],
+   "options": null,
+   "explanation": "A pawn may capture diagonally and promote on the same move.",
+   "hint": "Capture diagonally."
+  },
+  {
+   "type": "quiz",
+   "fen": "8/4P1k1/8/8/8/8/8/4K3 w - - 0 1",
+   "prompt": "Can a pawn promote to a king?",
+   "correct": [
+    "No"
+   ],
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "explanation": "A side has exactly one king.",
+   "hint": "Count the kings."
+  }
+ ]
+}

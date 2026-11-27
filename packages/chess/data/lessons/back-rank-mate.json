@@ -1,0 +1,71 @@
+{
+ "id": "back-rank-mate",
+ "title": "Back-rank mate",
+ "section": "Tactics",
+ "order": 36,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+   "prompt": "A king hemmed in by its own pawns on the back rank can be mated by a rook or queen along that rank. This is the most common beginner checkmate.",
+   "correct": [],
+   "options": null,
+   "explanation": "A king hemmed in by its own pawns on the back rank can be mated by a rook or queen along that rank. This is the most common beginner checkmate.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+   "prompt": "Trade rooks with a checkmate: capture on d8.",
+   "correct": [
+    "d1d8"
+   ],
+   "options": null,
+   "explanation": "Rxd8 is check and the pawns on f7, g7 and h7 take away the king's escape squares.",
+   "hint": "Capture the rook with your rook."
+  },
+  {
+   "type": "move",
+   "fen": "6k1/5ppp/8/8/8/b7/5PPP/3R2K1 b - - 0 1",
+   "prompt": "White threatens Rd8 mate. Black to move: give the king air (luft) with a pawn move.",
+   "correct": [
+    "h7h6",
+    "h7h5",
+    "g7g6",
+    "f7f6",
+    "f7f5"
+   ],
+   "options": null,
+   "explanation": "Moving one pawn makes an escape square, so a back-rank check is no longer mate.",
+   "hint": "Move a pawn in front of the king by one or two squares."
+  },
+  {
+   "type": "quiz",
+   "fen": "6k1/5ppp/8/8/8/b7/5PPP/3R2K1 b - - 0 1",
+   "prompt": "What is 'luft'?",
+   "correct": [
+    "An escape square created for the king"
+   ],
+   "options": [
+    "An escape square created for the king",
+    "A kind of rook"
+   ],
+   "explanation": "From German for 'air'. It is the simplest cure for back-rank weakness.",
+   "hint": "It gives the king air."
+  },
+  {
+   "type": "quiz",
+   "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+   "prompt": "Which habit prevents back-rank mates?",
+   "correct": [
+    "Make luft or keep a rook guarding the back rank"
+   ],
+   "options": [
+    "Make luft or keep a rook guarding the back rank",
+    "Move your king into the centre early"
+   ],
+   "explanation": "Do it early, before the threat appears.",
+   "hint": "Prevention is cheap."
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "id": "en-passant",
+ "title": "En passant",
+ "section": "Special moves",
+ "order": 13,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 2",
+   "prompt": "Black just pushed a pawn two squares from d7 to d5, landing beside your pawn on e5. You may capture it as if it had moved only one square.",
+   "correct": [],
+   "options": null,
+   "explanation": "Black just pushed a pawn two squares from d7 to d5, landing beside your pawn on e5. You may capture it as if it had moved only one square.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 2",
+   "prompt": "Capture en passant.",
+   "correct": [
+    "e5d6"
+   ],
+   "options": null,
+   "explanation": "Your pawn moves to d6, the square the black pawn skipped, and the black pawn on d5 is removed.",
+   "hint": "Move diagonally to the skipped square."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 2",
+   "prompt": "When can you capture en passant?",
+   "correct": [
+    "Only on the very next move"
+   ],
+   "options": [
+    "Only on the very next move",
+    "At any later time"
+   ],
+   "explanation": "If you do not take immediately, the chance is gone.",
+   "hint": "It is a now-or-never capture."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 2",
+   "prompt": "Which enemy pawn can be captured en passant?",
+   "correct": [
+    "One that just advanced two squares"
+   ],
+   "options": [
+    "One that just advanced two squares",
+    "Any pawn next to yours"
+   ],
+   "explanation": "It only works right after a double step, and only with a pawn beside it.",
+   "hint": "Think about the double step."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/8/3pP3/8/8/4K3 b - e3 0 1",
+   "prompt": "White just played e2-e4. Capture en passant with your pawn on d4.",
+   "correct": [
+    "d4e3"
+   ],
+   "options": null,
+   "explanation": "Black pawns capture downward: d4 takes on e3 and the e4 pawn disappears.",
+   "hint": "Move diagonally down to e3."
+  }
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "id": "opening-develop",
+ "title": "Develop your pieces",
+ "section": "Openings",
+ "order": 40,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+   "prompt": "Development means moving your knights and bishops off the back rank to active squares. Develop quickly: every move should bring a new piece into play.",
+   "correct": [],
+   "options": null,
+   "explanation": "Development means moving your knights and bishops off the back rank to active squares. Develop quickly: every move should bring a new piece into play.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+   "prompt": "Develop a knight toward the centre.",
+   "correct": [
+    "g1f3",
+    "b1c3"
+   ],
+   "options": null,
+   "explanation": "Knights belong on f3 and c3. Nf3 also attacks the e5 pawn.",
+   "hint": "Knights before bishops."
+  },
+  {
+   "type": "move",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+   "prompt": "Develop a bishop to an active diagonal.",
+   "correct": [
+    "f1c4",
+    "f1b5"
+   ],
+   "options": null,
+   "explanation": "Both bishop moves aim at Black's position. Bc4 targets f7, Bb5 pressures the c6 knight.",
+   "hint": "Open the f1 bishop diagonally."
+  },
+  {
+   "type": "quiz",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+   "prompt": "Moving the same piece several times in the opening is usually...",
+   "correct": [
+    "A waste of time"
+   ],
+   "options": [
+    "A waste of time",
+    "Always best"
+   ],
+   "explanation": "Each extra move with an already developed piece lets your opponent develop faster.",
+   "hint": "Think of tempo."
+  },
+  {
+   "type": "quiz",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+   "prompt": "How many minor pieces does each side have to develop?",
+   "correct": [
+    "Four"
+   ],
+   "options": [
+    "Four",
+    "Two"
+   ],
+   "explanation": "Two knights and two bishops.",
+   "hint": "Count knights plus bishops."
+  }
+ ]
+}

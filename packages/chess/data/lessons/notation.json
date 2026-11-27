@@ -1,0 +1,74 @@
+{
+ "id": "notation",
+ "title": "Reading chess moves",
+ "section": "Basics",
+ "order": 9,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Moves are written as piece letter + target square. K = king, Q = queen, R = rook, B = bishop, N = knight. Pawns have no letter: e4 means a pawn moves to e4.",
+   "correct": [],
+   "options": null,
+   "explanation": "Moves are written as piece letter + target square. K = king, Q = queen, R = rook, B = bishop, N = knight. Pawns have no letter: e4 means a pawn moves to e4.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Play e4.",
+   "correct": [
+    "e2e4"
+   ],
+   "options": null,
+   "explanation": "e4: the pawn in front of the king moves two squares.",
+   "hint": "Move the e-pawn to the e4 square."
+  },
+  {
+   "type": "move",
+   "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+   "prompt": "Black answered e5. Now play Nf3.",
+   "correct": [
+    "g1f3"
+   ],
+   "options": null,
+   "explanation": "Nf3: the knight from g1 jumps to f3 and attacks e5.",
+   "hint": "N is the knight. Which knight can reach f3?"
+  },
+  {
+   "type": "info",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+   "prompt": "More symbols: x means a capture (Nxe5 = knight takes on e5), + is check, # is checkmate, O-O is castling short (kingside) and O-O-O is castling long (queenside).",
+   "correct": [],
+   "options": null,
+   "explanation": "More symbols: x means a capture (Nxe5 = knight takes on e5), + is check, # is checkmate, O-O is castling short (kingside) and O-O-O is castling long (queenside).",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "quiz",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+   "prompt": "What does Bxf7+ mean?",
+   "correct": [
+    "A bishop takes on f7 with check"
+   ],
+   "options": [
+    "A bishop takes on f7 with check",
+    "A bishop moves to f7 and wins",
+    "A pawn takes on f7"
+   ],
+   "explanation": "B = bishop, x = takes, + = check.",
+   "hint": "Read it letter by letter."
+  },
+  {
+   "type": "move",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+   "prompt": "Play Bc4.",
+   "correct": [
+    "f1c4"
+   ],
+   "options": null,
+   "explanation": "Bc4: the light-squared bishop develops and aims at f7.",
+   "hint": "The bishop on f1 moves along the diagonal to c4."
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "id": "queen-moves",
+ "title": "How the queen moves",
+ "section": "Basics",
+ "order": 5,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "4k3/8/8/8/3Q4/8/8/4K3 w - - 0 1",
+   "prompt": "The queen is the strongest piece. She moves like a rook and a bishop combined: any distance along ranks, files and diagonals.",
+   "correct": [],
+   "options": null,
+   "explanation": "The queen is the strongest piece. She moves like a rook and a bishop combined: any distance along ranks, files and diagonals.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "square",
+   "fen": "4k3/8/8/8/3Q4/8/8/4K3 w - - 0 1",
+   "prompt": "Tap any square the queen on d4 can reach.",
+   "correct": [
+    "a1",
+    "a4",
+    "a7",
+    "b2",
+    "b4",
+    "b6",
+    "c3",
+    "c4",
+    "c5",
+    "d1",
+    "d2",
+    "d3",
+    "d5",
+    "d6",
+    "d7",
+    "d8",
+    "e3",
+    "e4",
+    "e5",
+    "f2",
+    "f4",
+    "f6",
+    "g1",
+    "g4",
+    "g7",
+    "h4",
+    "h8"
+   ],
+   "options": null,
+   "explanation": "From the centre the queen controls up to 27 squares on an empty board.",
+   "hint": "Straight lines and diagonals."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/8/3Q1p2/8/8/4K3 w - - 0 1",
+   "prompt": "Capture the black pawn on f4 with the queen.",
+   "correct": [
+    "d4f4"
+   ],
+   "options": null,
+   "explanation": "Queens capture like they move. Here the pawn is on the same rank.",
+   "hint": "Slide along the 4th rank."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/8/3Q4/8/8/4K3 w - - 0 1",
+   "prompt": "Roughly how many pawns is the queen worth?",
+   "correct": [
+    "9"
+   ],
+   "options": [
+    "3",
+    "5",
+    "9"
+   ],
+   "explanation": "The common scale is queen 9, rook 5, bishop 3, knight 3, pawn 1.",
+   "hint": "More than a rook."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/8/3Q4/8/8/4K3 w - - 0 1",
+   "prompt": "Give check, but not from a square next to the king (he could capture her).",
+   "correct": [
+    "d4a4",
+    "d4e4",
+    "d4h8"
+   ],
+   "options": null,
+   "explanation": "Checking from a distance keeps the queen safe. Qd7+ or Qd8+ would just lose her to the king.",
+   "hint": "Pick a far square on the e-file, a diagonal or the 8th rank."
+  }
+ ]
+}

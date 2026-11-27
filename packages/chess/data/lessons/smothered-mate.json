@@ -1,0 +1,54 @@
+{
+ "id": "smothered-mate",
+ "title": "Smothered mate",
+ "section": "Mating patterns",
+ "order": 26,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "6rk/6pp/8/6N1/8/8/8/6K1 w - - 0 1",
+   "prompt": "A smothered mate happens when the king is surrounded by its own pieces and a knight gives check. The king has nowhere to go and a knight check cannot be blocked.",
+   "correct": [],
+   "options": null,
+   "explanation": "A smothered mate happens when the king is surrounded by its own pieces and a knight gives check. The king has nowhere to go and a knight check cannot be blocked.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "6rk/6pp/8/6N1/8/8/8/6K1 w - - 0 1",
+   "prompt": "Checkmate in one with the knight.",
+   "correct": [
+    "g5f7"
+   ],
+   "options": null,
+   "explanation": "Nf7#: the rook and pawns block every escape square.",
+   "hint": "Which square lets the knight check h8?"
+  },
+  {
+   "type": "move",
+   "fen": "kr6/pp6/8/1N6/8/8/8/K7 w - - 0 1",
+   "prompt": "The same idea in the other corner. Checkmate in one.",
+   "correct": [
+    "b5c7"
+   ],
+   "options": null,
+   "explanation": "Nc7#: smothered again.",
+   "hint": "Find the knight check on a8."
+  },
+  {
+   "type": "quiz",
+   "fen": "6rk/6pp/8/6N1/8/8/8/6K1 w - - 0 1",
+   "prompt": "Which piece usually delivers a smothered mate?",
+   "correct": [
+    "Knight"
+   ],
+   "options": [
+    "Knight",
+    "Bishop",
+    "Rook"
+   ],
+   "explanation": "Only a knight can check a king that is fully surrounded.",
+   "hint": "It is the piece that jumps."
+  }
+ ]
+}

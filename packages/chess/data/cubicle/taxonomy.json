@@ -1,0 +1,2541 @@
+{
+ "sections": [
+  {
+   "id": "start",
+   "title": "Start here",
+   "blurb": "Zero to first games: the board, how pieces move, special moves, basic mates and opening habits.",
+   "floor": 40,
+   "nodes": [
+    {
+     "id": "start-board",
+     "title": "Board and pieces",
+     "shelf": "evergreen",
+     "level": "b",
+     "keywords": [
+      "chess board",
+      "set up the board",
+      "how to set up",
+      "chess pieces",
+      "piece values",
+      "board coordinates",
+      "files and ranks",
+      "algebraic"
+     ],
+     "practice": "#/learn?l=board-setup"
+    },
+    {
+     "id": "start-moves",
+     "title": "How the pieces move",
+     "shelf": "evergreen",
+     "level": "b",
+     "keywords": [
+      "how to move",
+      "how pieces move",
+      "pawn moves",
+      "knight moves",
+      "bishop moves",
+      "rook moves",
+      "queen moves",
+      "king moves",
+      "how the knight",
+      "how the bishop",
+      "how the rook",
+      "how the queen",
+      "how the pawn"
+     ],
+     "practice": "#/learn?l=rook-moves"
+    },
+    {
+     "id": "start-special",
+     "title": "Castling, en passant, promotion",
+     "shelf": "evergreen",
+     "level": "b",
+     "keywords": [
+      "castling",
+      "castle",
+      "en passant",
+      "promotion",
+      "promote",
+      "underpromotion",
+      "special moves"
+     ],
+     "practice": "#/learn?l=castling"
+    },
+    {
+     "id": "start-check",
+     "title": "Check, checkmate, stalemate",
+     "shelf": "evergreen",
+     "level": "b",
+     "keywords": [
+      "checkmate",
+      "check and mate",
+      "stalemate",
+      "what is check",
+      "what is checkmate",
+      "draw by",
+      "threefold",
+      "fifty-move",
+      "insufficient material"
+     ],
+     "practice": "#/learn?l=checkmate"
+    },
+    {
+     "id": "start-notation",
+     "title": "Notation",
+     "shelf": "evergreen",
+     "level": "b",
+     "keywords": [
+      "notation",
+      "algebraic notation",
+      "read a chess",
+      "write down",
+      "scoresheet",
+      "pgn"
+     ],
+     "practice": "#/learn?l=notation"
+    },
+    {
+     "id": "start-mates",
+     "title": "Basic checkmates",
+     "shelf": "evergreen",
+     "level": "b",
+     "keywords": [
+      "queen and king",
+      "king and queen",
+      "rook and king",
+      "king and rook",
+      "basic checkmate",
+      "ladder mate",
+      "scholar's mate",
+      "scholars mate",
+      "fool's mate",
+      "mate in 1",
+      "mate in one",
+      "easy checkmate",
+      "checkmate patterns for beginners"
+     ],
+     "practice": "#/learn?l=mate-king-queen"
+    },
+    {
+     "id": "start-opening",
+     "title": "Opening principles",
+     "shelf": "evergreen",
+     "level": "b",
+     "keywords": [
+      "opening principles",
+      "opening for beginners",
+      "beginner opening",
+      "how to start a chess game",
+      "first moves",
+      "control the center",
+      "develop your pieces",
+      "opening basics",
+      "opening rules"
+     ],
+     "practice": "#/learn?l=opening-develop"
+    },
+    {
+     "id": "start-mistakes",
+     "title": "Common beginner mistakes",
+     "shelf": "evergreen",
+     "level": "b",
+     "keywords": [
+      "undefended pieces",
+      "undefended",
+      "beginner mistakes",
+      "common mistakes",
+      "mistakes beginners",
+      "stop blundering",
+      "hanging pieces",
+      "blunder",
+      "avoid these mistakes",
+      "mistakes you make"
+     ],
+     "practice": "#/learn?l=blunder-check"
+    },
+    {
+     "id": "start-zero",
+     "title": "Learning chess from zero",
+     "shelf": "evergreen",
+     "level": "b",
+     "keywords": [
+      "chess fundamentals",
+      "fundamentals",
+      "learn chess",
+      "how to play chess",
+      "chess for beginners",
+      "beginner",
+      "beginners",
+      "chess basics",
+      "chess tutorial",
+      "chess rules",
+      "from scratch",
+      "absolute beginner",
+      "complete beginner",
+      "chess 101"
+     ],
+     "practice": "#/learn"
+    }
+   ]
+  },
+  {
+   "id": "tactics",
+   "title": "Tactics",
+   "blurb": "Forks, pins, mating patterns and the sacrifices that win games, plus how to train them.",
+   "floor": 70,
+   "nodes": [
+    {
+     "id": "tac-fork",
+     "title": "Forks",
+     "shelf": "evergreen",
+     "level": "b",
+     "keywords": [
+      "fork",
+      "knight fork",
+      "royal fork",
+      "family fork",
+      "double attack"
+     ],
+     "practice": "#/train?tab=puzzles&set=themed&theme=fork"
+    },
+    {
+     "id": "tac-pin",
+     "title": "Pins",
+     "shelf": "evergreen",
+     "level": "b",
+     "keywords": [
+      "pin",
+      "pins",
+      "pinned",
+      "absolute pin",
+      "relative pin"
+     ],
+     "practice": "#/train?tab=puzzles&set=themed&theme=pin"
+    },
+    {
+     "id": "tac-skewer",
+     "title": "Skewers",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "skewer",
+      "x-ray",
+      "x ray"
+     ],
+     "practice": "#/train?tab=puzzles&set=themed&theme=skewer"
+    },
+    {
+     "id": "tac-discovered",
+     "title": "Discovered attacks",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "discovered attack",
+      "discovered check",
+      "discovery",
+      "windmill"
+     ],
+     "practice": "#/train?tab=puzzles&set=themed&theme=discoveredAttack"
+    },
+    {
+     "id": "tac-deflection",
+     "title": "Deflection and decoy",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "deflection",
+      "decoy",
+      "attraction",
+      "lure"
+     ],
+     "practice": "#/train?tab=puzzles&set=themed&theme=deflection"
+    },
+    {
+     "id": "tac-defender",
+     "title": "Removing the defender",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "removing the defender",
+      "remove the defender",
+      "eliminate the defender",
+      "undermining",
+      "capturing the defender",
+      "destroy the defender"
+     ],
+     "practice": "#/train?tab=puzzles&set=themed&theme=capturingDefender"
+    },
+    {
+     "id": "tac-backrank",
+     "title": "Back rank",
+     "shelf": "evergreen",
+     "level": "b",
+     "keywords": [
+      "back rank",
+      "back-rank",
+      "backrank",
+      "luft"
+     ],
+     "practice": "#/train?tab=puzzles&set=themed&theme=backRankMate"
+    },
+    {
+     "id": "tac-matepatterns",
+     "title": "Mating patterns",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "mating pattern",
+      "mating patterns",
+      "mate patterns",
+      "checkmate patterns",
+      "smothered mate",
+      "arabian mate",
+      "anastasia",
+      "boden's mate",
+      "boden mate",
+      "epaulette",
+      "hook mate",
+      "dovetail",
+      "greco's mate",
+      "mate in 2",
+      "mate in 3",
+      "mate in two",
+      "mate in three",
+      "mating net",
+      "queen sacrifice mate"
+     ],
+     "practice": "#/train?tab=puzzles&set=themed&theme=mate"
+    },
+    {
+     "id": "tac-double",
+     "title": "Double check",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "double check"
+     ],
+     "practice": "#/train?tab=puzzles&set=themed&theme=doubleCheck"
+    },
+    {
+     "id": "tac-zwischen",
+     "title": "Zwischenzug",
+     "shelf": "evergreen",
+     "level": "a",
+     "keywords": [
+      "zwischenzug",
+      "intermezzo",
+      "in-between move",
+      "desperado"
+     ],
+     "practice": "#/train?tab=puzzles&set=themed&theme=intermezzo"
+    },
+    {
+     "id": "tac-trapped",
+     "title": "Trapped pieces",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "trapped piece",
+      "trap the",
+      "trapped bishop",
+      "trapped knight",
+      "trapped queen",
+      "trapped rook",
+      "trap a piece"
+     ],
+     "practice": "#/train?tab=puzzles&set=themed&theme=trappedPiece"
+    },
+    {
+     "id": "tac-overload",
+     "title": "Overloading",
+     "shelf": "evergreen",
+     "level": "a",
+     "keywords": [
+      "overload*",
+      "overworked",
+      "overworked defender"
+     ],
+     "practice": "#/train?tab=puzzles&set=themed&theme=sacrifice"
+    },
+    {
+     "id": "tac-perpetual",
+     "title": "Perpetual and stalemate tricks",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "perpetual",
+      "perpetual check",
+      "stalemate trick",
+      "stalemate trap",
+      "swindle",
+      "fortress trick",
+      "draw trick",
+      "saving a lost"
+     ],
+     "practice": "#/train?tab=puzzles"
+    },
+    {
+     "id": "tac-sacs",
+     "title": "Sacrifices",
+     "shelf": "evergreen",
+     "level": "a",
+     "keywords": [
+      "sacrific*",
+      "greek gift",
+      "exchange sac",
+      "piece sac",
+      "queen sac",
+      "rook sac",
+      "bishop sac",
+      "knight sac",
+      "brilliant sac",
+      "sac the"
+     ],
+     "practice": "#/train?tab=puzzles&set=themed&theme=sacrifice"
+    },
+    {
+     "id": "tac-drills",
+     "title": "Pattern drills",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "tactics",
+      "tactical",
+      "puzzle rush",
+      "tactic training",
+      "tactics training",
+      "tactical patterns",
+      "tactical motifs",
+      "puzzle storm",
+      "chess tactics",
+      "combination"
+     ],
+     "practice": "#/train?tab=puzzles"
+    },
+    {
+     "id": "tac-method",
+     "title": "Puzzle method",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "how to solve puzzles",
+      "solving puzzles",
+      "puzzle method",
+      "puzzle*",
+      "how to train tactics",
+      "tactics trainer",
+      "improve your tactics",
+      "tactical vision"
+     ],
+     "practice": "#/train?tab=puzzles"
+    }
+   ]
+  },
+  {
+   "id": "calc",
+   "title": "Calculation and thinking",
+   "blurb": "How to think: candidate moves, visualisation, blunder checks and managing the clock.",
+   "floor": 20,
+   "nodes": [
+    {
+     "id": "calc-candidates",
+     "title": "Candidate moves",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "candidate move",
+      "candidate moves",
+      "calculation",
+      "calculate",
+      "calculating",
+      "variations",
+      "analyze variations",
+      "look ahead"
+     ],
+     "practice": "#/train?tab=challenges"
+    },
+    {
+     "id": "calc-visual",
+     "title": "Visualisation",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "visuali*",
+      "see the board",
+      "mental board",
+      "board vision"
+     ],
+     "practice": "#/train?tab=challenges"
+    },
+    {
+     "id": "calc-blindfold",
+     "title": "Blindfold training",
+     "shelf": "evergreen",
+     "level": "a",
+     "keywords": [
+      "blindfold",
+      "blind chess",
+      "play blind"
+     ],
+     "practice": "#/train?tab=challenges"
+    },
+    {
+     "id": "calc-process",
+     "title": "Thinking process",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "thinking process",
+      "think like",
+      "how to think",
+      "decision making",
+      "thought process",
+      "chess thinking",
+      "how grandmasters think",
+      "how gms think",
+      "improve your thinking",
+      "intuition",
+      "pattern recognition",
+      "how to analyse a position",
+      "how to analyze a position"
+     ],
+     "practice": "#/train?tab=challenges"
+    },
+    {
+     "id": "calc-blunder",
+     "title": "Blunder checks",
+     "shelf": "evergreen",
+     "level": "b",
+     "keywords": [
+      "blunder check",
+      "blunder checking",
+      "checks captures threats",
+      "avoid blunders",
+      "double-check your move",
+      "safety check",
+      "oversight"
+     ],
+     "practice": "#/learn?l=blunder-check"
+    },
+    {
+     "id": "calc-time",
+     "title": "Time management",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "time management",
+      "manage your time",
+      "clock management",
+      "time trouble",
+      "think too long",
+      "thinking time",
+      "use your time"
+     ],
+     "practice": "#/learn?l=time-management"
+    }
+   ]
+  },
+  {
+   "id": "strategy",
+   "title": "Strategy",
+   "blurb": "Pawn structure, weak squares, piece activity and the typical plans that grow from them.",
+   "floor": 60,
+   "nodes": [
+    {
+     "id": "str-pawns",
+     "title": "Pawn structure",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "pawn structure",
+      "pawn structures",
+      "pawn chain",
+      "isolated pawn",
+      "doubled pawn",
+      "backward pawn",
+      "passed pawn",
+      "pawn islands",
+      "pawn majority",
+      "hanging pawns"
+     ],
+     "practice": "#/learn?l=pawn-structure"
+    },
+    {
+     "id": "str-outposts",
+     "title": "Outposts and weak squares",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "outpost",
+      "outposts",
+      "weak square",
+      "weak squares",
+      "weak colour",
+      "weak color",
+      "hole",
+      "holes"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "str-files",
+     "title": "Open files",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "open file",
+      "open files",
+      "rook activity",
+      "seventh rank",
+      "7th rank",
+      "rook on the seventh",
+      "half-open file",
+      "semi-open"
+     ],
+     "practice": "#/learn?l=open-files"
+    },
+    {
+     "id": "str-activity",
+     "title": "Piece activity",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "piece activity",
+      "active pieces",
+      "activate your pieces",
+      "improve your worst piece",
+      "worst piece",
+      "piece coordination",
+      "piece placement"
+     ],
+     "practice": "#/learn?l=piece-activity"
+    },
+    {
+     "id": "str-bvn",
+     "title": "Bishop vs knight",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "bishop vs knight",
+      "bishop versus knight",
+      "knight vs bishop",
+      "knight or bishop",
+      "bishop pair",
+      "two bishops",
+      "bishops or knights"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "str-goodbad",
+     "title": "Good and bad bishop",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "good bishop",
+      "bad bishop",
+      "bad bishops",
+      "good vs bad"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "str-space",
+     "title": "Space and the center",
+     "shelf": "evergreen",
+     "level": "a",
+     "keywords": [
+      "space advantage",
+      "gain space",
+      "cramp",
+      "restrict",
+      "central control",
+      "strong center",
+      "classical center",
+      "hypermodern"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "str-prophy",
+     "title": "Prophylaxis",
+     "shelf": "evergreen",
+     "level": "a",
+     "keywords": [
+      "prophylaxis",
+      "prophylactic",
+      "nimzowitsch",
+      "prevent the opponent",
+      "what does my opponent want"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "str-imbalance",
+     "title": "Imbalances",
+     "shelf": "evergreen",
+     "level": "a",
+     "keywords": [
+      "imbalance",
+      "imbalances",
+      "material imbalance",
+      "exchange sacrifice for",
+      "minor piece for",
+      "positional sacrifice"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "str-breaks",
+     "title": "Pawn breaks",
+     "shelf": "evergreen",
+     "level": "a",
+     "keywords": [
+      "pawn break",
+      "pawn breaks",
+      "pawn lever",
+      "pawn levers",
+      "break the center",
+      "c4-c5",
+      "f5 break",
+      "e5 break",
+      "d5 break"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "str-initiative",
+     "title": "Initiative and tempo",
+     "shelf": "evergreen",
+     "level": "a",
+     "keywords": [
+      "initiative",
+      "tempo",
+      "keeping the initiative",
+      "seize the initiative",
+      "dynamic play",
+      "dynamism"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "str-convert",
+     "title": "Converting an advantage",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "converting an advantage",
+      "convert an advantage",
+      "convert a winning",
+      "winning a won position",
+      "how to win a winning",
+      "trade down",
+      "simplify",
+      "how to win when ahead",
+      "winning technique",
+      "closing out"
+     ],
+     "practice": "#/learn?l=trade-when-ahead"
+    },
+    {
+     "id": "str-technique",
+     "title": "Technique",
+     "shelf": "evergreen",
+     "level": "a",
+     "keywords": [
+      "technique",
+      "positional chess",
+      "positional play",
+      "positional",
+      "positional understanding",
+      "strategy",
+      "strategic",
+      "planning",
+      "make a plan",
+      "plans in chess",
+      "chess strategy"
+     ],
+     "practice": "#/learn?l=make-a-plan"
+    },
+    {
+     "id": "str-defence",
+     "title": "Defence",
+     "shelf": "evergreen",
+     "level": "a",
+     "keywords": [
+      "defence",
+      "defense",
+      "defending",
+      "defend",
+      "defensive technique",
+      "passive position",
+      "fortress",
+      "resilience",
+      "swindling"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "str-structures",
+     "title": "Typical plans by structure",
+     "shelf": "evergreen",
+     "level": "a",
+     "keywords": [
+      "iqp",
+      "isolated queen's pawn",
+      "isolated queen pawn",
+      "carlsbad",
+      "maroczy",
+      "hedgehog",
+      "stonewall",
+      "benoni structure",
+      "french structure",
+      "slav structure",
+      "pawn structure and plans",
+      "typical plans",
+      "reversed sicilian"
+     ],
+     "practice": "#/learn"
+    }
+   ]
+  },
+  {
+   "id": "open-e4",
+   "title": "Openings as White: 1.e4",
+   "blurb": "Italian, Ruy Lopez, Scotch, Vienna and the open-game repertoire.",
+   "floor": 20,
+   "nodes": [
+    {
+     "id": "oe-italian",
+     "title": "Italian Game",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "italian",
+      "italian game",
+      "giuoco piano",
+      "giuoco pianissimo",
+      "two knights defense",
+      "two knights defence",
+      "fried liver",
+      "max lange"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "oe-ruy",
+     "title": "Ruy Lopez",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "ruy lopez",
+      "spanish game",
+      "spanish opening",
+      "marshall attack",
+      "closed ruy",
+      "exchange ruy",
+      "anti-marshall",
+      "spanish torture"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "oe-scotch",
+     "title": "Scotch Game",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "scotch",
+      "scotch game",
+      "scotch gambit"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "oe-vienna",
+     "title": "Vienna Game",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "vienna",
+      "vienna game",
+      "vienna gambit"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "oe-kg",
+     "title": "King's Gambit",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "king's gambit",
+      "kings gambit",
+      "king gambit",
+      "falkbeer"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "oe-evans",
+     "title": "Evans Gambit",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "evans gambit",
+      "evans"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "oe-fourknights",
+     "title": "Four Knights and others",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "four knights",
+      "three knights",
+      "bishop's opening",
+      "center game",
+      "ponziani",
+      "philidor defence",
+      "philidor defense"
+     ],
+     "practice": "#/train?tab=openings"
+    }
+   ]
+  },
+  {
+   "id": "open-d4",
+   "title": "Openings as White: 1.d4",
+   "blurb": "London, Queen's Gambit, Catalan and the queen-pawn systems.",
+   "floor": 20,
+   "nodes": [
+    {
+     "id": "od-london",
+     "title": "London System",
+     "shelf": "semi",
+     "level": "b",
+     "keywords": [
+      "london system",
+      "london",
+      "the london"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "od-qg",
+     "title": "Queen's Gambit",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "queen's gambit",
+      "queens gambit",
+      "qgd",
+      "qga",
+      "queen's gambit accepted",
+      "queen's gambit declined"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "od-catalan",
+     "title": "Catalan",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "catalan"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "od-colle",
+     "title": "Colle System",
+     "shelf": "semi",
+     "level": "b",
+     "keywords": [
+      "colle",
+      "colle system",
+      "colle-zukertort",
+      "zukertort"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "od-tromp",
+     "title": "Trompowsky",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "trompowsky",
+      "tromp",
+      "tromp attack"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "od-jobava",
+     "title": "Jobava London",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "jobava",
+      "jobava london"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "od-torre",
+     "title": "Torre Attack",
+     "shelf": "semi",
+     "level": "b",
+     "keywords": [
+      "torre",
+      "torre attack"
+     ],
+     "practice": "#/train?tab=openings"
+    }
+   ]
+  },
+  {
+   "id": "open-flank",
+   "title": "Openings: flank and system",
+   "blurb": "English, Reti, Bird and king's-indian-attack setups.",
+   "floor": 20,
+   "nodes": [
+    {
+     "id": "of-english",
+     "title": "English Opening",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "english opening",
+      "english",
+      "1.c4",
+      "c4 opening",
+      "symmetrical english",
+      "botvinnik system"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "of-reti",
+     "title": "Reti Opening",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "reti",
+      "reti opening",
+      "1.nf3",
+      "nf3 opening",
+      "zukertort opening"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "of-bird",
+     "title": "Bird Opening",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "bird opening",
+      "bird's opening",
+      "birds opening",
+      "from's gambit"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "of-kia",
+     "title": "King's Indian Attack",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "king's indian attack",
+      "kings indian attack",
+      "kia",
+      "barcza",
+      "sokolsky",
+      "orangutan"
+     ],
+     "practice": "#/train?tab=openings"
+    }
+   ]
+  },
+  {
+   "id": "def-e4",
+   "title": "Defences to 1.e4",
+   "blurb": "Sicilian, French, Caro-Kann and the rest of Black's answers.",
+   "floor": 20,
+   "nodes": [
+    {
+     "id": "de-najdorf",
+     "title": "Sicilian: Najdorf",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "najdorf"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "de-dragon",
+     "title": "Sicilian: Dragon",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "dragon",
+      "sicilian dragon",
+      "yugoslav attack"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "de-sveshnikov",
+     "title": "Sicilian: Sveshnikov",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "sveshnikov",
+      "chelyabinsk"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "de-taimanov",
+     "title": "Sicilian: Taimanov and Kan",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "taimanov",
+      "kan sicilian",
+      "paulsen",
+      "scheveningen"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "de-alapin",
+     "title": "Sicilian: Alapin",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "alapin",
+      "c3 sicilian",
+      "2.c3"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "de-accdragon",
+     "title": "Accelerated Dragon",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "accelerated dragon"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "de-sicilian",
+     "title": "Sicilian: general",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "sicilian",
+      "sicilian defense",
+      "sicilian defence",
+      "open sicilian",
+      "closed sicilian",
+      "grand prix attack",
+      "smith-morra"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "de-french",
+     "title": "French Defence",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "french defense",
+      "french defence",
+      "french",
+      "advance french",
+      "winawer",
+      "tarrasch french",
+      "exchange french"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "de-caro",
+     "title": "Caro-Kann",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "caro-kann",
+      "caro kann",
+      "caro"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "de-pirc",
+     "title": "Pirc and Modern",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "pirc",
+      "modern defense",
+      "modern defence",
+      "austrian attack"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "de-scandi",
+     "title": "Scandinavian",
+     "shelf": "semi",
+     "level": "b",
+     "keywords": [
+      "scandinavian",
+      "center counter",
+      "centre counter"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "de-alekhine",
+     "title": "Alekhine Defence",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "alekhine's defense",
+      "alekhine's defence",
+      "alekhine defense",
+      "alekhine defence"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "de-e5",
+     "title": "1...e5 mainlines",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "petroff",
+      "petrov",
+      "berlin",
+      "berlin defense",
+      "berlin defence",
+      "berlin wall",
+      "1...e5",
+      "open games",
+      "italian defense"
+     ],
+     "practice": "#/train?tab=openings"
+    }
+   ]
+  },
+  {
+   "id": "def-d4",
+   "title": "Defences to 1.d4",
+   "blurb": "QGD, Slav, King's Indian, Grunfeld, Nimzo and the other ways to meet queen-pawn openings.",
+   "floor": 20,
+   "nodes": [
+    {
+     "id": "dd-qgd",
+     "title": "Queen's Gambit Declined",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "queen's gambit declined",
+      "qgd",
+      "orthodox defense",
+      "tartakower",
+      "lasker defense"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "dd-slav",
+     "title": "Slav",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "slav",
+      "slav defense",
+      "slav defence",
+      "chebanenko"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "dd-semislav",
+     "title": "Semi-Slav",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "semi-slav",
+      "semi slav",
+      "meran",
+      "botvinnik semi"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "dd-kid",
+     "title": "King's Indian",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "king's indian",
+      "kings indian",
+      "kid",
+      "saemisch",
+      "sämisch",
+      "four pawns attack",
+      "mar del plata"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "dd-grunfeld",
+     "title": "Grunfeld",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "grunfeld",
+      "grünfeld"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "dd-nimzo",
+     "title": "Nimzo-Indian",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "nimzo",
+      "nimzo-indian",
+      "nimzo indian",
+      "nimzoindian"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "dd-qid",
+     "title": "Queen's Indian",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "queen's indian",
+      "queens indian",
+      "qid",
+      "bogo-indian",
+      "bogo indian"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "dd-benoni",
+     "title": "Benoni",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "benoni",
+      "modern benoni",
+      "czech benoni"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "dd-dutch",
+     "title": "Dutch Defence",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "dutch",
+      "dutch defense",
+      "dutch defence",
+      "stonewall dutch",
+      "leningrad dutch"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "dd-benko",
+     "title": "Benko Gambit",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "benko",
+      "volga gambit"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "dd-budapest",
+     "title": "Budapest Gambit",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "budapest",
+      "budapest gambit"
+     ],
+     "practice": "#/train?tab=openings"
+    }
+   ]
+  },
+  {
+   "id": "gambits",
+   "title": "Gambits and traps",
+   "blurb": "Danish, Smith-Morra, Englund and other sharp, trappy lines.",
+   "floor": 20,
+   "nodes": [
+    {
+     "id": "gam-danish",
+     "title": "Danish Gambit",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "danish gambit",
+      "danish"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "gam-morra",
+     "title": "Smith-Morra Gambit",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "smith-morra",
+      "smith morra",
+      "morra gambit",
+      "morra"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "gam-englund",
+     "title": "Englund Gambit",
+     "shelf": "semi",
+     "level": "b",
+     "keywords": [
+      "englund",
+      "englund gambit"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "gam-stafford",
+     "title": "Stafford Gambit",
+     "shelf": "semi",
+     "level": "b",
+     "keywords": [
+      "stafford",
+      "stafford gambit"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "gam-bdg",
+     "title": "Blackmar-Diemer Gambit",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "blackmar-diemer",
+      "blackmar diemer",
+      "bdg",
+      "blackmar"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "gam-latvian",
+     "title": "Latvian and others",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "latvian",
+      "latvian gambit",
+      "albin",
+      "elephant gambit",
+      "halloween gambit",
+      "jerome gambit",
+      "wing gambit",
+      "from gambit",
+      "gambit",
+      "opening trap",
+      "opening traps",
+      "trap",
+      "traps",
+      "trappy"
+     ],
+     "practice": "#/train?tab=openings"
+    }
+   ]
+  },
+  {
+   "id": "open-study",
+   "title": "Opening study",
+   "blurb": "How to study openings, build a repertoire and use engines and databases.",
+   "floor": 20,
+   "nodes": [
+    {
+     "id": "os-how",
+     "title": "How to study openings",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "how to study openings",
+      "study openings",
+      "learn openings",
+      "learning openings",
+      "how to learn openings",
+      "memorize openings",
+      "memorise openings",
+      "opening preparation",
+      "opening theory",
+      "opening study"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "os-rep",
+     "title": "Building a repertoire",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "ideas for black",
+      "ideas for white",
+      "queen pawn",
+      "repertoire",
+      "build a repertoire",
+      "opening repertoire",
+      "which opening",
+      "best openings",
+      "openings for beginners",
+      "openings to learn",
+      "choose an opening",
+      "opening choice"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "os-trans",
+     "title": "Transpositions",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "transposition",
+      "transpositions",
+      "transpose",
+      "move order",
+      "move orders"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "os-engine",
+     "title": "Engines and databases",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "engine",
+      "databases",
+      "database",
+      "stockfish",
+      "opening explorer",
+      "lichess opening",
+      "chessbase",
+      "opening tree",
+      "novelty",
+      "theory novelty"
+     ],
+     "practice": "#/train?tab=openings"
+    },
+    {
+     "id": "os-mistakes",
+     "title": "Opening mistakes by rating",
+     "shelf": "evergreen",
+     "level": "b",
+     "keywords": [
+      "opening mistakes",
+      "opening blunders",
+      "mistakes in the opening",
+      "opening errors",
+      "common opening",
+      "bad openings",
+      "opening traps to avoid"
+     ],
+     "practice": "#/train?tab=openings"
+    }
+   ]
+  },
+  {
+   "id": "middlegame",
+   "title": "Middlegame",
+   "blurb": "Attacking the king, pawn storms, defending and finding plans.",
+   "floor": 20,
+   "nodes": [
+    {
+     "id": "mg-attack",
+     "title": "Attacking the king",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "attack*",
+      "attacking the king",
+      "king attack",
+      "kingside attack",
+      "king hunt",
+      "attacking chess",
+      "attacking play",
+      "attacking patterns",
+      "mating attack"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "mg-storm",
+     "title": "Pawn storms",
+     "shelf": "evergreen",
+     "level": "a",
+     "keywords": [
+      "pawn storm",
+      "pawn storms",
+      "pawn advance",
+      "g4",
+      "h4 push",
+      "pawn push"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "mg-oppcastle",
+     "title": "Opposite-side castling",
+     "shelf": "evergreen",
+     "level": "a",
+     "keywords": [
+      "opposite side castling",
+      "opposite-side castling",
+      "opposite castling",
+      "opposite sides"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "mg-defend",
+     "title": "Defending",
+     "shelf": "evergreen",
+     "level": "a",
+     "keywords": [
+      "defending against",
+      "how to defend",
+      "defend against",
+      "counterattack",
+      "counter-attack",
+      "counterplay",
+      "survive",
+      "defensive"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "mg-plans",
+     "title": "Plans and initiative",
+     "shelf": "evergreen",
+     "level": "a",
+     "keywords": [
+      "middlegame",
+      "middle game",
+      "plans",
+      "find a plan",
+      "strategic plan",
+      "initiative",
+      "transition"
+     ],
+     "practice": "#/learn"
+    }
+   ]
+  },
+  {
+   "id": "endgames",
+   "title": "Endgames",
+   "blurb": "Pawn, rook, minor-piece and queen endings, plus practical technique.",
+   "floor": 60,
+   "nodes": [
+    {
+     "id": "end-pawn",
+     "title": "Pawn endings",
+     "shelf": "evergreen",
+     "level": "b",
+     "keywords": [
+      "pawn ending",
+      "pawn endings",
+      "pawn endgame",
+      "king and pawn",
+      "opposition",
+      "triangulation",
+      "square rule",
+      "rule of the square",
+      "key squares",
+      "outside passed pawn",
+      "zugzwang"
+     ],
+     "practice": "#/train?tab=endgames"
+    },
+    {
+     "id": "end-rook",
+     "title": "Rook endings",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "rook ending",
+      "rook endings",
+      "rook endgame",
+      "rook endgames",
+      "lucena",
+      "philidor position",
+      "vancura",
+      "cutting off the king",
+      "bridge building",
+      "rook and pawn",
+      "rook vs pawn",
+      "tarrasch rule",
+      "active rook"
+     ],
+     "practice": "#/train?tab=endgames"
+    },
+    {
+     "id": "end-minor",
+     "title": "Minor piece endings",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "bishop endgame",
+      "knight endgame",
+      "bishop vs knight endgame",
+      "same colored bishops",
+      "same-colored bishops",
+      "opposite colored bishops",
+      "opposite-colored bishops",
+      "opposite colour bishops",
+      "opposite bishops",
+      "wrong bishop",
+      "minor piece ending"
+     ],
+     "practice": "#/train?tab=endgames"
+    },
+    {
+     "id": "end-queen",
+     "title": "Queen endings",
+     "shelf": "evergreen",
+     "level": "a",
+     "keywords": [
+      "queen ending",
+      "queen endings",
+      "queen endgame",
+      "queen vs pawn",
+      "queen versus rook",
+      "queen and pawn"
+     ],
+     "practice": "#/train?tab=endgames"
+    },
+    {
+     "id": "end-practical",
+     "title": "Practical endgames",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "endgame",
+      "endgames",
+      "end game",
+      "endings",
+      "endgame technique",
+      "endgame tips",
+      "endgame principles",
+      "endgame basics",
+      "must know endgames",
+      "essential endgames"
+     ],
+     "practice": "#/train?tab=endgames"
+    },
+    {
+     "id": "end-technical",
+     "title": "Technical endgames",
+     "shelf": "evergreen",
+     "level": "a",
+     "keywords": [
+      "technical endgame",
+      "theoretical endgame",
+      "tablebase",
+      "tablebases",
+      "syzygy",
+      "endgame theory",
+      "endgame study",
+      "endgame studies",
+      "composition"
+     ],
+     "practice": "#/train?tab=endgames"
+    }
+   ]
+  },
+  {
+   "id": "analysis",
+   "title": "Game analysis",
+   "blurb": "Annotated classics, engine-era games and how to review your own.",
+   "floor": 50,
+   "nodes": [
+    {
+     "id": "an-classic",
+     "title": "Classic annotated games",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "morphy",
+      "immortal game",
+      "evergreen game",
+      "opera game",
+      "capablanca",
+      "lasker",
+      "tal",
+      "fischer",
+      "botvinnik",
+      "karpov",
+      "kasparov",
+      "spassky",
+      "petrosian",
+      "steinitz",
+      "anderssen",
+      "game of the century",
+      "classic game",
+      "legendary game"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "an-engine",
+     "title": "Engine-era top games",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "alphazero",
+      "stockfish vs",
+      "leela",
+      "lc0",
+      "neural net",
+      "deepmind",
+      "engine game",
+      "computer game",
+      "super grandmaster game",
+      "candidates game",
+      "world championship game",
+      "carlsen vs",
+      "nakamura vs",
+      "caruana vs",
+      "firouzja vs",
+      "gukesh vs",
+      "ding vs",
+      "nepomniachtchi vs",
+      "ding liren"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "an-modern",
+     "title": "Modern masterpieces",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "masterpiece",
+      "brilliant game",
+      "brilliancy",
+      "best game",
+      "incredible game",
+      "unbelievable game",
+      "crazy game",
+      "amazing game",
+      "beautiful game",
+      "game of the year",
+      "greatest game",
+      "best move"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "an-review",
+     "title": "GM reviews of club games",
+     "shelf": "semi",
+     "level": "b",
+     "keywords": [
+      "review",
+      "reviews your games",
+      "reviewing",
+      "reviewing your",
+      "game review",
+      "subscriber game",
+      "viewer game",
+      "analyzing your games",
+      "analysing your games",
+      "analysis of your game",
+      "under 1000",
+      "under 1500"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "an-guess",
+     "title": "Guess the move and Elo",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "guess the move",
+      "guess the elo",
+      "guess the rating",
+      "guess the opening",
+      "find the best move",
+      "what would you play",
+      "spot the"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "an-own",
+     "title": "Reviewing your own games",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "analyze your own games",
+      "analyse your own games",
+      "review your own games",
+      "how to analyze",
+      "how to analyse",
+      "how to review",
+      "game analysis",
+      "post-game analysis",
+      "improve by analysing",
+      "annotate"
+     ],
+     "practice": "#/learn"
+    }
+   ]
+  },
+  {
+   "id": "gameplay",
+   "title": "Gameplay",
+   "blurb": "Games played with the thought process spoken aloud.",
+   "floor": 50,
+   "nodes": [
+    {
+     "id": "gp-blitz",
+     "title": "Blitz commentary",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "blitz",
+      "3+0",
+      "3 minute",
+      "5 minute",
+      "3+2",
+      "blitz game",
+      "blitz chess",
+      "blitz battle"
+     ],
+     "practice": "#/train?tab=challenges"
+    },
+    {
+     "id": "gp-rapid",
+     "title": "Rapid commentary",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "rapid",
+      "10+0",
+      "15+10",
+      "rapid game",
+      "rapid chess"
+     ],
+     "practice": "#/train?tab=challenges"
+    },
+    {
+     "id": "gp-bullet",
+     "title": "Bullet and speedruns",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "bullet",
+      "1+0",
+      "speedrun",
+      "speed run",
+      "hyperbullet",
+      "1 minute",
+      "ultrabullet"
+     ],
+     "practice": "#/train?tab=challenges"
+    },
+    {
+     "id": "gp-stream",
+     "title": "Titled streamers",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "stream",
+      "streamer",
+      "live stream",
+      "titled tuesday",
+      "pogchamps",
+      "pog champs",
+      "vs viewers",
+      "chess session"
+     ],
+     "practice": "#/train?tab=challenges"
+    },
+    {
+     "id": "gp-brilliancy",
+     "title": "Brilliancy walkthroughs",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "brilliancy",
+      "brilliancies",
+      "walkthrough",
+      "i played",
+      "my game",
+      "my best game",
+      "sacrificed",
+      "sacrifice my queen",
+      "sacrificing my queen"
+     ],
+     "practice": "#/train?tab=challenges"
+    },
+    {
+     "id": "gp-960",
+     "title": "Chess960",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "chess960",
+      "chess 960",
+      "fischer random",
+      "freestyle chess",
+      "freestyle",
+      "960"
+     ],
+     "practice": "#/train?tab=challenges"
+    }
+   ]
+  },
+  {
+   "id": "news",
+   "title": "Tournaments and news",
+   "blurb": "Round recaps and highlights from the big events.",
+   "floor": 20,
+   "nodes": [
+    {
+     "id": "nw-wch",
+     "title": "World Championship",
+     "shelf": "fast",
+     "level": "i",
+     "keywords": [
+      "world championship",
+      "world chess championship",
+      "wcc",
+      "ding vs gukesh",
+      "gukesh vs ding"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "nw-cand",
+     "title": "Candidates",
+     "shelf": "fast",
+     "level": "a",
+     "keywords": [
+      "candidates",
+      "candidates tournament",
+      "fide candidates"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "nw-olympiad",
+     "title": "Olympiad",
+     "shelf": "fast",
+     "level": "i",
+     "keywords": [
+      "olympiad",
+      "chess olympiad",
+      "fide olympiad",
+      "team event",
+      "team championship"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "nw-tata",
+     "title": "Tata Steel",
+     "shelf": "fast",
+     "level": "i",
+     "keywords": [
+      "tata steel",
+      "wijk aan zee",
+      "tata steel chess"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "nw-norway",
+     "title": "Norway Chess",
+     "shelf": "fast",
+     "level": "i",
+     "keywords": [
+      "norway chess",
+      "armageddon",
+      "stavanger"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "nw-gct",
+     "title": "Grand Chess Tour",
+     "shelf": "fast",
+     "level": "i",
+     "keywords": [
+      "grand chess tour",
+      "gct",
+      "sinquefield cup",
+      "superbet",
+      "saint louis rapid",
+      "st. louis rapid",
+      "paris rapid",
+      "tour final"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "nw-wc",
+     "title": "World Cup and others",
+     "shelf": "fast",
+     "level": "i",
+     "keywords": [
+      "total chess",
+      "semifinal",
+      "finals",
+      "clutch chess",
+      "crowned",
+      "tournament",
+      "drama",
+      "forfeit",
+      "hans niemann",
+      "world cup",
+      "fide world cup",
+      "grand swiss",
+      "fide grand swiss",
+      "world rapid",
+      "world blitz",
+      "highlights",
+      "round",
+      "day 1",
+      "day 2",
+      "day 3",
+      "recap",
+      "commentary",
+      "live commentary",
+      "live coverage",
+      "speed chess championship",
+      "champions chess tour",
+      "esports world cup",
+      "rapid and blitz championship"
+     ],
+     "practice": "#/learn"
+    }
+   ]
+  },
+  {
+   "id": "improve",
+   "title": "Improve",
+   "blurb": "Training methods by rating band, psychology and study plans.",
+   "floor": 40,
+   "nodes": [
+    {
+     "id": "imp-b",
+     "title": "Under 1000",
+     "shelf": "evergreen",
+     "level": "b",
+     "keywords": [
+      "under 1000",
+      "below 1000",
+      "0-1000",
+      "beginner to 1000",
+      "from 400",
+      "from 600",
+      "from 800",
+      "0 to 1000",
+      "sub 1000"
+     ],
+     "practice": "#/learn?l=practice-routine"
+    },
+    {
+     "id": "imp-i",
+     "title": "1000 to 1500",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "1000-1500",
+      "1000 to 1500",
+      "1200",
+      "1300",
+      "1400",
+      "1500",
+      "beginner to intermediate",
+      "intermediate player",
+      "intermediate players"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "imp-a",
+     "title": "1500 to 2000",
+     "shelf": "evergreen",
+     "level": "a",
+     "keywords": [
+      "1500-2000",
+      "1500 to 2000",
+      "1600",
+      "1700",
+      "1800",
+      "1900",
+      "2000 elo",
+      "club player",
+      "club players",
+      "advanced player"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "imp-x",
+     "title": "2000 and above",
+     "shelf": "evergreen",
+     "level": "x",
+     "keywords": [
+      "2000+",
+      "2000-2500",
+      "2200",
+      "2300",
+      "2400",
+      "master level",
+      "become a master",
+      "become an im",
+      "become a gm",
+      "titled player",
+      "from 2000",
+      "above 2000"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "imp-plateau",
+     "title": "Plateaus",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "plateau",
+      "plateaus",
+      "stuck at",
+      "stuck in",
+      "break through",
+      "why you are not improving",
+      "why you aren't improving",
+      "why you're stuck",
+      "not improving",
+      "get unstuck"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "imp-mind",
+     "title": "Tilt and psychology",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "tilt",
+      "psychology",
+      "mindset",
+      "nerves",
+      "confidence",
+      "mental",
+      "losing streak",
+      "rage",
+      "focus",
+      "fear of losing",
+      "motivation"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "imp-time",
+     "title": "Time management",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "time management in chess",
+      "manage the clock",
+      "clock",
+      "time pressure"
+     ],
+     "practice": "#/learn?l=time-management"
+    },
+    {
+     "id": "imp-otb",
+     "title": "OTB tournament prep",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "otb",
+      "over the board",
+      "over-the-board",
+      "tournament prep",
+      "tournament preparation",
+      "play a tournament",
+      "first tournament",
+      "classical game",
+      "fide rating"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "imp-online",
+     "title": "Online vs OTB",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "online vs otb",
+      "online versus otb",
+      "online chess vs",
+      "transition to otb"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "imp-lichess",
+     "title": "Lichess and engines",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "lichess",
+      "lichess tips",
+      "use stockfish",
+      "analysis board",
+      "lichess features",
+      "engine analysis",
+      "lichess study",
+      "lichess tutorial"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "imp-plan",
+     "title": "Study plans",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "study plan",
+      "training plan",
+      "improve at chess",
+      "improve your chess",
+      "get better at chess",
+      "how to improve",
+      "how to get better",
+      "improve fast",
+      "rating climb",
+      "climb",
+      "climbing",
+      "get to 1500",
+      "get to 2000",
+      "training routine",
+      "daily routine",
+      "practice routine",
+      "chess improvement"
+     ],
+     "practice": "#/learn?l=practice-routine"
+    }
+   ]
+  },
+  {
+   "id": "speed",
+   "title": "Speed chess",
+   "blurb": "Blitz, bullet and rapid strategy, premoves and flagging.",
+   "floor": 20,
+   "nodes": [
+    {
+     "id": "sp-blitz",
+     "title": "Blitz strategy",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "blitz strategy",
+      "blitz tips",
+      "win at blitz",
+      "how to win blitz",
+      "blitz openings",
+      "improve at blitz",
+      "play blitz",
+      "blitz rating"
+     ],
+     "practice": "#/train?tab=challenges"
+    },
+    {
+     "id": "sp-bullet",
+     "title": "Bullet strategy",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "bullet strategy",
+      "bullet tips",
+      "win at bullet",
+      "how to win bullet",
+      "bullet chess",
+      "improve at bullet",
+      "bullet rating"
+     ],
+     "practice": "#/train?tab=challenges"
+    },
+    {
+     "id": "sp-rapid",
+     "title": "Rapid strategy",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "rapid strategy",
+      "rapid tips",
+      "win at rapid",
+      "rapid rating"
+     ],
+     "practice": "#/train?tab=challenges"
+    },
+    {
+     "id": "sp-pre",
+     "title": "Premoves",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "premove",
+      "premoves",
+      "pre-move",
+      "pre move",
+      "mouse slip",
+      "mouse skills",
+      "mousework"
+     ],
+     "practice": "#/train?tab=challenges"
+    },
+    {
+     "id": "sp-flag",
+     "title": "Flagging and time scrambles",
+     "shelf": "semi",
+     "level": "a",
+     "keywords": [
+      "flag",
+      "flagging",
+      "time scramble",
+      "scramble",
+      "increment",
+      "low on time",
+      "win on time",
+      "time odds",
+      "clock tricks"
+     ],
+     "practice": "#/train?tab=challenges"
+    }
+   ]
+  },
+  {
+   "id": "legends",
+   "title": "Legends and stories",
+   "blurb": "Documentaries, famous matches, history and interviews.",
+   "floor": 20,
+   "nodes": [
+    {
+     "id": "lg-docs",
+     "title": "Player documentaries",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "documentary",
+      "biography",
+      "life story",
+      "rise and fall",
+      "story of",
+      "the story",
+      "his life",
+      "her life",
+      "career",
+      "the genius",
+      "the legend",
+      "the prodigy"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "lg-matches",
+     "title": "Famous matches",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "fischer vs spassky",
+      "fischer-spassky",
+      "kasparov vs deep blue",
+      "deep blue",
+      "carlsen vs nepomniachtchi",
+      "match of the century",
+      "karpov vs kasparov",
+      "kasparov vs karpov",
+      "century match"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "lg-history",
+     "title": "History",
+     "shelf": "evergreen",
+     "level": "i",
+     "keywords": [
+      "history of chess",
+      "chess history",
+      "origin of chess",
+      "evolution of chess",
+      "chaturanga",
+      "the turk",
+      "mechanical turk",
+      "chess in the soviet",
+      "soviet chess",
+      "hall of fame"
+     ],
+     "practice": "#/learn"
+    },
+    {
+     "id": "lg-interviews",
+     "title": "Interviews",
+     "shelf": "semi",
+     "level": "i",
+     "keywords": [
+      "interview",
+      "interviews",
+      "q&a",
+      "ama",
+      "sits down with",
+      "conversation with",
+      "talks with",
+      "podcast",
+      "press conference"
+     ],
+     "practice": "#/learn"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "id": "mate-king-queen",
+ "title": "Mate with king and queen",
+ "section": "Basic mates",
+ "order": 20,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "8/8/k7/2K5/8/8/8/3Q4 w - - 0 1",
+   "prompt": "King and queen beat a lone king. The plan: use the queen to shrink the black king's area, bring your own king close, then mate. Always leave the king one square, or it is stalemate.",
+   "correct": [],
+   "options": null,
+   "explanation": "King and queen beat a lone king. The plan: use the queen to shrink the black king's area, bring your own king close, then mate. Always leave the king one square, or it is stalemate.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "7k/5K2/8/8/8/8/8/6Q1 w - - 0 1",
+   "prompt": "Mate in one. The king supports the queen: deliver checkmate.",
+   "correct": [
+    "g1g8",
+    "g1g7",
+    "g1h2",
+    "g1h1"
+   ],
+   "options": null,
+   "explanation": "The queen on g7 is protected by your king, and together they cover every escape square.",
+   "hint": "Check the king on the edge, with your king covering the escape squares."
+  },
+  {
+   "type": "move",
+   "fen": "8/8/k7/2K5/8/8/8/3Q4 w - - 0 1",
+   "prompt": "Mate in two. Place the queen a knight's move from the king to take away squares. Find the first move.",
+   "correct": [
+    "d1d7"
+   ],
+   "options": null,
+   "explanation": "Qd7 takes the 7th rank away and keeps the king boxed in. Whatever Black plays, you can mate next move.",
+   "hint": "Play the queen far away on the d-file, a knight's move from the king."
+  },
+  {
+   "type": "move",
+   "fen": "1k6/8/8/Q2K4/8/8/8/8 w - - 0 1",
+   "prompt": "Mate in two. Bring your king closer; the queen already does the work.",
+   "correct": [
+    "d5c6"
+   ],
+   "options": null,
+   "explanation": "Kc6 takes b6 and c7 away from the king on b8, so the next queen move is mate.",
+   "hint": "Use your king, not the queen."
+  },
+  {
+   "type": "quiz",
+   "fen": "8/8/k7/2K5/8/8/8/3Q4 w - - 0 1",
+   "prompt": "What is the biggest danger when mating with a queen?",
+   "correct": [
+    "Stalemate"
+   ],
+   "options": [
+    "Stalemate",
+    "Losing the queen to a fork"
+   ],
+   "explanation": "Giving the lone king no legal move without check is a draw.",
+   "hint": "Look at what happens if the king cannot move."
+  }
+ ]
+}

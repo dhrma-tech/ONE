@@ -1,0 +1,67 @@
+{
+ "id": "opening-early-queen",
+ "title": "Do not rush the queen",
+ "section": "Openings",
+ "order": 42,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 3 3",
+   "prompt": "Bringing the queen out early is risky: she can be chased, and you lose time. Beginners often aim for quick mates, and these are easy to stop if you know the idea.",
+   "correct": [],
+   "options": null,
+   "explanation": "Bringing the queen out early is risky: she can be chased, and you lose time. Beginners often aim for quick mates, and these are easy to stop if you know the idea.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 3 3",
+   "prompt": "White's queen and bishop aim at f7. Deliver the mate.",
+   "correct": [
+    "h5f7"
+   ],
+   "options": null,
+   "explanation": "Qxf7 is checkmate because the bishop on c4 protects the queen. This is called the scholar's mate.",
+   "hint": "Take the pawn on f7."
+  },
+  {
+   "type": "move",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - 3 3",
+   "prompt": "Now defend as Black: stop Qxf7 and attack the queen.",
+   "correct": [
+    "g8f6"
+   ],
+   "options": null,
+   "explanation": "Nf6 defends nothing directly but attacks the queen on h5; after the queen moves, f7 is no longer in danger.",
+   "hint": "Develop a knight with a threat."
+  },
+  {
+   "type": "quiz",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - 3 3",
+   "prompt": "Which pawn does the White queen and bishop target?",
+   "correct": [
+    "f7"
+   ],
+   "options": [
+    "f7",
+    "a7"
+   ],
+   "explanation": "f7 is protected only by the king at the start, making it a weak point.",
+   "hint": "It is next to the black king."
+  },
+  {
+   "type": "quiz",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 3 3",
+   "prompt": "A better plan than an early queen sortie is...",
+   "correct": [
+    "Develop knights and bishops first"
+   ],
+   "options": [
+    "Develop knights and bishops first",
+    "Move the queen again and again"
+   ],
+   "explanation": "Pieces first, queen later.",
+   "hint": "The queen is valuable and can be chased."
+  }
+ ]
+}

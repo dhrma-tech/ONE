@@ -1,0 +1,77 @@
+{
+ "id": "bishop-moves",
+ "title": "How the bishop moves",
+ "section": "Basics",
+ "order": 4,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "4k3/8/8/8/3B4/8/8/4K3 w - - 0 1",
+   "prompt": "The bishop moves any number of squares diagonally and cannot jump over pieces.",
+   "correct": [],
+   "options": null,
+   "explanation": "The bishop moves any number of squares diagonally and cannot jump over pieces.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "square",
+   "fen": "4k3/8/8/8/3B4/8/8/4K3 w - - 0 1",
+   "prompt": "Tap any square the white bishop on d4 can reach.",
+   "correct": [
+    "a1",
+    "a7",
+    "b2",
+    "b6",
+    "c3",
+    "c5",
+    "e3",
+    "e5",
+    "f2",
+    "f6",
+    "g1",
+    "g7",
+    "h8"
+   ],
+   "options": null,
+   "explanation": "From d4 the bishop has four diagonals to slide along.",
+   "hint": "Diagonals only."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/5p2/8/3B4/8/8/4K3 w - - 0 1",
+   "prompt": "Capture the black pawn on f6.",
+   "correct": [
+    "d4f6"
+   ],
+   "options": null,
+   "explanation": "The pawn on f6 is on the same diagonal as the bishop (d4, e5, f6).",
+   "hint": "Go up and to the right."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/8/3B4/8/8/4K3 w - - 0 1",
+   "prompt": "A bishop starting on a light square can only ever stand on which squares?",
+   "correct": [
+    "Light squares"
+   ],
+   "options": [
+    "Light squares",
+    "Dark squares"
+   ],
+   "explanation": "A diagonal step always lands on the same colour, so each bishop is stuck on one colour for the whole game.",
+   "hint": "Diagonal steps never change colour."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/8/8/8/4B3/4K3 w - - 0 1",
+   "prompt": "Give check with the bishop.",
+   "correct": [
+    "e2b5",
+    "e2h5"
+   ],
+   "options": null,
+   "explanation": "From b5 or h5 the bishop sees the black king on e8 along a diagonal.",
+   "hint": "Find a square on a diagonal that leads to e8."
+  }
+ ]
+}

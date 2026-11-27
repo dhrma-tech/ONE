@@ -1,0 +1,58 @@
+{
+ "id": "scholars-mate-defend",
+ "title": "How to stop Scholar's mate",
+ "section": "Openings",
+ "order": 43,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - 3 3",
+   "prompt": "White's queen and bishop both aim at f7 and threaten Qxf7#. Beginners lose this way all the time. Learn the calm defences.",
+   "correct": [],
+   "options": null,
+   "explanation": "White's queen and bishop both aim at f7 and threaten Qxf7#. Beginners lose this way all the time. Learn the calm defences.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - 3 3",
+   "prompt": "Defend against Qxf7#.",
+   "correct": [
+    "g7g6",
+    "d8e7",
+    "d8f6"
+   ],
+   "options": null,
+   "explanation": "g6 blocks the queen and attacks it. Qe7 or Qf6 also guard f7.",
+   "hint": "Block the queen's path, or protect f7 with your queen."
+  },
+  {
+   "type": "move",
+   "fen": "r1bqkbnr/pppp1p1p/2n3p1/4p3/2B1P3/5Q2/PPPP1PPP/RNB1K1NR b KQkq - 1 4",
+   "prompt": "White tries again with Qf3, aiming at f7. Defend and develop at the same time.",
+   "correct": [
+    "g8f6",
+    "d8f6",
+    "d8e7"
+   ],
+   "options": null,
+   "explanation": "Nf6 blocks the queen and develops a piece: the best answer.",
+   "hint": "A knight on f6 blocks the f-file."
+  },
+  {
+   "type": "quiz",
+   "fen": "r1bqkbnr/pppp1p1p/2n3p1/4p3/2B1P3/5Q2/PPPP1PPP/RNB1K1NR b KQkq - 1 4",
+   "prompt": "Why is bringing the queen out early often bad for White?",
+   "correct": [
+    "It can be chased with tempo by developing moves"
+   ],
+   "options": [
+    "It can be chased with tempo by developing moves",
+    "Queens cannot move early",
+    "It is against the rules"
+   ],
+   "explanation": "Black develops with threats against the queen and gets ahead in development.",
+   "hint": "What happens when you attack the queen with a knight?"
+  }
+ ]
+}

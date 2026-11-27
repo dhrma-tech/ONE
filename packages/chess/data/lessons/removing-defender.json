@@ -1,0 +1,55 @@
+{
+ "id": "removing-defender",
+ "title": "Remove the defender",
+ "section": "Tactics",
+ "order": 37,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "6k1/8/2b5/8/3n4/4P3/8/2R3K1 w - - 0 1",
+   "prompt": "If a piece is only protected by one defender, capture or chase away that defender. Then the piece falls.",
+   "correct": [],
+   "options": null,
+   "explanation": "If a piece is only protected by one defender, capture or chase away that defender. Then the piece falls.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "6k1/8/2b5/8/3n4/4P3/8/2R3K1 w - - 0 1",
+   "prompt": "The knight on d4 defends the bishop on c6. Remove it.",
+   "correct": [
+    "e3d4",
+    "g1f2"
+   ],
+   "options": null,
+   "explanation": "exd4 wins the knight, and now the bishop on c6 is attacked by your rook too.",
+   "hint": "Your pawn can capture the defender."
+  },
+  {
+   "type": "move",
+   "fen": "6k1/8/2b5/8/3P4/8/8/2R3K1 w - - 0 1",
+   "prompt": "Now the bishop has no defender. Take it.",
+   "correct": [
+    "c1c6"
+   ],
+   "options": null,
+   "explanation": "Rxc6: with its defender gone, the bishop was free.",
+   "hint": "The rook goes straight up the c-file."
+  },
+  {
+   "type": "quiz",
+   "fen": "6k1/8/2b5/8/3n4/4P3/8/2R3K1 w - - 0 1",
+   "prompt": "What is the idea of this tactic?",
+   "correct": [
+    "Take away the piece that guards a target"
+   ],
+   "options": [
+    "Take away the piece that guards a target",
+    "Trade queens",
+    "Push a passed pawn"
+   ],
+   "explanation": "Find the guard, remove it, then win what it guarded.",
+   "hint": "Think about the job of the knight."
+  }
+ ]
+}

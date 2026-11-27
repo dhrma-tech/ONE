@@ -1,0 +1,67 @@
+{
+ "id": "endgame-king-and-pawn",
+ "title": "King and pawn endgames",
+ "section": "Endgames",
+ "order": 52,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "2k5/8/K7/8/2P5/8/8/8 w - - 0 1",
+   "prompt": "In pawn endgames the king is a fighting piece. Put your king in front of your pawn and use the opposition: kings face each other with one square between them, and the side that must move gives way.",
+   "correct": [],
+   "options": null,
+   "explanation": "In pawn endgames the king is a fighting piece. Put your king in front of your pawn and use the opposition: kings face each other with one square between them, and the side that must move gives way.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "2k5/8/K7/8/2P5/8/8/8 w - - 0 1",
+   "prompt": "White to move and win. Put your king in front of the pawn with the right move.",
+   "correct": [
+    "a6b6"
+   ],
+   "options": null,
+   "explanation": "Kb6 takes the key squares in front of the pawn; the king will escort the pawn up the board.",
+   "hint": "Move the king toward the front of the pawn."
+  },
+  {
+   "type": "move",
+   "fen": "8/8/8/8/3P4/7k/8/4K3 b - - 0 1",
+   "prompt": "Black to move and draw. Rush the king toward the pawn.",
+   "correct": [
+    "h3g4"
+   ],
+   "options": null,
+   "explanation": "Kg4 keeps the king within reach of the pawn and White's king is too far to protect it.",
+   "hint": "Head for the pawn."
+  },
+  {
+   "type": "quiz",
+   "fen": "2k5/8/K7/8/2P5/8/8/8 w - - 0 1",
+   "prompt": "When does a king in front of its pawn usually win?",
+   "correct": [
+    "When it reaches the key squares ahead of the pawn"
+   ],
+   "options": [
+    "When it reaches the key squares ahead of the pawn",
+    "Whenever it is on the same file"
+   ],
+   "explanation": "The key squares are the squares two ranks ahead of the pawn (and neighbours).",
+   "hint": "Look in front of the pawn."
+  },
+  {
+   "type": "quiz",
+   "fen": "8/8/8/8/3P4/7k/8/4K3 b - - 0 1",
+   "prompt": "A lone king's best defence against a far-away pawn is...",
+   "correct": [
+    "Get close and use the opposition"
+   ],
+   "options": [
+    "Get close and use the opposition",
+    "Stay in the corner"
+   ],
+   "explanation": "The defender wants to stand in front of the pawn.",
+   "hint": "Keep the king active."
+  }
+ ]
+}

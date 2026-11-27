@@ -1,0 +1,53 @@
+{
+ "id": "opening-castle",
+ "title": "Castle early",
+ "section": "Openings",
+ "order": 41,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+   "prompt": "Castling tucks the king behind a wall of pawns and brings a rook toward the centre. Most players should castle within the first ten moves.",
+   "correct": [],
+   "options": null,
+   "explanation": "Castling tucks the king behind a wall of pawns and brings a rook toward the centre. Most players should castle within the first ten moves.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+   "prompt": "White has developed a knight and a bishop. Castle now.",
+   "correct": [
+    "e1g1"
+   ],
+   "options": null,
+   "explanation": "The squares between king and rook are empty, so short castling is available.",
+   "hint": "King two squares to the right."
+  },
+  {
+   "type": "move",
+   "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQ1RK1 b kq - 6 5",
+   "prompt": "Black to move. Castle kingside.",
+   "correct": [
+    "e8g8"
+   ],
+   "options": null,
+   "explanation": "Now both kings are safe and both rooks can join the game.",
+   "hint": "King two squares toward the h-file."
+  },
+  {
+   "type": "quiz",
+   "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+   "prompt": "Why is a king in the centre risky?",
+   "correct": [
+    "Lines open up and attackers arrive quickly"
+   ],
+   "options": [
+    "Lines open up and attackers arrive quickly",
+    "It blocks the queen"
+   ],
+   "explanation": "Open files and diagonals leading to the centre are easy for enemy pieces to use.",
+   "hint": "Think of open lines."
+  }
+ ]
+}

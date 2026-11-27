@@ -1,0 +1,68 @@
+{
+ "id": "pawn-moves",
+ "title": "How the pawn moves",
+ "section": "Basics",
+ "order": 8,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "4k3/8/8/8/8/8/4P3/4K3 w - - 0 1",
+   "prompt": "Pawns move forward one square, but from their starting square they may move two. They never move backward.",
+   "correct": [],
+   "options": null,
+   "explanation": "Pawns move forward one square, but from their starting square they may move two. They never move backward.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/8/8/8/4P3/4K3 w - - 0 1",
+   "prompt": "Advance the pawn. Choose one or two squares.",
+   "correct": [
+    "e2e3",
+    "e2e4"
+   ],
+   "options": null,
+   "explanation": "Both are legal on the pawn's first move. Two squares claims more space.",
+   "hint": "Forward only."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/3p4/4P3/8/8/4K3 w - - 0 1",
+   "prompt": "Pawns capture diagonally forward. Capture the pawn on d5.",
+   "correct": [
+    "e4d5"
+   ],
+   "options": null,
+   "explanation": "Unlike their move, pawn captures go one square diagonally forward.",
+   "hint": "Go diagonally up-left."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/3p4/3P4/8/8/4K3 w - - 0 1",
+   "prompt": "Can the white pawn on d4 capture the black pawn on d5 straight ahead?",
+   "correct": [
+    "No"
+   ],
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "explanation": "Pawns only capture diagonally. Head-to-head pawns block each other.",
+   "hint": "Captures are diagonal."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/8/8/8/4P3/4K3 w - - 0 1",
+   "prompt": "After its first move, how many squares can a pawn advance?",
+   "correct": [
+    "One"
+   ],
+   "options": [
+    "One",
+    "Two"
+   ],
+   "explanation": "The double step is only allowed from the starting square.",
+   "hint": "The double step is a one-time option."
+  }
+ ]
+}

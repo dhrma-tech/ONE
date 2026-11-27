@@ -91,7 +91,7 @@ describe("weekly grade", () => {
 describe("facts", () => {
   it("aggregates rows into days", () => {
     const empty = Object.fromEntries(
-      ["focus_sessions", "tasks", "meditation_sessions", "flashcard_reviews", "reading_sessions", "chess_events", "workouts", "diet_logs", "water_logs", "weigh_ins", "persona_daily", "speaking_recordings", "contacts", "presence_ticks", "posts", "github_snapshots", "daily_reviews", "problem_log", "video_progress", "xp_events", "units"].map((k) => [k, []]),
+      ["focus_sessions", "tasks", "meditation_sessions", "flashcard_reviews", "reading_sessions", "chess_events", "workouts", "diet_logs", "water_logs", "weigh_ins", "persona_daily", "speaking_recordings", "contacts", "presence_ticks", "posts", "github_snapshots", "daily_reviews", "problem_log", "video_progress", "xp_events", "units", "chess_snapshots"].map((k) => [k, []]),
     ) as unknown as FactRows;
     const rows = {
       ...empty,

@@ -1,0 +1,70 @@
+{
+ "id": "pawn-structure",
+ "title": "Pawn structure",
+ "section": "Strategy",
+ "order": 49,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "4k3/pp4pp/8/3P4/8/8/PP4PP/4K3 w - - 0 1",
+   "prompt": "A passed pawn has no enemy pawns in front of it on its own file or the files next to it. Nothing can stop it except pieces, so it is a big strength.",
+   "correct": [],
+   "options": null,
+   "explanation": "A passed pawn has no enemy pawns in front of it on its own file or the files next to it. Nothing can stop it except pieces, so it is a big strength.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "square",
+   "fen": "4k3/pp4pp/8/3P4/8/8/PP4PP/4K3 w - - 0 1",
+   "prompt": "Click White's passed pawn.",
+   "correct": [
+    "d5"
+   ],
+   "options": null,
+   "explanation": "d5 is passed: no black pawns on the c, d or e files.",
+   "hint": "Which white pawn has a free road?"
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/pp2pppp/8/8/3P4/8/PP3PPP/4K3 w - - 0 1",
+   "prompt": "What do we call the white pawn on d4?",
+   "correct": [
+    "Isolated"
+   ],
+   "options": [
+    "Isolated",
+    "Passed",
+    "Doubled"
+   ],
+   "explanation": "No white pawns on the c- or e-files can protect it: an isolated pawn is a target.",
+   "hint": "Look at its neighbours."
+  },
+  {
+   "type": "square",
+   "fen": "4k3/pppp1ppp/8/8/8/2P5/P1P2PPP/4K3 w - - 0 1",
+   "prompt": "Click one of White's doubled pawns.",
+   "correct": [
+    "c2",
+    "c3"
+   ],
+   "options": null,
+   "explanation": "Two pawns on the same file are doubled. They cannot protect each other.",
+   "hint": "Two pawns on one file."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/pp4pp/8/3P4/8/8/PP4PP/4K3 w - - 0 1",
+   "prompt": "What should you usually do with a passed pawn?",
+   "correct": [
+    "Push it, with your pieces supporting it"
+   ],
+   "options": [
+    "Push it, with your pieces supporting it",
+    "Leave it at home",
+    "Trade it for a knight"
+   ],
+   "explanation": "'Passed pawns must be pushed', especially in the endgame.",
+   "hint": "It wants to promote."
+  }
+ ]
+}

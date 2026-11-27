@@ -1,0 +1,520 @@
+[
+ {
+  "id": "fork",
+  "tags": [
+   "fork",
+   "tactic"
+  ],
+  "title": "Fork",
+  "text": "A fork is one piece attacking two or more enemy pieces at once. Knights, pawns and queens fork most often. Before playing one, make sure the forking piece cannot simply be captured."
+ },
+ {
+  "id": "knight-fork",
+  "tags": [
+   "fork",
+   "knight",
+   "tactic"
+  ],
+  "title": "Knight fork",
+  "text": "A knight attacks eight squares in an L pattern that is easy to overlook. A knight check that also hits a rook or queen wins material because checks cannot be blocked by interposing."
+ },
+ {
+  "id": "pawn-fork",
+  "tags": [
+   "fork",
+   "pawn",
+   "tactic"
+  ],
+  "title": "Pawn fork",
+  "text": "A pawn move that attacks two pieces at once wins material when the pawn is safe. Look for enemy pieces placed on the same rank, two files apart."
+ },
+ {
+  "id": "pin",
+  "tags": [
+   "pin",
+   "tactic"
+  ],
+  "title": "Pin",
+  "text": "A pin attacks a piece that cannot move without exposing something more valuable behind it. An absolute pin shields the king and makes the move illegal. Pile up attackers on the pinned piece."
+ },
+ {
+  "id": "relative-pin",
+  "tags": [
+   "pin",
+   "tactic"
+  ],
+  "title": "Relative pin",
+  "text": "In a relative pin the piece behind the pinned one is valuable but not the king. The pinned piece can legally move, but doing so loses material. Treat it as nearly frozen."
+ },
+ {
+  "id": "skewer",
+  "tags": [
+   "skewer",
+   "tactic"
+  ],
+  "title": "Skewer",
+  "text": "A skewer attacks a valuable piece that must move, exposing a less valuable piece behind it on the same line. It works like a pin in reverse and is delivered by bishops, rooks and queens."
+ },
+ {
+  "id": "discovered-attack",
+  "tags": [
+   "discovered",
+   "tactic"
+  ],
+  "title": "Discovered attack",
+  "text": "Move a piece that stands in front of a bishop, rook or queen, uncovering its attack. If the moving piece also makes a threat, such as a check, the opponent cannot meet both."
+ },
+ {
+  "id": "discovered-check",
+  "tags": [
+   "discovered",
+   "check",
+   "tactic"
+  ],
+  "title": "Discovered check",
+  "text": "A discovered check uncovers a check from a piece behind. The piece that moved is then free to capture something or make a second threat, because the opponent must answer the check first."
+ },
+ {
+  "id": "double-check",
+  "tags": [
+   "double_check",
+   "discovered",
+   "tactic"
+  ],
+  "title": "Double check",
+  "text": "A double check is a check from two pieces at once. It cannot be answered by capturing or blocking, so the king must move. It often leads to mate."
+ },
+ {
+  "id": "back-rank",
+  "tags": [
+   "back_rank",
+   "mate_threat",
+   "tactic"
+  ],
+  "title": "Back-rank mate",
+  "text": "A king trapped behind its own pawns on the first or eighth rank can be checkmated by a rook or queen along that rank. Prevent it by making luft, an escape square, or keeping a rook on the back rank."
+ },
+ {
+  "id": "luft",
+  "tags": [
+   "back_rank",
+   "defence"
+  ],
+  "title": "Making luft",
+  "text": "Luft is German for air. Moving a pawn in front of the castled king, usually h3 or h6, gives it an escape square and removes back-rank mate threats. Do it before you need it."
+ },
+ {
+  "id": "hanging-piece",
+  "tags": [
+   "hanging_piece",
+   "tactic"
+  ],
+  "title": "Hanging pieces",
+  "text": "A hanging piece is attacked and not defended. Before every move, scan for your opponent's loose pieces and for your own. Most beginner games are decided by pieces left hanging."
+ },
+ {
+  "id": "trapped-piece",
+  "tags": [
+   "trapped_piece",
+   "tactic"
+  ],
+  "title": "Trapped piece",
+  "text": "A piece is trapped when every square it can move to is attacked and it cannot be defended enough. Greedy captures by bishops and queens far from home often end up trapped."
+ },
+ {
+  "id": "deflection",
+  "tags": [
+   "deflection",
+   "tactic"
+  ],
+  "title": "Deflection",
+  "text": "Deflection forces an enemy piece away from an important duty, such as guarding a square or a piece, usually by attacking it or offering a sacrifice. Then you take what it left behind."
+ },
+ {
+  "id": "decoy",
+  "tags": [
+   "decoy",
+   "tactic"
+  ],
+  "title": "Decoy",
+  "text": "A decoy lures an enemy piece onto a bad square, often with a sacrifice, so you can fork it, mate it or win material. Ask what the opponent's piece would be forced to capture."
+ },
+ {
+  "id": "removing-the-defender",
+  "tags": [
+   "removing_defender",
+   "tactic"
+  ],
+  "title": "Removing the defender",
+  "text": "If a piece is protected by only one piece, capture or chase the defender first. Count attackers against defenders before you capture on any square."
+ },
+ {
+  "id": "overloaded-piece",
+  "tags": [
+   "overloaded",
+   "tactic"
+  ],
+  "title": "Overloaded piece",
+  "text": "A piece that guards two things at once is overloaded. Attack one of them, and the defender cannot do both jobs. Look for pieces that protect the king and another piece together."
+ },
+ {
+  "id": "zwischenzug",
+  "tags": [
+   "zwischenzug",
+   "tactic"
+  ],
+  "title": "Intermediate move",
+  "text": "A zwischenzug is an unexpected in-between move, often a check or a bigger threat, played before the expected recapture. Always see if you have one before recapturing automatically."
+ },
+ {
+  "id": "x-ray",
+  "tags": [
+   "x_ray",
+   "tactic"
+  ],
+  "title": "X-ray",
+  "text": "An x-ray is an attack through another piece. A rook can defend a square through an enemy piece standing in the way. Remember it when counting attackers and defenders."
+ },
+ {
+  "id": "smothered-mate",
+  "tags": [
+   "mate_pattern",
+   "mate_threat",
+   "tactic"
+  ],
+  "title": "Smothered mate",
+  "text": "A knight checkmates a king that is boxed in by its own pieces. The knight is the only piece that can give check without being blocked or captured, which is why this pattern works."
+ },
+ {
+  "id": "mate-threat",
+  "tags": [
+   "mate_threat",
+   "tactic"
+  ],
+  "title": "Spotting mate threats",
+  "text": "Each turn, ask which checks and forcing moves your opponent has, and what they threaten after your move. Missing a one-move mate threat is the most common way to lose a game quickly."
+ },
+ {
+  "id": "perpetual-check",
+  "tags": [
+   "perpetual_check",
+   "defence"
+  ],
+  "title": "Perpetual check",
+  "text": "If you are losing, a repeating series of checks gives a draw. Look for it when the enemy king has few safe squares. Conversely, when you are ahead, give your king a safe place to hide."
+ },
+ {
+  "id": "checks-captures-threats",
+  "tags": [
+   "calculation",
+   "habit"
+  ],
+  "title": "Checks, captures, threats",
+  "text": "When choosing a move, look at every check, then every capture, then every threat. Forcing moves limit your opponent's replies and make calculation easier."
+ },
+ {
+  "id": "opening-centre",
+  "tags": [
+   "opening",
+   "opening_principle"
+  ],
+  "title": "Control the centre",
+  "text": "Pawns and pieces on or aiming at d4, e4, d5 and e5 control more squares and move faster to either wing. Start by moving a central pawn two squares."
+ },
+ {
+  "id": "opening-development",
+  "tags": [
+   "opening",
+   "opening_principle",
+   "development"
+  ],
+  "title": "Develop your pieces",
+  "text": "Bring out your knights and bishops quickly, each with a purpose. Every move in the opening should add a new piece to the game, ideally with a threat or toward castling."
+ },
+ {
+  "id": "opening-castle",
+  "tags": [
+   "opening",
+   "opening_principle",
+   "castling",
+   "king_safety"
+  ],
+  "title": "Castle early",
+  "text": "Castling moves your king to safety and activates a rook. Usually castle in the first ten moves, before the centre opens. Check that no square along the path is attacked."
+ },
+ {
+  "id": "opening-knights-before-bishops",
+  "tags": [
+   "opening",
+   "opening_principle"
+  ],
+  "title": "Knights before bishops",
+  "text": "Knights usually have an obvious best square, such as f3 or c3. Bishops need more information about the pawn structure, so decide their squares after the knights are out."
+ },
+ {
+  "id": "opening-no-early-queen",
+  "tags": [
+   "opening",
+   "opening_principle",
+   "queen_early"
+  ],
+  "title": "Do not rush the queen",
+  "text": "An early queen can be hit by developing moves, costing you tempi. Develop minor pieces first and bring the queen out when it has a clear job."
+ },
+ {
+  "id": "opening-same-piece-twice",
+  "tags": [
+   "opening",
+   "opening_principle",
+   "tempo"
+  ],
+  "title": "Move each piece once",
+  "text": "In the opening, moving the same piece twice usually wastes a tempo unless it wins material or makes a major threat. Prefer developing a new piece."
+ },
+ {
+  "id": "opening-pawn-moves",
+  "tags": [
+   "opening",
+   "opening_principle"
+  ],
+  "title": "Limit pawn moves",
+  "text": "Pawns cannot move backward, so each pawn move is permanent. Make only the pawn moves that claim the centre or free a bishop, and avoid weakening the squares in front of your king."
+ },
+ {
+  "id": "opening-knights-on-rim",
+  "tags": [
+   "opening",
+   "opening_principle",
+   "knight"
+  ],
+  "title": "Knights on the rim",
+  "text": "A knight on the edge attacks only a few squares. Keep knights near the centre, where they attack up to eight squares and support your pawns."
+ },
+ {
+  "id": "opening-flank-attack",
+  "tags": [
+   "opening",
+   "opening_principle"
+  ],
+  "title": "Respond to a flank by striking the centre",
+  "text": "If your opponent starts on the wing, respond in the centre. A strong centre is the best answer to flank play because it keeps your pieces ahead in space."
+ },
+ {
+  "id": "opening-plan",
+  "tags": [
+   "opening",
+   "opening_principle"
+  ],
+  "title": "Know your opening ideas",
+  "text": "Learn the ideas behind a few openings rather than long move sequences: where the pieces go, which pawn breaks matter and where the king goes. Ideas survive an opponent's surprises."
+ },
+ {
+  "id": "endgame-king-active",
+  "tags": [
+   "endgame",
+   "endgame_k_p",
+   "king_activity"
+  ],
+  "title": "Activate the king",
+  "text": "In the endgame, the king becomes a strong fighting piece. Centralise it early to support pawns, attack enemy pawns and block enemy passers."
+ },
+ {
+  "id": "endgame-opposition",
+  "tags": [
+   "endgame",
+   "endgame_k_p",
+   "opposition"
+  ],
+  "title": "Opposition",
+  "text": "Kings face each other with one square between them, and the side to move must give way. Having the opposition lets you push the enemy king back and decides many king-and-pawn endings."
+ },
+ {
+  "id": "endgame-rule-of-square",
+  "tags": [
+   "endgame",
+   "endgame_k_p",
+   "rule_of_square"
+  ],
+  "title": "Rule of the square",
+  "text": "Draw a square from the pawn to its promotion square. If the defending king can step inside it, it catches the pawn. Otherwise the pawn promotes."
+ },
+ {
+  "id": "endgame-passed-pawn",
+  "tags": [
+   "endgame",
+   "endgame_k_p",
+   "passed_pawn"
+  ],
+  "title": "Passed pawns",
+  "text": "A passed pawn has no enemy pawns blocking it or guarding its path. It ties up opposing pieces, so push it when your king and pieces can support it."
+ },
+ {
+  "id": "endgame-rook-behind-pawn",
+  "tags": [
+   "endgame",
+   "endgame_rook",
+   "rook_behind_pawn"
+  ],
+  "title": "Rooks behind passed pawns",
+  "text": "Place your rook behind your passed pawn, or behind the enemy's. Behind the pawn it grows more powerful as the pawn advances and never gets in the pawn's way."
+ },
+ {
+  "id": "endgame-rook-active",
+  "tags": [
+   "endgame",
+   "endgame_rook",
+   "active_rook"
+  ],
+  "title": "Active rooks",
+  "text": "In rook endings an active rook is worth more than a pawn. Seek open files, attack pawns from behind and check the enemy king from the side to keep it cut off."
+ },
+ {
+  "id": "endgame-lucena",
+  "tags": [
+   "endgame",
+   "endgame_rook",
+   "lucena"
+  ],
+  "title": "Lucena position",
+  "text": "A rook and a pawn on the seventh rank, your king in front of it and the enemy king cut off, is a theoretical win by building a bridge with the rook to shield your king from checks."
+ },
+ {
+  "id": "endgame-philidor",
+  "tags": [
+   "endgame",
+   "endgame_rook",
+   "philidor"
+  ],
+  "title": "Philidor position",
+  "text": "As the defender in a rook ending, keep your rook on the third rank so the enemy king cannot advance. When the pawn reaches the sixth rank, switch to checking from behind."
+ },
+ {
+  "id": "endgame-wrong-bishop",
+  "tags": [
+   "endgame",
+   "endgame_k_p",
+   "wrong_bishop"
+  ],
+  "title": "Wrong-coloured bishop",
+  "text": "A bishop and a rook pawn draw if the bishop cannot control the promotion corner and the defending king reaches it. The same pawn with the right bishop wins."
+ },
+ {
+  "id": "endgame-zugzwang",
+  "tags": [
+   "endgame",
+   "zugzwang"
+  ],
+  "title": "Zugzwang",
+  "text": "Zugzwang is when any move you make worsens your position and you would prefer to pass. It is common in king and pawn endings and decides the opposition fights."
+ },
+ {
+  "id": "endgame-trade-when-ahead",
+  "tags": [
+   "endgame",
+   "strategy"
+  ],
+  "title": "Trade pieces when ahead",
+  "text": "When you are ahead in material, trade pieces. Fewer pieces make your extra material count more and reduce your opponent's counterplay. Avoid trading pawns."
+ },
+ {
+  "id": "endgame-bishop-pair",
+  "tags": [
+   "endgame",
+   "strategy"
+  ],
+  "title": "Bishops versus knights",
+  "text": "Bishops are best in open positions with pawns on both wings. Knights prefer closed positions with blocked pawns and strong outposts."
+ },
+ {
+  "id": "mistake-hanging",
+  "tags": [
+   "hanging_piece",
+   "beginner_mistake"
+  ],
+  "title": "Leaving pieces hanging",
+  "text": "Before moving, check what the move leaves undefended and what your opponent's last move attacks. A simple check each turn prevents most lost pieces."
+ },
+ {
+  "id": "mistake-greedy",
+  "tags": [
+   "hanging_piece",
+   "beginner_mistake",
+   "greed"
+  ],
+  "title": "Greedy captures",
+  "text": "A free-looking pawn may be bait. Before capturing, ask what the capture opens up: a file, a diagonal or a fork. If you take, be sure of your piece's way back."
+ },
+ {
+  "id": "mistake-ignore-threat",
+  "tags": [
+   "mate_threat",
+   "beginner_mistake"
+  ],
+  "title": "Ignoring the opponent's move",
+  "text": "Always ask why your opponent made their last move. Most blunders happen because the threat created by the previous move was never considered."
+ },
+ {
+  "id": "mistake-time-trouble",
+  "tags": [
+   "time_trouble",
+   "beginner_mistake"
+  ],
+  "title": "Time trouble",
+  "text": "Spending too long early leaves no time for the critical moment. Play opening moves quickly, think hardest when the position changes sharply, and keep a rough budget per move."
+ },
+ {
+  "id": "mistake-passive-play",
+  "tags": [
+   "strategy",
+   "beginner_mistake"
+  ],
+  "title": "Passive play",
+  "text": "Shuffling pieces without a plan gives your opponent time. Improve your worst-placed piece each move, or create a clear threat."
+ },
+ {
+  "id": "mistake-no-castle",
+  "tags": [
+   "castling",
+   "king_safety",
+   "beginner_mistake"
+  ],
+  "title": "Delaying castling",
+  "text": "A king left in the centre becomes a target when files open. If you cannot castle soon, at least avoid opening the centre."
+ },
+ {
+  "id": "mistake-pawn-grabbing",
+  "tags": [
+   "opening",
+   "beginner_mistake"
+  ],
+  "title": "Pawn grabbing",
+  "text": "Spending several early moves to win one pawn lets your opponent develop quickly and attack. Development beats a lone pawn in most openings."
+ },
+ {
+  "id": "mistake-one-move-plan",
+  "tags": [
+   "strategy",
+   "beginner_mistake"
+  ],
+  "title": "Planning one move at a time",
+  "text": "Even a simple plan helps: improve the pieces, secure the king, create a target. Without it, small mistakes pile up."
+ },
+ {
+  "id": "mistake-trades-without-reason",
+  "tags": [
+   "strategy",
+   "beginner_mistake"
+  ],
+  "title": "Random trades",
+  "text": "Trade pieces for a reason: to win material, relieve a cramped position, remove a strong enemy piece or simplify when ahead. Avoid trading away your attackers."
+ },
+ {
+  "id": "habit-blunder-check",
+  "tags": [
+   "habit",
+   "beginner_mistake"
+  ],
+  "title": "Blunder check",
+  "text": "Before you press a move, scan for captures, checks and threats against you after the move is played. This takes a few seconds and prevents most one-move blunders."
+ }
+]

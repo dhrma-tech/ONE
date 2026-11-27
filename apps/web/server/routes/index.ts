@@ -4,6 +4,7 @@ import { video } from "./video.js";
 import { news } from "./news.js";
 import { linkTitle } from "./linkTitle.js";
 import { leetcode } from "./leetcode.js";
+import { chesscom } from "./chesscom.js";
 
 export const routes: Record<string, Handler> = {
   "GET /api/health": async () => json({ ok: true, service: "one", time: new Date().toISOString() }),
@@ -11,4 +12,5 @@ export const routes: Record<string, Handler> = {
   "GET /api/news": news,
   "GET /api/link-title": linkTitle,
   "GET /api/leetcode": leetcode,
+  "GET /api/chesscom": chesscom,
 };

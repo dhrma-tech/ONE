@@ -1,0 +1,70 @@
+{
+ "id": "piece-values",
+ "title": "What the pieces are worth",
+ "section": "Basics",
+ "order": 10,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "A rough scale helps you judge trades: pawn 1, knight 3, bishop 3, rook 5, queen 9. The king is priceless.",
+   "correct": [],
+   "options": null,
+   "explanation": "A rough scale helps you judge trades: pawn 1, knight 3, bishop 3, rook 5, queen 9. The king is priceless.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "quiz",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Which trade is generally good for you?",
+   "correct": [
+    "Your knight for their rook"
+   ],
+   "options": [
+    "Your rook for their knight",
+    "Your knight for their rook"
+   ],
+   "explanation": "Giving 3 points to win 5 points is a gain of 2.",
+   "hint": "Compare the numbers."
+  },
+  {
+   "type": "quiz",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Which is worth more?",
+   "correct": [
+    "Two minor pieces"
+   ],
+   "options": [
+    "Two minor pieces",
+    "A single rook"
+   ],
+   "explanation": "Two minor pieces equal 6 points against the rook's 5, and they usually coordinate well.",
+   "hint": "Add the values."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/3r4/4P3/8/8/4K3 w - - 0 1",
+   "prompt": "Win material: capture the rook with your pawn.",
+   "correct": [
+    "e4d5"
+   ],
+   "options": null,
+   "explanation": "A pawn (1) takes a rook (5): a gain of 4 points.",
+   "hint": "Pawns capture diagonally."
+  },
+  {
+   "type": "quiz",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Values are a guide only. What else can matter more than points?",
+   "correct": [
+    "Checkmate and king safety"
+   ],
+   "options": [
+    "Checkmate and king safety",
+    "The colour of the pieces"
+   ],
+   "explanation": "A sacrifice that leads to mate is worth more than any material.",
+   "hint": "What ends the game?"
+  }
+ ]
+}

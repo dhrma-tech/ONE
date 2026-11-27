@@ -1,0 +1,56 @@
+{
+ "id": "practice-routine",
+ "title": "How to improve every day",
+ "section": "Good habits",
+ "order": 64,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "A simple daily routine works best: 10 minutes of puzzles, one game you think about, and a quick review of that game. Bobby's daily plan in Train follows exactly this.",
+   "correct": [],
+   "options": null,
+   "explanation": "A simple daily routine works best: 10 minutes of puzzles, one game you think about, and a quick review of that game. Bobby's daily plan in Train follows exactly this.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "quiz",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "What helps beginners improve fastest?",
+   "correct": [
+    "Tactics puzzles and reviewing your own games"
+   ],
+   "options": [
+    "Tactics puzzles and reviewing your own games",
+    "Memorising long opening lines",
+    "Only playing fast games"
+   ],
+   "explanation": "Most beginner games are decided by tactics. Puzzles train your eye, reviews fix your habits.",
+   "hint": "What decides most beginner games?"
+  },
+  {
+   "type": "quiz",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "After losing a game, what should you do?",
+   "correct": [
+    "Review it to find the turning point"
+   ],
+   "options": [
+    "Review it to find the turning point",
+    "Play again right away",
+    "Forget it"
+   ],
+   "explanation": "Every loss shows you something. Bobby turns your mistakes into puzzles for you.",
+   "hint": "Learn from it."
+  },
+  {
+   "type": "info",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Keep your streak going in Train > Challenges, and come back to these lessons whenever a weakness shows up in your games.",
+   "correct": [],
+   "options": null,
+   "explanation": "Keep your streak going in Train > Challenges, and come back to these lessons whenever a weakness shows up in your games.",
+   "hint": "Read, then continue."
+  }
+ ]
+}

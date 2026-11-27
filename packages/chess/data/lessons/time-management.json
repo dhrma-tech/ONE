@@ -1,0 +1,56 @@
+{
+ "id": "time-management",
+ "title": "Using your time",
+ "section": "Good habits",
+ "order": 63,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Play the opening at a steady pace, spend your time on the critical moments (captures, attacks, the moment the position changes), and never let your clock run very low.",
+   "correct": [],
+   "options": null,
+   "explanation": "Play the opening at a steady pace, spend your time on the critical moments (captures, attacks, the moment the position changes), and never let your clock run very low.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "quiz",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "When should you think the longest?",
+   "correct": [
+    "At critical moments, like captures and attacks"
+   ],
+   "options": [
+    "At critical moments, like captures and attacks",
+    "On the first move",
+    "When the position is quiet and simple"
+   ],
+   "explanation": "Invest time where one move changes the result.",
+   "hint": "Where are mistakes most costly?"
+  },
+  {
+   "type": "quiz",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "You have 30 seconds left and a winning position. What should you do?",
+   "correct": [
+    "Play simple safe moves quickly"
+   ],
+   "options": [
+    "Play simple safe moves quickly",
+    "Look for the most beautiful move",
+    "Offer a draw"
+   ],
+   "explanation": "Under time pressure, safe and simple beats brilliant.",
+   "hint": "Don't lose on time."
+  },
+  {
+   "type": "info",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Tip: in a 10-minute game, aim to have about half your time left after move 15. Use the time controls in New game to practise.",
+   "correct": [],
+   "options": null,
+   "explanation": "Tip: in a 10-minute game, aim to have about half your time left after move 15. Use the time controls in New game to practise.",
+   "hint": "Read, then continue."
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+{
+ "id": "check",
+ "title": "Check",
+ "section": "Check and mate",
+ "order": 15,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "4r1k1/8/8/8/8/8/3B4/4K3 w - - 0 1",
+   "prompt": "A king under attack is in check. You must answer it at once; there are exactly three ways: capture the checker, block the line, or move the king.",
+   "correct": [],
+   "options": null,
+   "explanation": "A king under attack is in check. You must answer it at once; there are exactly three ways: capture the checker, block the line, or move the king.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/8/8/8/4q3/4K3 w - - 0 1",
+   "prompt": "Your king is in check from the queen. Capture her.",
+   "correct": [
+    "e1e2"
+   ],
+   "options": null,
+   "explanation": "The queen is undefended, so the king can simply take it.",
+   "hint": "The queen is next to your king."
+  },
+  {
+   "type": "move",
+   "fen": "4r1k1/8/8/8/8/8/3B4/4K3 w - - 0 1",
+   "prompt": "The rook checks along the e-file. Block it with the bishop.",
+   "correct": [
+    "d2e3"
+   ],
+   "options": null,
+   "explanation": "A block works against checks from bishops, rooks and queens, but not knights.",
+   "hint": "Put the bishop between rook and king."
+  },
+  {
+   "type": "move",
+   "fen": "4r1k1/8/8/8/8/8/3B4/4K3 w - - 0 1",
+   "prompt": "Now escape instead: step the king off the e-file.",
+   "correct": [
+    "e1d1",
+    "e1f1",
+    "e1f2"
+   ],
+   "options": null,
+   "explanation": "Moving away is the third option. Check that the new square is not attacked.",
+   "hint": "Any safe neighbouring square off the e-file."
+  },
+  {
+   "type": "quiz",
+   "fen": "4r1k1/8/8/8/8/8/3B4/4K3 w - - 0 1",
+   "prompt": "Can you leave your king in check and make another move?",
+   "correct": [
+    "No"
+   ],
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "explanation": "Any move that leaves your king attacked is illegal.",
+   "hint": "You must always resolve check."
+  },
+  {
+   "type": "quiz",
+   "fen": "4r1k1/8/8/8/8/8/3B4/4K3 w - - 0 1",
+   "prompt": "Which piece's check can never be blocked?",
+   "correct": [
+    "Knight"
+   ],
+   "options": [
+    "Knight",
+    "Rook"
+   ],
+   "explanation": "Knights jump, so there is no line to block. You must capture it or move the king.",
+   "hint": "Which piece jumps?"
+  }
+ ]
+}

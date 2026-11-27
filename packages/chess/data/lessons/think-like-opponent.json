@@ -1,0 +1,62 @@
+{
+ "id": "think-like-opponent",
+ "title": "Think like your opponent",
+ "section": "Good habits",
+ "order": 62,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+   "prompt": "After your opponent moves, ask 'why did they play that?' Every move has a purpose: an attack, a threat, a plan. Find it before you answer.",
+   "correct": [],
+   "options": null,
+   "explanation": "After your opponent moves, ask 'why did they play that?' Every move has a purpose: an attack, a threat, a plan. Find it before you answer.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "quiz",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+   "prompt": "White just played Nf3. What does it attack?",
+   "correct": [
+    "The pawn on e5"
+   ],
+   "options": [
+    "The pawn on e5",
+    "The king",
+    "The knight on b8"
+   ],
+   "explanation": "Nf3 attacks e5, so Black defends it with ...Nc6.",
+   "hint": "Look at the knight's squares."
+  },
+  {
+   "type": "quiz",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - 3 3",
+   "prompt": "White just played Qh5. What is the threat?",
+   "correct": [
+    "Qxf7 checkmate"
+   ],
+   "options": [
+    "Qxf7 checkmate",
+    "Qxh7",
+    "Nothing"
+   ],
+   "explanation": "Queen and bishop both aim at f7: a mate threat.",
+   "hint": "Follow both pieces' lines."
+  },
+  {
+   "type": "quiz",
+   "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+   "prompt": "Your opponent's move doesn't seem to do anything. What should you do?",
+   "correct": [
+    "Look again for a hidden threat, then make your plan"
+   ],
+   "options": [
+    "Look again for a hidden threat, then make your plan",
+    "Ignore it",
+    "Copy their move"
+   ],
+   "explanation": "Quiet moves often prepare a tactic. If there is truly nothing, carry on with your plan.",
+   "hint": "Be suspicious first."
+  }
+ ]
+}

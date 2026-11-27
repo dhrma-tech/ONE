@@ -1,0 +1,54 @@
+{
+ "id": "arabian-mate",
+ "title": "Rook and knight: the Arabian mate",
+ "section": "Mating patterns",
+ "order": 27,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "7k/1R6/5N2/8/8/8/8/6K1 w - - 0 1",
+   "prompt": "In the Arabian mate a rook checks next to the king in the corner and a knight protects the rook and covers the last escape square.",
+   "correct": [],
+   "options": null,
+   "explanation": "In the Arabian mate a rook checks next to the king in the corner and a knight protects the rook and covers the last escape square.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "7k/1R6/5N2/8/8/8/8/6K1 w - - 0 1",
+   "prompt": "Checkmate in one.",
+   "correct": [
+    "b7h7"
+   ],
+   "options": null,
+   "explanation": "Rh7#: the knight on f6 protects the rook and covers g8.",
+   "hint": "Slide the rook along the 7th rank."
+  },
+  {
+   "type": "square",
+   "fen": "7k/7R/5N2/8/8/8/8/6K1 b - - 0 1",
+   "prompt": "Which escape square does the knight cover?",
+   "correct": [
+    "g8"
+   ],
+   "options": null,
+   "explanation": "The knight on f6 controls g8 and h7.",
+   "hint": "Squares next to the black king."
+  },
+  {
+   "type": "quiz",
+   "fen": "7k/7R/5N2/8/8/8/8/6K1 b - - 0 1",
+   "prompt": "Why can't the king take the rook on h7?",
+   "correct": [
+    "The knight protects it"
+   ],
+   "options": [
+    "The knight protects it",
+    "Kings cannot capture",
+    "It is not Black's move"
+   ],
+   "explanation": "A king can never capture a protected piece.",
+   "hint": "Who guards h7?"
+  }
+ ]
+}

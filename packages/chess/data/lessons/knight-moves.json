@@ -1,0 +1,73 @@
+{
+ "id": "knight-moves",
+ "title": "How the knight moves",
+ "section": "Basics",
+ "order": 6,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "4k3/8/8/8/3N4/8/8/4K3 w - - 0 1",
+   "prompt": "The knight moves in an L: two squares in one direction and one square sideways. It is the only piece that can jump over others.",
+   "correct": [],
+   "options": null,
+   "explanation": "The knight moves in an L: two squares in one direction and one square sideways. It is the only piece that can jump over others.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "square",
+   "fen": "4k3/8/8/8/3N4/8/8/4K3 w - - 0 1",
+   "prompt": "Tap any square the knight on d4 can jump to.",
+   "correct": [
+    "b3",
+    "b5",
+    "c2",
+    "c6",
+    "e2",
+    "e6",
+    "f3",
+    "f5"
+   ],
+   "options": null,
+   "explanation": "A knight in the centre has eight possible squares, all of the opposite colour to the one it stands on.",
+   "hint": "Two steps then one step to the side."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/4p3/8/3N4/8/8/4K3 w - - 0 1",
+   "prompt": "Capture the black pawn on e6.",
+   "correct": [
+    "d4e6"
+   ],
+   "options": null,
+   "explanation": "The pawn is two squares up and one to the right of the knight: an L-shape.",
+   "hint": "Up two, right one."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/8/3N4/8/8/4K3 w - - 0 1",
+   "prompt": "Which piece can jump over other pieces?",
+   "correct": [
+    "Knight"
+   ],
+   "options": [
+    "Knight",
+    "Bishop",
+    "Rook"
+   ],
+   "explanation": "Only knights jump. That is why they are strong in cramped positions.",
+   "hint": "It is the piece shaped like a horse."
+  },
+  {
+   "type": "move",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Jump a knight out toward the centre.",
+   "correct": [
+    "g1f3",
+    "b1c3"
+   ],
+   "options": null,
+   "explanation": "Knights are best developed toward the centre, to f3 or c3 for White.",
+   "hint": "Knights on the rim are dim: aim for f3 or c3."
+  }
+ ]
+}

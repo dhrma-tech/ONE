@@ -1,0 +1,67 @@
+{
+ "id": "board-setup",
+ "title": "The board and the setup",
+ "section": "Basics",
+ "order": 1,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "The board has 64 squares: files a to h from left to right, ranks 1 to 8 from White's side. Each side starts with 16 pieces.",
+   "correct": [],
+   "options": null,
+   "explanation": "The board has 64 squares: files a to h from left to right, ranks 1 to 8 from White's side. Each side starts with 16 pieces.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "square",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Tap the square where the white king starts.",
+   "correct": [
+    "e1"
+   ],
+   "options": null,
+   "explanation": "The white king starts on e1, next to the queen. Kings always start on the e-file.",
+   "hint": "It is on White's back rank, on the e-file."
+  },
+  {
+   "type": "square",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Tap the square where the white queen starts.",
+   "correct": [
+    "d1"
+   ],
+   "options": null,
+   "explanation": "The queen starts on d1. A handy rule: the queen goes on her own colour, so the white queen starts on a light square.",
+   "hint": "Next to the king, on the d-file."
+  },
+  {
+   "type": "quiz",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Which of these squares is a light square?",
+   "correct": [
+    "h1"
+   ],
+   "options": [
+    "a1",
+    "h1"
+   ],
+   "explanation": "h1 is light. Every board has a light square in each player's bottom-right corner.",
+   "hint": "Look at the bottom-right corner from White's side."
+  },
+  {
+   "type": "quiz",
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "prompt": "Which side moves first?",
+   "correct": [
+    "White"
+   ],
+   "options": [
+    "White",
+    "Black"
+   ],
+   "explanation": "White always makes the first move, then the players alternate.",
+   "hint": "Think of the colour that gets a small head start."
+  }
+ ]
+}

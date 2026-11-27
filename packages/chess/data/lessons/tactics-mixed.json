@@ -1,0 +1,68 @@
+{
+ "id": "tactics-mixed",
+ "title": "Tactics practice",
+ "section": "Tactics",
+ "order": 38,
+ "steps": [
+  {
+   "type": "move",
+   "fen": "4k3/8/8/1q6/4N3/8/8/4K3 w - - 0 1",
+   "prompt": "Win the queen.",
+   "correct": [
+    "e4d6"
+   ],
+   "options": null,
+   "explanation": "Nd6+ is a fork: it checks the king and attacks the queen.",
+   "hint": "Find a knight check that also hits b5."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/4p3/3n4/8/3R2b1/8/8/4K3 w - - 0 1",
+   "prompt": "Win material.",
+   "correct": [
+    "d4g4"
+   ],
+   "options": null,
+   "explanation": "Rxg4: the bishop had no defender. Taking the knight would lose your rook to exd6.",
+   "hint": "Which black piece is not protected?"
+  },
+  {
+   "type": "move",
+   "fen": "6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1",
+   "prompt": "Find the fastest win.",
+   "correct": [
+    "e1e8"
+   ],
+   "options": null,
+   "explanation": "Re8# is checkmate on the back rank.",
+   "hint": "Look for checks first."
+  },
+  {
+   "type": "move",
+   "fen": "6k1/8/2b5/8/3n4/4P3/8/2R3K1 w - - 0 1",
+   "prompt": "Win a piece.",
+   "correct": [
+    "e3d4",
+    "g1f2"
+   ],
+   "options": null,
+   "explanation": "exd4: removing the defender of c6 wins material.",
+   "hint": "Capture the guard."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/1q6/4N3/8/8/4K3 w - - 0 1",
+   "prompt": "In what order should you look for tactics?",
+   "correct": [
+    "Checks, captures, threats"
+   ],
+   "options": [
+    "Checks, captures, threats",
+    "Pawn moves first",
+    "Queen moves only"
+   ],
+   "explanation": "Forcing moves come first: they limit what your opponent can do.",
+   "hint": "Start with the most forcing moves."
+  }
+ ]
+}

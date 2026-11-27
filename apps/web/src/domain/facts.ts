@@ -44,6 +44,7 @@ export interface DayFacts {
   units_cracked: number;
   gym_day: boolean;
   xp: number;
+  rapid: number | null;
 }
 
 export interface FactRows {
@@ -68,12 +69,13 @@ export interface FactRows {
   video_progress: Rows["video_progress"][];
   xp_events: Rows["xp_events"][];
   units: Rows["units"][];
+  chess_snapshots: Rows["chess_snapshots"][];
 }
 
 export const FACT_TABLES: (keyof FactRows)[] = [
   "focus_sessions", "tasks", "meditation_sessions", "flashcard_reviews", "reading_sessions", "chess_events", "workouts",
   "diet_logs", "water_logs", "weigh_ins", "persona_daily", "speaking_recordings", "contacts", "presence_ticks", "posts",
-  "github_snapshots", "daily_reviews", "problem_log", "video_progress", "xp_events", "units",
+  "github_snapshots", "daily_reviews", "problem_log", "video_progress", "xp_events", "units", "chess_snapshots",
 ];
 
 const zeroSec = () => ({ career: 0, mind: 0, body: 0, persona: 0, home: 0 });
@@ -86,7 +88,7 @@ export function emptyFacts(date: ISODate, targets?: Targets): DayFacts {
     english_min: 0, conversations: 0, real_conversations: 0, recordings: 0, outreach_done: false, contacts_sent: 0,
     presence_ticks: 0, posts_published: 0, pushes: null, review_submitted: false, lights_out: null, stuck_min: 0,
     problems_solved: 0, videos_done: 0, notes_reviewed: 0, units_cracked: 0,
-    gym_day: targets ? targets.gym_days.includes(dow(date)) : [1, 3, 5].includes(dow(date)), xp: 0,
+    gym_day: targets ? targets.gym_days.includes(dow(date)) : [1, 3, 5].includes(dow(date)), xp: 0, rapid: null,
   };
 }
 
@@ -209,6 +211,10 @@ export function buildFacts(dates: ISODate[], r: FactRows, targets: Targets): Map
     f.xp += x.points;
     if (x.kind === "note_reviewed") f.notes_reviewed++;
     if (x.kind === "unit_cracked") f.units_cracked++;
+  }
+  for (const c of r.chess_snapshots ?? []) {
+    const f = at(c.date);
+    if (f && c.rapid) f.rapid = c.rapid;
   }
   return m;
 }

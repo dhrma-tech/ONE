@@ -1,0 +1,6 @@
+{
+ "note": "Re-uploads and unwanted content. Video ids are added only after being seen in fetched data; patterns are regexes matched against titles.",
+ "video_ids": [],
+ "channels": [],
+ "title_patterns": ["\\bre-?upload(ed)?\\b", "\\(reupload\\)", "\\bfull movie\\b", "\\bcredits? to\\b"]
+}

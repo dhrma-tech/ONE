@@ -1,0 +1,57 @@
+{
+ "id": "king-activity",
+ "title": "The king in the endgame",
+ "section": "Endgames",
+ "order": 55,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "6k1/5ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
+   "prompt": "In the endgame the king becomes an attacker. The side whose king reaches the centre first usually wins pawn endings.",
+   "correct": [],
+   "options": null,
+   "explanation": "In the endgame the king becomes an attacker. The side whose king reaches the centre first usually wins pawn endings.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "6k1/5ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
+   "prompt": "Start walking your king to the centre.",
+   "correct": [
+    "g1f1"
+   ],
+   "options": null,
+   "explanation": "Kf1, then Ke2 and Kd3: the king heads for the middle.",
+   "hint": "Step toward e2."
+  },
+  {
+   "type": "quiz",
+   "fen": "8/5k2/8/8/3K4/8/8/8 w - - 0 1",
+   "prompt": "Which king is better placed for a pawn endgame?",
+   "correct": [
+    "White's, in the centre"
+   ],
+   "options": [
+    "White's, in the centre",
+    "Black's"
+   ],
+   "explanation": "A central king can reach both sides of the board quickly.",
+   "hint": "Count steps to each side."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
+   "prompt": "How many points is an active king worth in the endgame, roughly?",
+   "correct": [
+    "About as much as a minor piece (3-4)"
+   ],
+   "options": [
+    "About as much as a minor piece (3-4)",
+    "Nothing",
+    "As much as a queen"
+   ],
+   "explanation": "An active king can attack and defend like a strong piece.",
+   "hint": "It is worth a lot, but not a queen."
+  }
+ ]
+}

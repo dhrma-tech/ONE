@@ -1,0 +1,66 @@
+{
+ "id": "queen-mate-patterns",
+ "title": "Queen mates: the final blow",
+ "section": "Basic mates",
+ "order": 21,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "k7/8/1K6/8/8/8/8/6Q1 w - - 0 1",
+   "prompt": "To mate with a queen, drive the enemy king to the edge. Then your king comes close and the queen delivers the last check, with your king guarding the escape squares.",
+   "correct": [],
+   "options": null,
+   "explanation": "To mate with a queen, drive the enemy king to the edge. Then your king comes close and the queen delivers the last check, with your king guarding the escape squares.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "k7/8/1K6/8/8/8/8/6Q1 w - - 0 1",
+   "prompt": "Checkmate in one move.",
+   "correct": [
+    "g1g8"
+   ],
+   "options": null,
+   "explanation": "Qg8#: the queen covers the 8th rank and your king covers a7 and b7.",
+   "hint": "Use the open g-file to reach the back rank."
+  },
+  {
+   "type": "move",
+   "fen": "7k/8/6K1/8/8/8/8/1Q6 w - - 0 1",
+   "prompt": "Checkmate in one move.",
+   "correct": [
+    "b1b8"
+   ],
+   "options": null,
+   "explanation": "Qb8#: the queen takes the 8th rank, your king covers g7 and h7.",
+   "hint": "The 8th rank again."
+  },
+  {
+   "type": "move",
+   "fen": "3k4/8/3K4/8/8/8/8/7Q w - - 0 1",
+   "prompt": "Checkmate in one move.",
+   "correct": [
+    "h1a8",
+    "h1h8"
+   ],
+   "options": null,
+   "explanation": "Qh8#: a check along the back rank while your king covers c7, d7 and e7.",
+   "hint": "Your king already guards the 7th rank."
+  },
+  {
+   "type": "quiz",
+   "fen": "k7/8/1Q6/8/8/8/8/K7 b - - 0 1",
+   "prompt": "It is Black to move. What is this position?",
+   "correct": [
+    "Stalemate"
+   ],
+   "options": [
+    "Stalemate",
+    "Checkmate",
+    "Check"
+   ],
+   "explanation": "Black is not in check but has no legal move: stalemate, a draw. Always leave the king a square until you can give mate.",
+   "hint": "Is the black king attacked right now?"
+  }
+ ]
+}

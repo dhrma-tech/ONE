@@ -1,0 +1,32 @@
+/* ONE theme override for Bobby (added for ONE). Pure black dark theme and the MIND accent. */
+:root[data-theme="dark"] {
+  --chalk: #000;
+  --page: #000;
+  --ink: #fafafa;
+  --moss: #a1a1a1;
+  --accent: #6a3fd1;
+  --accent-ink: #ffffff;
+  --focus: #b69cff;
+  --surface: #171717;
+  --line: #ffffff1a;
+  --wash: #ffffff0d;
+}
+:root[data-theme="light"] {
+  --chalk: #f8f0fa;
+  --page: #faf3fc;
+  --ink: #171318;
+  --moss: #6c676d;
+  --accent: #6a3fd1;
+  --accent-ink: #ffffff;
+  --focus: #6a3fd1;
+  --surface: #faf3fc;
+  --line: #e3dde5;
+}
+/* Inside ONE: ONE already has a nav rail; keep Bobby's own top bar compact. */
+:root.in-one .brand {
+  font-size: 0;
+}
+:root.in-one .brand img {
+  width: 24px;
+  height: 24px;
+}

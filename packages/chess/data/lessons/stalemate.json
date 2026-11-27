@@ -1,0 +1,71 @@
+{
+ "id": "stalemate",
+ "title": "Stalemate",
+ "section": "Check and mate",
+ "order": 18,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "7k/5Q2/6K1/8/8/8/8/8 b - - 0 1",
+   "prompt": "Stalemate: the side to move has no legal move but is not in check. The game is a draw, even if one side is far ahead.",
+   "correct": [],
+   "options": null,
+   "explanation": "Stalemate: the side to move has no legal move but is not in check. The game is a draw, even if one side is far ahead.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "quiz",
+   "fen": "7k/5Q2/6K1/8/8/8/8/8 b - - 0 1",
+   "prompt": "Black to move. This position is...",
+   "correct": [
+    "Stalemate"
+   ],
+   "options": [
+    "Checkmate",
+    "Stalemate"
+   ],
+   "explanation": "The king is not attacked, but every square it could go to is covered.",
+   "hint": "Is the king actually in check?"
+  },
+  {
+   "type": "quiz",
+   "fen": "7k/5Q2/6K1/8/8/8/8/8 b - - 0 1",
+   "prompt": "How does the game end?",
+   "correct": [
+    "A draw"
+   ],
+   "options": [
+    "A draw",
+    "Black wins",
+    "White wins"
+   ],
+   "explanation": "Stalemate is a draw. It is a standard defensive resource for the weaker side.",
+   "hint": "Nobody wins."
+  },
+  {
+   "type": "move",
+   "fen": "7k/8/5K2/8/8/8/8/6Q1 w - - 0 1",
+   "prompt": "White to move. Avoid stalemate: pick a move that gives checkmate.",
+   "correct": [
+    "g1g7"
+   ],
+   "options": null,
+   "explanation": "Only a move that gives check can mate. Quiet queen moves that take away all squares would stalemate.",
+   "hint": "Give check with support from your king."
+  },
+  {
+   "type": "quiz",
+   "fen": "7k/5Q2/6K1/8/8/8/8/8 b - - 0 1",
+   "prompt": "Best habit when you are far ahead?",
+   "correct": [
+    "Always leave the enemy king one safe square"
+   ],
+   "options": [
+    "Always leave the enemy king one safe square",
+    "Take all squares from the king"
+   ],
+   "explanation": "Before each move, ask: does my opponent still have a legal move?",
+   "hint": "Check the opponent's options."
+  }
+ ]
+}

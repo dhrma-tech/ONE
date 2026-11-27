@@ -1,0 +1,57 @@
+{
+ "id": "counting-exchanges",
+ "title": "Counting attackers and defenders",
+ "section": "Tactics",
+ "order": 30,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "4k3/8/4p3/3n4/2P5/8/8/4K3 w - - 0 1",
+   "prompt": "Before you capture, count. How many of your pieces attack the target, and how many defend it? And start with your cheapest attacker.",
+   "correct": [],
+   "options": null,
+   "explanation": "Before you capture, count. How many of your pieces attack the target, and how many defend it? And start with your cheapest attacker.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/4p3/3n4/2P5/8/8/4K3 w - - 0 1",
+   "prompt": "The knight is defended by a pawn. Win material anyway.",
+   "correct": [
+    "c4d5"
+   ],
+   "options": null,
+   "explanation": "cxd5: even if exd5 follows, you traded a pawn (1) for a knight (3).",
+   "hint": "Capture with your cheapest piece."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/4p3/3p4/8/1BN5/8/4K3 w - - 0 1",
+   "prompt": "Your knight and bishop attack d5, Black defends it once. Is Nxd5 a good idea?",
+   "correct": [
+    "No: after Nxd5 exd5 Bxd5 you gave a knight for two pawns"
+   ],
+   "options": [
+    "No: after Nxd5 exd5 Bxd5 you gave a knight for two pawns",
+    "Yes: two attackers beat one defender"
+   ],
+   "explanation": "Counting is not enough: the values matter too. A knight is worth more than two pawns.",
+   "hint": "Add up what you give and what you get."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
+   "prompt": "Which piece should usually capture first in an exchange?",
+   "correct": [
+    "The cheapest attacker"
+   ],
+   "options": [
+    "The cheapest attacker",
+    "The queen",
+    "The king"
+   ],
+   "explanation": "Lead with the least valuable piece so a recapture costs you as little as possible.",
+   "hint": "Think about what happens if it is taken back."
+  }
+ ]
+}

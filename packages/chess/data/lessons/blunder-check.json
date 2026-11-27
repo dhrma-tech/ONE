@@ -1,0 +1,57 @@
+{
+ "id": "blunder-check",
+ "title": "The blunder check",
+ "section": "Good habits",
+ "order": 60,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "4k3/8/4p3/3p4/6n1/8/8/3Q2K1 w - - 0 1",
+   "prompt": "Before you let go of a piece, ask: after this move, can my opponent capture something, give check or mate? This 5-second check saves more games than any opening.",
+   "correct": [],
+   "options": null,
+   "explanation": "Before you let go of a piece, ask: after this move, can my opponent capture something, give check or mate? This 5-second check saves more games than any opening.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/4p3/3p4/6n1/8/8/3Q2K1 w - - 0 1",
+   "prompt": "Should White play Qxd5?",
+   "correct": [
+    "No"
+   ],
+   "options": [
+    "No",
+    "Yes"
+   ],
+   "explanation": "exd5 wins your queen: the d5 pawn is protected by e6.",
+   "hint": "Who protects d5?"
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/4p3/3p4/6n1/8/8/3Q2K1 w - - 0 1",
+   "prompt": "Find the safe capture.",
+   "correct": [
+    "d1g4"
+   ],
+   "options": null,
+   "explanation": "Qxg4: the knight has no defender, so it is a free piece.",
+   "hint": "Which black piece is unprotected?"
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
+   "prompt": "When should you do the blunder check?",
+   "correct": [
+    "Before every move"
+   ],
+   "options": [
+    "Before every move",
+    "Only in the endgame",
+    "Only when in check"
+   ],
+   "explanation": "Make it a habit: one quick look before every single move.",
+   "hint": "Every time."
+  }
+ ]
+}

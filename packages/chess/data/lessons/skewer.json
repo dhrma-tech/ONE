@@ -1,0 +1,67 @@
+{
+ "id": "skewer",
+ "title": "The skewer",
+ "section": "Tactics",
+ "order": 33,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "4k2q/8/8/8/8/8/8/R3K3 w - - 0 1",
+   "prompt": "A skewer is a pin in reverse: you attack a valuable piece, it must move, and you capture the less valuable piece standing behind it.",
+   "correct": [],
+   "options": null,
+   "explanation": "A skewer is a pin in reverse: you attack a valuable piece, it must move, and you capture the less valuable piece standing behind it.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "4k2q/8/8/8/8/8/8/R3K3 w - - 0 1",
+   "prompt": "Skewer the king and queen with the rook.",
+   "correct": [
+    "a1a8"
+   ],
+   "options": null,
+   "explanation": "Ra8+ forces the king off the 8th rank and the rook then takes the queen on h8.",
+   "hint": "Check along the 8th rank."
+  },
+  {
+   "type": "move",
+   "fen": "7r/6k1/8/8/8/8/8/2B1K3 w - - 0 1",
+   "prompt": "Skewer the king and rook with the bishop.",
+   "correct": [
+    "c1b2"
+   ],
+   "options": null,
+   "explanation": "Bb2+ attacks the king on g7 along the long diagonal; when it steps aside, Bxh8 wins the rook.",
+   "hint": "Give check on the long diagonal."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k2q/8/8/8/8/8/8/R3K3 w - - 0 1",
+   "prompt": "In a skewer, which piece is attacked first?",
+   "correct": [
+    "The more valuable piece"
+   ],
+   "options": [
+    "The more valuable piece",
+    "The less valuable piece"
+   ],
+   "explanation": "The valuable piece in front must move away, exposing the one behind.",
+   "hint": "That is the difference from a pin."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k2q/8/8/8/8/8/8/R3K3 w - - 0 1",
+   "prompt": "Which pieces can skewer?",
+   "correct": [
+    "Queens, rooks and bishops"
+   ],
+   "options": [
+    "Queens, rooks and bishops",
+    "Knights and pawns"
+   ],
+   "explanation": "Skewers need a long line, so only line pieces work.",
+   "hint": "They slide along lines."
+  }
+ ]
+}

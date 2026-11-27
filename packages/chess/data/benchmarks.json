@@ -1,0 +1,140 @@
+{
+ "band": {
+  "600-800": {
+   "acpl": {
+    "opening": 90.5,
+    "middle": 120.0,
+    "end": 53.4
+   },
+   "blunder_rate": 0.0891,
+   "mistake_rate": 0.0668,
+   "inaccuracy_rate": 0.0859,
+   "common_themes_missed": [
+    "hanging_piece",
+    "fork",
+    "back_rank",
+    "mate_threat"
+   ],
+   "games": 6645
+  },
+  "800-1000": {
+   "acpl": {
+    "opening": 70.1,
+    "middle": 110.2,
+    "end": 53.2
+   },
+   "blunder_rate": 0.0774,
+   "mistake_rate": 0.0653,
+   "inaccuracy_rate": 0.0867,
+   "common_themes_missed": [
+    "hanging_piece",
+    "fork",
+    "back_rank",
+    "mate_threat"
+   ],
+   "games": 21898
+  },
+  "1000-1200": {
+   "acpl": {
+    "opening": 55.6,
+    "middle": 101.6,
+    "end": 52.4
+   },
+   "blunder_rate": 0.0678,
+   "mistake_rate": 0.0639,
+   "inaccuracy_rate": 0.0877,
+   "common_themes_missed": [
+    "hanging_piece",
+    "fork",
+    "back_rank",
+    "mate_threat"
+   ],
+   "games": 40055
+  },
+  "1200-1400": {
+   "acpl": {
+    "opening": 45.8,
+    "middle": 93.6,
+    "end": 50.7
+   },
+   "blunder_rate": 0.0601,
+   "mistake_rate": 0.0625,
+   "inaccuracy_rate": 0.0885,
+   "common_themes_missed": [
+    "hanging_piece",
+    "fork",
+    "back_rank",
+    "mate_threat"
+   ],
+   "games": 53073
+  },
+  "1400-1600": {
+   "acpl": {
+    "opening": 39.0,
+    "middle": 86.5,
+    "end": 50.8
+   },
+   "blunder_rate": 0.0537,
+   "mistake_rate": 0.0606,
+   "inaccuracy_rate": 0.0879,
+   "common_themes_missed": [
+    "hanging_piece",
+    "fork",
+    "back_rank",
+    "mate_threat"
+   ],
+   "games": 65403
+  },
+  "1600-1800": {
+   "acpl": {
+    "opening": 32.4,
+    "middle": 80.7,
+    "end": 49.5
+   },
+   "blunder_rate": 0.0486,
+   "mistake_rate": 0.0583,
+   "inaccuracy_rate": 0.0872,
+   "common_themes_missed": [
+    "hanging_piece",
+    "fork",
+    "back_rank",
+    "mate_threat"
+   ],
+   "games": 64425
+  },
+  "1800-2000": {
+   "acpl": {
+    "opening": 27.0,
+    "middle": 74.1,
+    "end": 48.1
+   },
+   "blunder_rate": 0.043,
+   "mistake_rate": 0.0553,
+   "inaccuracy_rate": 0.085,
+   "common_themes_missed": [
+    "hanging_piece",
+    "fork",
+    "back_rank",
+    "mate_threat"
+   ],
+   "games": 52086
+  },
+  "2000+": {
+   "acpl": {
+    "opening": 19.6,
+    "middle": 62.8,
+    "end": 45.5
+   },
+   "blunder_rate": 0.0344,
+   "mistake_rate": 0.0485,
+   "inaccuracy_rate": 0.0775,
+   "common_themes_missed": [
+    "hanging_piece",
+    "fork",
+    "back_rank",
+    "mate_threat"
+   ],
+   "games": 59978
+  }
+ }
+}

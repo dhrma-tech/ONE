@@ -1,0 +1,73 @@
+{
+ "id": "castling",
+ "title": "Castling",
+ "section": "Special moves",
+ "order": 12,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "r3k2r/pppq1ppp/2n2n2/3pp3/3PP3/2N2N2/PPPQ1PPP/R3K2R w KQkq - 0 1",
+   "prompt": "Castling moves the king two squares toward a rook, and the rook jumps to the other side of the king. It protects the king and activates the rook.",
+   "correct": [],
+   "options": null,
+   "explanation": "Castling moves the king two squares toward a rook, and the rook jumps to the other side of the king. It protects the king and activates the rook.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "r3k2r/pppq1ppp/2n2n2/3pp3/3PP3/2N2N2/PPPQ1PPP/R3K2R w KQkq - 0 1",
+   "prompt": "Castle kingside (short): move the king two squares toward the h-rook.",
+   "correct": [
+    "e1g1"
+   ],
+   "options": null,
+   "explanation": "King to g1, rook to f1. Kingside castling is called short castling.",
+   "hint": "Move the king from e1 to g1."
+  },
+  {
+   "type": "move",
+   "fen": "r3k2r/pppq1ppp/2n2n2/3pp3/3PP3/2N2N2/PPPQ1PPP/R3K2R w KQkq - 0 1",
+   "prompt": "Castle queenside (long): move the king toward the a-rook.",
+   "correct": [
+    "e1c1"
+   ],
+   "options": null,
+   "explanation": "King to c1, rook to d1. Long castling passes over three squares.",
+   "hint": "Move the king from e1 to c1."
+  },
+  {
+   "type": "info",
+   "fen": "r3k2r/pppq1ppp/2n2n2/3pp3/3PP3/2N2N2/PPPQ1PPP/R3K2R w KQkq - 0 1",
+   "prompt": "Rules: neither the king nor that rook has moved, no pieces between them, the king is not in check, and it does not cross or land on an attacked square.",
+   "correct": [],
+   "options": null,
+   "explanation": "Rules: neither the king nor that rook has moved, no pieces between them, the king is not in check, and it does not cross or land on an attacked square.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/8/8/5q2/8/4K2R w K - 0 1",
+   "prompt": "The black queen attacks f1. Can White castle kingside?",
+   "correct": [
+    "No"
+   ],
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "explanation": "The king would pass over f1, which is attacked, so castling is illegal.",
+   "hint": "Check the square the king crosses."
+  },
+  {
+   "type": "move",
+   "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+   "prompt": "Castle to tuck your king away.",
+   "correct": [
+    "e1g1"
+   ],
+   "options": null,
+   "explanation": "With the bishop and knight developed, f1 and g1 are empty and castling is legal.",
+   "hint": "Short castling."
+  }
+ ]
+}

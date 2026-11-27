@@ -1,0 +1,58 @@
+{
+ "id": "piece-activity",
+ "title": "Active pieces",
+ "section": "Strategy",
+ "order": 47,
+ "steps": [
+  {
+   "type": "info",
+   "fen": "4k3/8/8/8/8/N7/8/4K3 w - - 0 1",
+   "prompt": "Pieces are stronger in the centre where they control more squares. 'A knight on the rim is dim': on the edge it sees only a few squares.",
+   "correct": [],
+   "options": null,
+   "explanation": "Pieces are stronger in the centre where they control more squares. 'A knight on the rim is dim': on the edge it sees only a few squares.",
+   "hint": "Read, then continue."
+  },
+  {
+   "type": "move",
+   "fen": "4k3/8/8/8/8/N7/8/4K3 w - - 0 1",
+   "prompt": "Move your knight toward the centre.",
+   "correct": [
+    "a3c4",
+    "a3b5"
+   ],
+   "options": null,
+   "explanation": "From the centre a knight controls up to 8 squares.",
+   "hint": "Jump toward d5 and e5."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/3N4/8/8/8/N3K3 w - - 0 1",
+   "prompt": "Which knight is stronger?",
+   "correct": [
+    "The knight on d5"
+   ],
+   "options": [
+    "The knight on d5",
+    "The knight on a1"
+   ],
+   "explanation": "The d5 knight attacks 8 squares; the a1 knight only 2.",
+   "hint": "Count the squares."
+  },
+  {
+   "type": "quiz",
+   "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
+   "prompt": "Where are bishops strongest?",
+   "correct": [
+    "On long open diagonals"
+   ],
+   "options": [
+    "On long open diagonals",
+    "Behind their own pawns",
+    "In the corner"
+   ],
+   "explanation": "A bishop blocked by its own pawns is 'bad'. Open lines make it strong.",
+   "hint": "Think about open lines."
+  }
+ ]
+}
