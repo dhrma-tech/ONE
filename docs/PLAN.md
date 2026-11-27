@@ -384,7 +384,7 @@ Exit: review auto-fill from all sources; weekly review screen saves `weekly_grad
 ### Phase 12: PWA ×5 + offline [x]
 Exit: 5 manifests valid, SW precache, offline shell, outbox replays; Playwright checks manifests per route.
 
-### Phase 13: Notion import scripts
+### Phase 13: Notion import scripts [x]
 Exit: dry-run prints counts + first 5 rows from fixture exports; real mode upserts via service role.
 
 ### Phase 14: Portfolio widget
