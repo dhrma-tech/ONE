@@ -1,0 +1,283 @@
+/* App shell: rail (desktop), collapsible rail (tablet), dock (phone). Full width up to 1440px content. */
+
+.shell {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: var(--rail-w) minmax(0, 1fr);
+}
+
+.shell-main {
+  min-width: 0;
+  padding: calc(var(--s-6) + var(--safe-top)) var(--s-8) var(--s-12);
+}
+
+.shell-inner {
+  width: 100%;
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+/* Rail */
+.rail {
+  position: sticky;
+  top: 0;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-2);
+  padding: calc(var(--s-4) + var(--safe-top)) 0 var(--s-4);
+  border-right: 1px dashed var(--border);
+  background: var(--background);
+  z-index: 40;
+}
+
+.rail-logo {
+  font: 500 20px/1 var(--font-display);
+  letter-spacing: 0.04em;
+  margin-bottom: var(--s-4);
+  padding: 6px 8px;
+  border: 1px dashed var(--border);
+  border-radius: var(--r-xs);
+}
+
+.rail-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+}
+
+.rail-item {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--r-sm);
+  color: var(--muted-foreground);
+  transition:
+    color var(--t-fast) var(--ease-std),
+    background-color var(--t-fast) var(--ease-std);
+}
+
+.rail-item:hover {
+  color: var(--foreground);
+  background: var(--muted);
+}
+
+.rail-item[aria-current="page"] {
+  color: var(--item-accent, var(--foreground));
+  background: color-mix(in srgb, var(--item-accent, var(--foreground)) 12%, transparent);
+}
+
+.rail-item[aria-current="page"]::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 12px;
+  bottom: 12px;
+  width: 3px;
+  border-radius: 2px;
+  background: var(--item-accent, var(--foreground));
+}
+
+.rail-item .rail-tip {
+  position: absolute;
+  left: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%) translateX(-4px);
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  padding: 4px 8px;
+  border-radius: var(--r-xs);
+  background: var(--popover);
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  font-size: var(--fs-xs);
+  transition:
+    opacity var(--t-fast) var(--ease-std),
+    transform var(--t-fast) var(--ease-std);
+}
+
+.rail-item:hover .rail-tip,
+.rail-item:focus-visible .rail-tip {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+.rail-spacer {
+  flex: 1;
+}
+
+.rail-foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-2);
+}
+
+/* Dock (phone) */
+.dock {
+  display: none;
+}
+
+/* Bento grid */
+.bento {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--gap);
+  align-items: start;
+}
+
+.span-3 { grid-column: span 3; }
+.span-4 { grid-column: span 4; }
+.span-5 { grid-column: span 5; }
+.span-6 { grid-column: span 6; }
+.span-7 { grid-column: span 7; }
+.span-8 { grid-column: span 8; }
+.span-9 { grid-column: span 9; }
+.span-12 { grid-column: 1 / -1; }
+.stretch { align-self: stretch; }
+
+.cols-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--gap);
+}
+.cols-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--gap);
+}
+.cols-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--gap);
+}
+
+/* Section page header + tabs */
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-6);
+}
+
+.page-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--s-4);
+  flex-wrap: wrap;
+}
+
+.page-title {
+  font-size: var(--fs-3xl);
+  color: var(--foreground);
+}
+
+.page-title .dot {
+  color: var(--accent);
+}
+
+/* Focus mode dims the app except the focus surface */
+:root[data-focus="on"] .shell-main > .shell-inner > *:not(.focus-keep) {
+  opacity: 0.18;
+  pointer-events: none;
+  transition: opacity 300ms var(--ease-std);
+}
+:root[data-focus="on"] .rail-item:not(.focus-allowed),
+:root[data-focus="on"] .dock-item:not(.focus-allowed) {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .shell {
+    grid-template-columns: 64px minmax(0, 1fr);
+  }
+  .rail-item {
+    width: 44px;
+    height: 44px;
+  }
+  .shell-main {
+    padding: calc(var(--s-5) + var(--safe-top)) var(--s-5) var(--s-10);
+  }
+  .bento {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .bento > [class*="span-"] {
+    grid-column: span 1;
+  }
+  .bento > .span-8,
+  .bento > .span-9,
+  .bento > .span-12,
+  .bento > .t-full {
+    grid-column: 1 / -1;
+  }
+  .cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Phone */
+@media (max-width: 767px) {
+  .shell {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .rail {
+    display: none;
+  }
+  .shell-main {
+    padding: calc(var(--s-4) + var(--safe-top)) calc(var(--s-4) + var(--safe-right))
+      calc(var(--dock-h) + var(--s-8) + var(--safe-bottom)) calc(var(--s-4) + var(--safe-left));
+  }
+  .bento,
+  .cols-2,
+  .cols-3 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .bento > [class*="span-"] {
+    grid-column: 1 / -1;
+  }
+  .cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .page-title {
+    font-size: var(--fs-2xl);
+  }
+  .dock {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    height: calc(var(--dock-h) + var(--safe-bottom));
+    padding: 6px calc(8px + var(--safe-right)) calc(6px + var(--safe-bottom)) calc(8px + var(--safe-left));
+    background: color-mix(in srgb, var(--background) 88%, transparent);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-top: 1px dashed var(--border);
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  .dock-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    min-width: 44px;
+    border-radius: var(--r-sm);
+    color: var(--muted-foreground);
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .dock-item[aria-current="page"] {
+    color: var(--item-accent, var(--foreground));
+  }
+}

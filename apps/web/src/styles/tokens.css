@@ -1,0 +1,170 @@
+/* ONE design tokens. Dark (pure black) is the default; light lavender is the toggle.
+   Values follow the observed heyalok.com semantic palette (see docs/DESIGN-ANALYSIS.md). */
+
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #000;
+  --foreground: #fafafa;
+  --card: #171717;
+  --card-foreground: #fafafa;
+  --popover: #171717;
+  --muted: #262626;
+  --muted-foreground: #a1a1a1;
+  --accent-bg: #262626;
+  --secondary: #262626;
+  --primary: #e5e5e5;
+  --primary-foreground: #171717;
+  --border: #ffffff1a;
+  --border-strong: #ffffff33;
+  --input: #ffffff26;
+  --ring: #737373;
+  --destructive: #ff6568;
+  --success: #4ecf6b;
+  --warning: #ffb224;
+  --footer: #0e0c0f;
+  --footer-foreground: #e7e3e8;
+  --chart-1: #d4d4d4;
+  --chart-2: #737373;
+  --chart-3: #525252;
+  --chart-4: #404040;
+  --chart-5: #262626;
+  --contrib-0: #1f1f1f;
+  --contrib-1: #123f23;
+  --contrib-2: #166634;
+  --contrib-3: #2a984b;
+  --contrib-4: #4ecf6b;
+  --scene-sky: #05060a;
+  --scene-ink: #fafafa;
+  --scene-dim: #2a2a2e;
+  --scene-wood: #3b2a22;
+  --scene-glow: #fff7d6;
+  --particle: #e0f2fe;
+  --shadow: 0 18px 48px rgb(0 0 0 / 0.55), 0 2px 8px rgb(0 0 0 / 0.4);
+  --backdrop: rgb(0 0 0 / 0.55);
+  --neo-track: inset 3px 3px 6px #0009, inset -3px -3px 6px #ffffff14, inset 0 1px 2px #0006;
+  --neo-knob: 3px 4px 7px #0009, -2px -2px 5px #ffffff14, inset 0 1px 1px #ffffff1f;
+  --neo-knob-bg: linear-gradient(145deg, #303030, #161616);
+
+  --accent-career: #ffb224;
+  --accent-mind: #b69cff;
+  --accent-body: #ff7a6b;
+  --accent-persona: #4cc3ff;
+  --accent-home: #e5e5e5;
+  --accent-settings: #a1a1a1;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --background: #f8f0fa;
+  --foreground: #171318;
+  --card: #faf3fc;
+  --card-foreground: #171318;
+  --popover: #faf3fc;
+  --muted: #efe9f0;
+  --muted-foreground: #6c676d;
+  --accent-bg: #ede6ee;
+  --secondary: #f2ecf4;
+  --primary: #221b24;
+  --primary-foreground: #fbf9fb;
+  --border: #e3dde5;
+  --border-strong: #cfc7d2;
+  --input: #eae4eb;
+  --ring: #b0a7b2;
+  --destructive: #ee3533;
+  --success: #218041;
+  --warning: #9a5a00;
+  --footer: #efe8f0;
+  --footer-foreground: #373038;
+  --chart-1: #d4c5d7;
+  --chart-2: #9b919d;
+  --chart-3: #6e666f;
+  --chart-4: #49434a;
+  --chart-5: #2c272d;
+  --contrib-0: #e9e4ea;
+  --contrib-1: #ace4bc;
+  --contrib-2: #6ed08c;
+  --contrib-3: #3aab60;
+  --contrib-4: #218041;
+  --scene-sky: #e9def0;
+  --scene-ink: #221b24;
+  --scene-dim: #cfc4d6;
+  --scene-wood: #b08a72;
+  --scene-glow: #fff3c4;
+  --particle: #93c5fd;
+  --shadow: 0 18px 48px rgb(66 54 68 / 0.16), 0 2px 8px rgb(66 54 68 / 0.08);
+  --backdrop: rgb(34 27 36 / 0.25);
+  --neo-track: inset 3px 3px 6px #6251664d, inset -3px -3px 6px #fffffffa;
+  --neo-knob: 3px 4px 7px #6251664d, -3px -3px 6px #fffffffa, inset 0 1px 1px #fffffffa;
+  --neo-knob-bg: linear-gradient(145deg, #fffeff, #f6f0f8);
+
+  --accent-career: #9a5a00;
+  --accent-mind: #6a3fd1;
+  --accent-body: #b8322a;
+  --accent-persona: #0b6aa8;
+  --accent-home: #221b24;
+  --accent-settings: #6c676d;
+}
+
+:root {
+  /* Section accent: overridden by [data-section] wrappers */
+  --accent: var(--accent-home);
+
+  /* Type */
+  --font-ui: "Geist Pixel Square", "Geist Pixel", "Geist Mono Variable", ui-monospace, Menlo, Consolas, monospace;
+  --font-display: "Pixelify Sans", "Geist Pixel Square", ui-monospace, monospace;
+  --font-mono: "Geist Mono Variable", "Geist Mono", ui-monospace, Menlo, Consolas, monospace;
+  --font-text: "Inter Variable", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-scale: 1;
+  --fs-micro: calc(10px * var(--font-scale));
+  --fs-xs: calc(12px * var(--font-scale));
+  --fs-sm: calc(14px * var(--font-scale));
+  --fs-md: calc(16px * var(--font-scale));
+  --fs-lg: calc(18px * var(--font-scale));
+  --fs-xl: calc(22px * var(--font-scale));
+  --fs-2xl: calc(28px * var(--font-scale));
+  --fs-3xl: calc(40px * var(--font-scale));
+  --fs-hero: calc(64px * var(--font-scale));
+  --track-micro: 0.14em;
+
+  /* Space (4px base) */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --s-10: 40px;
+  --s-12: 48px;
+  --gap: 16px;
+
+  /* Radius */
+  --r-xs: 2px;
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-pill: 9999px;
+
+  /* Motion */
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-std: cubic-bezier(0.4, 0, 0.2, 1);
+  --t-fast: 150ms;
+  --t-med: 220ms;
+  --t-page: 180ms;
+
+  /* Layout */
+  --rail-w: 72px;
+  --dock-h: 64px;
+  --content-max: 1440px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+}
+
+[data-section="career"] { --accent: var(--accent-career); }
+[data-section="mind"] { --accent: var(--accent-mind); }
+[data-section="body"] { --accent: var(--accent-body); }
+[data-section="persona"] { --accent: var(--accent-persona); }
+[data-section="home"] { --accent: var(--accent-home); }
+[data-section="settings"] { --accent: var(--accent-settings); }

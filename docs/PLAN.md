@@ -327,20 +327,20 @@ Each phase ends with: `pnpm typecheck && pnpm lint && pnpm test && pnpm build` g
 
 ### Phase 1: Repo setup
 Goal: a green, Windows-friendly workspace.
-- [ ] pnpm workspace (`apps/*`, `packages/*`), root scripts (`dev`, `build`, `typecheck`, `lint`, `test`, `e2e`, `format`), `.npmrc`, `.gitignore` (`_ref/`, `.env.local`, `scripts/import/notion/input/`, `docs/design-ref/*.png`? kept local only)
-- [ ] `apps/web` Vite + React 18 + TS strict; ESLint 9 flat config + Prettier; Vitest + RTL + jsdom; Playwright config
-- [ ] `.env.example` with every variable documented; `src/env.ts` reads `import.meta.env` safely
-- [ ] GitHub Actions CI (pnpm install, typecheck, lint, test, build)
-- [ ] LICENSE GPL-3.0, THIRD_PARTY_NOTICES.md, README stub
+- [x] pnpm workspace (`apps/*`, `packages/*`), root scripts (`dev`, `build`, `typecheck`, `lint`, `test`, `e2e`, `format`), `.npmrc`, `.gitignore` (`_ref/`, `.env.local`, `scripts/import/notion/input/`, `docs/design-ref/*.png`? kept local only)
+- [x] `apps/web` Vite + React 18 + TS strict; ESLint 9 flat config + Prettier; Vitest + RTL + jsdom; Playwright config
+- [x] `.env.example` with every variable documented; `src/env.ts` reads `import.meta.env` safely
+- [x] GitHub Actions CI (pnpm install, typecheck, lint, test, build)
+- [x] LICENSE GPL-3.0, THIRD_PARTY_NOTICES.md, README stub
 Exit: CI-equivalent commands pass locally; first push to `origin main`.
 
 ### Phase 2: Design system + shell
-- [ ] tokens.css (dark default, light), fonts, base.css, motion.css, layout.css
-- [ ] theme store + `d` key + reduced-motion handling + `data-motion`
-- [ ] AppShell: Rail (desktop), collapsible rail (tablet), Dock (phone, safe areas), page transition, skip link
-- [ ] Components listed in §5 with props documented in JSDoc
-- [ ] `/ui` style guide showing every component in every state (both themes toggle)
-- [ ] Component tests: ContributionGrid, StatCard count-up, PillButton, Checklist
+- [x] tokens.css (dark default, light), fonts, base.css, motion.css, layout.css
+- [x] theme store + `d` key + reduced-motion handling + `data-motion`
+- [x] AppShell: Rail (desktop), collapsible rail (tablet), Dock (phone, safe areas), page transition, skip link
+- [x] Components listed in §5 with props documented in JSDoc
+- [x] `/ui` style guide showing every component in every state (both themes toggle)
+- [x] Component tests: ContributionGrid, StatCard count-up, PillButton, Checklist
 Exit: `/ui` renders all components; full-width at 1440/1920; dock at 390.
 
 ### Phase 3: Data layer
