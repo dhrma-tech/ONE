@@ -1,0 +1,30 @@
+{
+  "name": "one",
+  "private": true,
+  "version": "0.1.0",
+  "description": "ONE: a distraction-free, all-in-one lock-in app.",
+  "license": "GPL-3.0-only",
+  "packageManager": "pnpm@10.32.1",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "pnpm --filter @one/web dev",
+    "build": "pnpm --filter @one/web build",
+    "build:chess": "pnpm --filter @one/chess build",
+    "build:all": "pnpm build:chess && pnpm build",
+    "preview": "pnpm --filter @one/web preview",
+    "typecheck": "pnpm --filter @one/web typecheck",
+    "lint": "pnpm --filter @one/web lint",
+    "test": "pnpm --filter @one/web test",
+    "e2e": "pnpm --filter @one/web e2e",
+    "format": "prettier --write \"apps/web/**/*.{ts,tsx,css,json}\" \"scripts/**/*.{ts,mjs}\"",
+    "check": "pnpm typecheck && pnpm lint && pnpm test && pnpm build",
+    "db:check": "node scripts/db/check-migrations.mjs",
+    "import:notion": "tsx scripts/import/notion/index.ts",
+    "seed:remote": "tsx scripts/seed/remote.ts"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.6",
+    "typescript": "~5.9.3"
+  }
+}

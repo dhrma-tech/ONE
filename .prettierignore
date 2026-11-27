@@ -1,0 +1,7 @@
+_ref
+dist
+coverage
+pnpm-lock.yaml
+packages/chess
+docs
+apps/desktop/src-tauri/target

@@ -1,0 +1,29 @@
+node_modules/
+dist/
+coverage/
+.vercel/
+.env
+.env.local
+.env.*.local
+*.log
+.DS_Store
+Thumbs.db
+# cloned source repos for reference
+_ref/
+# heyalok.com reference captures (never shipped)
+docs/design-ref/
+# personal Notion export (contains contact data)
+scripts/import/notion/input/*
+!scripts/import/notion/input/.gitkeep
+# playwright
+test-results/
+playwright-report/
+# tauri
+apps/desktop/src-tauri/target/
+apps/desktop/src-tauri/gen/
+# chess build output copied into web
+apps/web/public/chess-app/
+packages/chess/site/public/pyodide/
+packages/chess/site/public/engine/
+packages/chess/site/public/py/
+packages/chess/site/public/data/
