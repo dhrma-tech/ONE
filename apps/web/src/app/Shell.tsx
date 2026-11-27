@@ -5,6 +5,8 @@ import { SCOPE, inScope } from "@/scope";
 import { Icon, IconButton, Toaster } from "@/ui";
 import { ui, useUI } from "@/data/ui";
 import { FocusBar } from "@/modules/focus";
+import { CommandPalette, HelpSheet } from "@/modules/palette";
+import { MusicCorner } from "@/modules/music";
 
 function NavItem({ a, cls, children }: { a: (typeof AREAS)[number]; cls: string; children: ReactNode }) {
   const loc = useLocation();
@@ -94,6 +96,9 @@ export function Shell({ children }: { children?: ReactNode }) {
         </div>
       </main>
       <Dock />
+      <CommandPalette />
+      <HelpSheet />
+      <MusicCorner />
       <Toaster />
     </div>
   );

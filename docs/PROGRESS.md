@@ -1,9 +1,9 @@
 # Progress
 
 ## Current state
-- **Phase:** 5 (shared modules) starting
-- **Last finished:** Phase 4 (Home)
-- **Next:** Library (player, inbox, add/bulk), analytics kit, path editor, command palette, music corner
+- **Phase:** 6 (CAREER) starting
+- **Last finished:** Phase 5 (shared modules)
+- **Next:** CAREER tabs: Path, Library, Practice, Build, News, Reading, Notes, College, Analytics
 - **Blockers:** none (all secrets mocked via local mode; see NEEDS-FROM-DHARMA.md)
 
 ## How to resume
@@ -30,3 +30,7 @@ Tests: 20 passing.
 Domain logic (pure + tested): per-day facts, done rules per section, section/master levels, streaks with never-miss-twice, weekly grade (9 checks + reward rule), XP table, 28 achievements, daily task generation (habits, path, note reviews, follow-ups, exam units, One Thing). Services: settings/targets, live facts, whole-history summary, XP awards (idempotent), achievements unlock, tasks.
 Home: banner + profile (Day N, level/XP, streak, miss flag), Today (One Thing, grouped tasks, inline add, star to pin), calendar card (mock until Phase 10), section index tiles with rings/streaks/key stats, master grid, week strip with live grade, focus terminal (global focus mode + dimming + Block 1 XP), next-up video, nightly review (auto-fill, draft autosave, submit → toast/XP/grid), achievements shelf, exam banner, daily quote, footer.
 Checked at 1440 and 390. Tests: 36 passing.
+
+### Phase 5: shared modules (2026-11-27)
+Library (next-up sort, queue/done/inbox with paging, add video via /api/video, bulk import, candidate packs from Cubicle (568) and BOBBY (180) built by `scripts/packs/build-packs.mjs`), distraction-free watch page (postMessage IFrame API on youtube-nocookie, ONE pause + end cards so no YouTube suggestions show, resume, done at 90%, N for timestamped notes, focus dim), frame thumbnails with fallback chain, analytics kit (grid, stats, trend, lagging-in, range), path editor (lanes, stages, gates, reorder), command palette with regex parser + help sheet, music corner (Apple Music embed converter, stays mounted), quick-log services, server auth helper.
+Tests: 47 passing.

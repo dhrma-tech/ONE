@@ -370,3 +370,18 @@
 .char-count.over {
   color: var(--destructive);
 }
+
+/* Watch focus: dim everything except player + notes */
+.page:has(.watch-focus) :is(.section-hero, .tabs) {
+  opacity: 0.12;
+  transition: opacity 300ms var(--ease-std);
+}
+.page:has(.watch-focus) :is(.section-hero, .tabs):hover {
+  opacity: 1;
+}
+.video-grid {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+.notes-panel .list li {
+  align-items: flex-start;
+}

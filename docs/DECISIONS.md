@@ -19,3 +19,5 @@
 | 2026-11-27 | Buffer via the new GraphQL API (`api.buffer.com`) with a personal API key. | The legacy REST API is closed to new apps. |
 | 2026-11-27 | Charts are hand-written SVG; toasts use `sonner`. | Bundle size; heyalok uses Sonner and its feel matches. |
 | 2026-11-27 | Late-night rule: between 00:00 and 04:00 the nightly review targets the previous date. | Dharma's review is 23:30-00:00 and lights out ~00:15. |
+| 2026-11-27 | YouTube IFrame Player API is driven over postMessage (Cubicle's approach), not by loading `youtube.com/iframe_api`. | Same API, no third-party script, tighter CSP. Pause and end states are covered by ONE's own cards, so YouTube's pause/end suggestions never show. |
+| 2026-11-27 | Library candidates ship as small static "packs" (top 6 per Cubicle topic, all 180 Bobby chess videos) imported into the Inbox on demand. | The full Cubicle catalogue (6,647 videos, 2 MB) is too big to ship; nothing is approved automatically. |

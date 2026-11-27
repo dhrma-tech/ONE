@@ -359,13 +359,13 @@ Exit: unit tests for repo/sync pass; app boots in local mode with seed data.
 Exit: Home works end-to-end in local mode; review submit → toast → XP → grid cell.
 
 ### Phase 5: Shared modules
-- [ ] Library (cards, player, end card, notes, resume, done ≥90%, add video, bulk import, inbox, next-up, paging)
-- [ ] Analytics kit (grid, stats, trend, lagging, range switch)
-- [ ] Path engine + editor + daily task generation
-- [ ] XP/levels/streaks/achievements engine + tests
-- [ ] Focus timer + focus dimming/lock
-- [ ] Command palette + parser + shortcuts + help sheet
-- [ ] Music corner
+- [x] Library (cards, player, end card, notes, resume, done ≥90%, add video, bulk import, inbox, next-up, paging)
+- [x] Analytics kit (grid, stats, trend, lagging, range switch)
+- [x] Path engine + editor + daily task generation
+- [x] XP/levels/streaks/achievements engine + tests
+- [x] Focus timer + focus dimming/lock
+- [x] Command palette + parser + shortcuts + help sheet
+- [x] Music corner
 Exit: all domain tests pass (xp, levels, streaks, grade, done rules, review schedule, thumbs, queue sort, palette parser).
 
 ### Phase 6: CAREER (all 9 tabs incl. College) · Phase 7: MIND (incl. BOBBY) · Phase 8: BODY · Phase 9: PERSONA

@@ -2,6 +2,7 @@ import { lazy, useEffect, type ReactNode } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Shell, PageFallback } from "./app/Shell";
 import { useGlobalKeys } from "./app/keys";
+import { focus } from "./modules/focus";
 import { boot } from "./app/boot";
 import { SCOPE } from "./scope";
 import { ui } from "./data/ui";
@@ -13,8 +14,9 @@ const StyleGuide = lazy(() => import("./pages/StyleGuide"));
 const Login = lazy(() => import("./pages/Login"));
 const Home = lazy(() => import("./pages/home/Home"));
 
+const KEY_HANDLERS = { onFocus: () => focus.start({}) };
 function Keys() {
-  useGlobalKeys();
+  useGlobalKeys(KEY_HANDLERS);
   return null;
 }
 
