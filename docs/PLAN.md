@@ -368,7 +368,7 @@ Exit: Home works end-to-end in local mode; review submit → toast → XP → gr
 - [x] Music corner
 Exit: all domain tests pass (xp, levels, streaks, grade, done rules, review schedule, thumbs, queue sort, palette parser).
 
-### Phase 6: CAREER (all 9 tabs incl. College) · Phase 7: MIND (incl. BOBBY) · Phase 8: BODY · Phase 9: PERSONA
+### Phase 6: CAREER (all 9 tabs incl. College) [x] · Phase 7: MIND (incl. BOBBY) · Phase 8: BODY · Phase 9: PERSONA
 Each: every sub-page from §6 with data reads/writes, empty states with dry copy, analytics tab, tests for its domain logic (SGPA/pass rules, milestone generator, SM-2, ladder, rotation/progression/PR, weight-rate hints, top-skills tally, char counters, follow-up dates).
 Exit per phase: manual run-through of every tab at 1440 and 390, tests green.
 

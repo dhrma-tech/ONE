@@ -56,7 +56,7 @@ for (const t of topoOrder()) {
   out(`create index if not exists ${t}_user_synced on public.${t} (user_id, synced_at);`);
   for (const i of d.idx ?? []) out(`create index if not exists ${t}_${i} on public.${t} (user_id, ${i});`);
   (d.unique ?? []).forEach((u, n) =>
-    out(`create unique index if not exists ${t}_uq${n} on public.${t} (user_id, ${u.join(", ")}) where deleted_at is null;`),
+    out(`create unique index if not exists ${t}_uq${n} on public.${t} (user_id, ${u.join(", ")})${d.serverOnly ? "" : " where deleted_at is null"};`),
   );
   out(`drop trigger if exists ${t}_touch on public.${t};`);
   out(`create trigger ${t}_touch before insert or update on public.${t} for each row execute function public.one_touch();`);

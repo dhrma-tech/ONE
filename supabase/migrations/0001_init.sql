@@ -436,7 +436,7 @@ create table if not exists public.integration_secrets (
   deleted_at timestamptz
 );
 create index if not exists integration_secrets_user_synced on public.integration_secrets (user_id, synced_at);
-create unique index if not exists integration_secrets_uq0 on public.integration_secrets (user_id, provider) where deleted_at is null;
+create unique index if not exists integration_secrets_uq0 on public.integration_secrets (user_id, provider);
 drop trigger if exists integration_secrets_touch on public.integration_secrets;
 create trigger integration_secrets_touch before insert or update on public.integration_secrets for each row execute function public.one_touch();
 alter table public.integration_secrets enable row level security;
@@ -458,7 +458,7 @@ create table if not exists public.api_cache (
   deleted_at timestamptz
 );
 create index if not exists api_cache_user_synced on public.api_cache (user_id, synced_at);
-create unique index if not exists api_cache_uq0 on public.api_cache (user_id, key) where deleted_at is null;
+create unique index if not exists api_cache_uq0 on public.api_cache (user_id, key);
 drop trigger if exists api_cache_touch on public.api_cache;
 create trigger api_cache_touch before insert or update on public.api_cache for each row execute function public.one_touch();
 alter table public.api_cache enable row level security;

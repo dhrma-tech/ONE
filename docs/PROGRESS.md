@@ -1,9 +1,9 @@
 # Progress
 
 ## Current state
-- **Phase:** 6 (CAREER) starting
-- **Last finished:** Phase 5 (shared modules)
-- **Next:** CAREER tabs: Path, Library, Practice, Build, News, Reading, Notes, College, Analytics
+- **Phase:** 7 (MIND) starting
+- **Last finished:** Phase 6 (CAREER)
+- **Next:** MIND: Bobby chess integration (iframe + bridge), Chess.com stats, Meditate, Library, Focus training, Memory (SM-2), Reading shelf, locked modules, Analytics
 - **Blockers:** none (all secrets mocked via local mode; see NEEDS-FROM-DHARMA.md)
 
 ## How to resume
@@ -34,3 +34,7 @@ Checked at 1440 and 390. Tests: 36 passing.
 ### Phase 5: shared modules (2026-11-27)
 Library (next-up sort, queue/done/inbox with paging, add video via /api/video, bulk import, candidate packs from Cubicle (568) and BOBBY (180) built by `scripts/packs/build-packs.mjs`), distraction-free watch page (postMessage IFrame API on youtube-nocookie, ONE pause + end cards so no YouTube suggestions show, resume, done at 90%, N for timestamped notes, focus dim), frame thumbnails with fallback chain, analytics kit (grid, stats, trend, lagging-in, range), path editor (lanes, stages, gates, reorder), command palette with regex parser + help sheet, music corner (Apple Music embed converter, stays mounted), quick-log services, server auth helper.
 Tests: 47 passing.
+
+### Phase 6: CAREER (2026-11-27)
+All 9 tabs: Path (two lanes, collapsible stages, gates, Block 1 timer, daily-structure habits, target title, exam mode, AI rules), Library, Practice (LeetCode card with stale badge + problem log), Build (projects kanban, GitHub grid, website ideas, hackathons), News (hard cap 10/day by quotas, save to Reading), Reading (title fetch, takeaway required → Ideas bank), Notes (markdown, 3/7/30/90 review, post draft, flashcard), College (semesters/archive, units with Cracked XP, PYQ bank with manual unit tags + most asked, study links, submissions, exams countdown, 4-day milestone generator, marks with pass/fail warnings, SGPA/CGPA, editable grade table), Analytics.
+Server routes live in dev: /api/video, /api/news, /api/link-title (SSRF-guarded), /api/leetcode (cached). Fixed scope detection (section apps now keyed by launch URL `?app=`).
