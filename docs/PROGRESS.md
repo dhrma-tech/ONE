@@ -1,9 +1,9 @@
 # Progress
 
 ## Current state
-- **Phase:** 4 (Home) starting
-- **Last finished:** Phase 3 (data layer)
-- **Next:** domain logic (done rules, XP, streaks, grade) + Home page
+- **Phase:** 5 (shared modules) starting
+- **Last finished:** Phase 4 (Home)
+- **Next:** Library (player, inbox, add/bulk), analytics kit, path editor, command palette, music corner
 - **Blockers:** none (all secrets mocked via local mode; see NEEDS-FROM-DHARMA.md)
 
 ## How to resume
@@ -25,3 +25,8 @@ Verified by screenshots at 1440 (dark) and 390 (light): no horizontal overflow. 
 69 tables defined once in `src/data/schema.ts` → generated SQL migration, TS row types and SCHEMA.md (`pnpm db:gen`). Hand-written views (`daily_summary`, `weekly_summary`, `public_stats`) and private storage buckets. `pnpm db:check` runs all migrations on real Postgres (PGlite) and verifies RLS isolation, LWW trigger, views, public-stats filtering.
 Client: Dexie mirror + outbox, repo (insert/patch/softDelete/upsertBy), live hooks, sync engine (push outbox in FK order, incremental pull by server `synced_at`, LWW, conflict log, first-login bootstrap), Supabase magic-link auth + gate, local mode when env is empty, idempotent brief-17 seed with deterministic ids.
 Tests: 20 passing.
+
+### Phase 4: Home (2026-11-27)
+Domain logic (pure + tested): per-day facts, done rules per section, section/master levels, streaks with never-miss-twice, weekly grade (9 checks + reward rule), XP table, 28 achievements, daily task generation (habits, path, note reviews, follow-ups, exam units, One Thing). Services: settings/targets, live facts, whole-history summary, XP awards (idempotent), achievements unlock, tasks.
+Home: banner + profile (Day N, level/XP, streak, miss flag), Today (One Thing, grouped tasks, inline add, star to pin), calendar card (mock until Phase 10), section index tiles with rings/streaks/key stats, master grid, week strip with live grade, focus terminal (global focus mode + dimming + Block 1 XP), next-up video, nightly review (auto-fill, draft autosave, submit → toast/XP/grid), achievements shelf, exam banner, daily quote, footer.
+Checked at 1440 and 390. Tests: 36 passing.

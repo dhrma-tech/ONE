@@ -318,7 +318,7 @@ Secrets (`.env.example`): `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`, `SUPABA
 **Level curve:** XP to go from level n to n+1 = `round(100 × n^1.5)` (L1→2 100, L2→3 283, L5→6 1,118, L10→11 3,162). Overall level from total XP; section level from that section's XP.
 **Streaks:** per section = consecutive done days; overall day counts when the review is submitted **and** ≥ 2 sections are done. **Never miss twice:** one missed day keeps the streak (flag "Missed one. 20-minute minimum today."), two consecutive misses reset it. Today does not break a streak until it is over.
 **Weekly grade:** 9 checks from brief 06 (Mon-Sun week); A 9, B 7-8, C 5-6, D 3-4, F 0-2. Reward rule: episodes unlocked only with gym 3/3 + weigh-in + Block 1 ≥ 5/7.
-**Achievements (25):** first_push, first_block1, block1_7, streak_7, streak_30, streak_100, first_review, reviews_30, first_unit_cracked, units_10, chess_1000_rapid, puzzles_100, meditation_7, meditation_30_sessions, workouts_10, workouts_36, gained_2kg, gained_5kg, protein_week, first_post, posts_10, conversations_10, connections_50, first_recording, books_3, grade_a, level_10.
+**Achievements (28, see `domain/achievements.ts`):** first_push, first_block1, block1_7, streak_7, streak_30, streak_100, first_review, reviews_30, first_unit_cracked, units_10, chess_1000_rapid, puzzles_100, meditation_7, meditation_30_sessions, workouts_10, workouts_36, gained_2kg, gained_5kg, protein_week, first_post, posts_10, conversations_10, connections_50, first_recording, books_3, grade_a, level_10.
 
 ---
 
@@ -354,8 +354,8 @@ Exit: `/ui` renders all components; full-width at 1440/1920; dock at 390.
 Exit: unit tests for repo/sync pass; app boots in local mode with seed data.
 
 ### Phase 4: Home (mock integrations)
-- [ ] profile card (Day N, level, XP bar, streak), Today (one thing, grouped tasks, inline add), calendar list (mock hook)
-- [ ] master grid, section index tiles with rings, week strip with live grade, focus strip, next up, review form (auto-fill + submit flow), achievements shelf, quote block (60 lines), exam banner, footer
+- [x] profile card (Day N, level, XP bar, streak), Today (one thing, grouped tasks, inline add), calendar list (mock hook)
+- [x] master grid, section index tiles with rings, week strip with live grade, focus strip, next up, review form (auto-fill + submit flow), achievements shelf, quote block (60 lines), exam banner, footer
 Exit: Home works end-to-end in local mode; review submit → toast → XP → grid cell.
 
 ### Phase 5: Shared modules

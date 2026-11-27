@@ -75,3 +75,9 @@ export const relTime = (iso: string, now = Date.now()): string => {
   if (s < 86400) return `${Math.floor(s / 3600)} h ago`;
   return `${Math.floor(s / 86400)} d ago`;
 };
+
+/** "HH:MM" → minutes since midnight. */
+export const timeToMin = (t: string): number => {
+  const [h, m] = t.split(":").map(Number);
+  return (h || 0) * 60 + (m || 0);
+};

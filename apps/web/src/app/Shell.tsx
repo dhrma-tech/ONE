@@ -4,6 +4,7 @@ import { AREAS, areaOf } from "@/lib/sections";
 import { SCOPE, inScope } from "@/scope";
 import { Icon, IconButton, Toaster } from "@/ui";
 import { ui, useUI } from "@/data/ui";
+import { FocusBar } from "@/modules/focus";
 
 function NavItem({ a, cls, children }: { a: (typeof AREAS)[number]; cls: string; children: ReactNode }) {
   const loc = useLocation();
@@ -88,6 +89,7 @@ export function Shell({ children }: { children?: ReactNode }) {
       <Rail />
       <main id="main" className="shell-main" tabIndex={-1}>
         <div className="shell-inner page-enter" key={area}>
+          <FocusBar />
           <Suspense fallback={<PageFallback />}>{children ?? <Outlet />}</Suspense>
         </div>
       </main>

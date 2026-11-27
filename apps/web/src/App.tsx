@@ -11,6 +11,7 @@ import Placeholder from "./pages/Placeholder";
 
 const StyleGuide = lazy(() => import("./pages/StyleGuide"));
 const Login = lazy(() => import("./pages/Login"));
+const Home = lazy(() => import("./pages/home/Home"));
 
 function Keys() {
   useGlobalKeys();
@@ -34,7 +35,7 @@ function AppRoutes() {
   return (
     <Routes>
       <Route element={<Shell />}>
-        <Route index element={SCOPE === "master" ? <Placeholder scene="home" title="Home" /> : <Navigate to={`/${SCOPE}`} replace />} />
+        <Route index element={SCOPE === "master" ? <Home /> : <Navigate to={`/${SCOPE}`} replace />} />
         <Route path="career/*" element={<Placeholder scene="career" title="Career" />} />
         <Route path="mind/*" element={<Placeholder scene="mind" title="Mind" />} />
         <Route path="body/*" element={<Placeholder scene="body" title="Body" />} />

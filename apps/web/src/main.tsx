@@ -9,6 +9,7 @@ import "./styles/base.css";
 import "./styles/motion.css";
 import "./styles/layout.css";
 import "./styles/ui.css";
+import "./styles/pages.css";
 import { App } from "./App";
 
 createRoot(document.getElementById("root")!).render(

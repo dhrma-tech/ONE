@@ -181,7 +181,7 @@
 }
 
 /* Focus mode dims the app except the focus surface */
-:root[data-focus="on"] .shell-main > .shell-inner > *:not(.focus-keep) {
+:root[data-focus="on"] .shell-inner :is(.card, .frame, .banner, .index-table, .tabs, .footer, .page-head):not(.focus-keep):not(:has(.focus-keep)) {
   opacity: 0.18;
   pointer-events: none;
   transition: opacity 300ms var(--ease-std);
