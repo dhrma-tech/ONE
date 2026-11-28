@@ -20,6 +20,7 @@
     "test": "pnpm --filter @one/web test",
     "e2e": "pnpm --filter @one/web e2e",
     "format": "prettier --write \"apps/web/**/*.{ts,tsx,css,json}\" \"scripts/**/*.{ts,mjs}\"",
+    "format:check": "prettier --check \"apps/web/**/*.{ts,tsx,css,json}\" \"scripts/**/*.{ts,mjs}\"",
     "check": "pnpm typecheck && pnpm lint && pnpm test && pnpm build",
     "db:check": "tsx scripts/db/check-migrations.ts",
     "import:notion": "tsx scripts/import/notion/index.ts",
