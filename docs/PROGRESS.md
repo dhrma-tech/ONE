@@ -68,3 +68,6 @@ Deploy steps for Dharma: merge the branch, set `NEXT_PUBLIC_ONE_URL` in the port
 
 ### Phase 15: a11y + performance (2026-11-27)
 axe-core e2e (`e2e/a11y.spec.ts`, WCAG 2.1 A/AA) on 11 routes × 2 themes × desktop/phone: all pass. Fixes: light-theme destructive #c0262d and Career accent #8f5300 (AA on small text), lighter chip tint, sr-only rail logo label, contribution grid as role=img + sr-only last-7-days list, focusable scrolling grid (starts at today on phones). Performance: Supabase SDK lazy-loaded (main bundle 190 → 134 KB gz), pixel fonts preloaded, local Suspense in section layouts + skeletons to stop layout shift. Lighthouse (mobile, simulated 4G): Home 94, Career path 91, Mind 95, Body 95, Persona 93, Settings 96; desktop 99-100; a11y 98, best practices 96-100. Full suite: 99 unit + 66 e2e passing.
+
+### Housekeeping (2026-11-28)
+Added `.nvmrc` (Node 20), `pnpm format:check`, `docs/DEPLOY.md` (Supabase + Vercel checklist, variable table), README links. Phase 17 will expand DEPLOY.md after final QA.
