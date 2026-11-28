@@ -10,6 +10,6 @@ pnpm install
 pnpm dev            # http://localhost:5173 (local mode: no keys needed)
 pnpm check          # typecheck + lint + tests + build
 ```
-Full setup, env vars, deploy and install steps: see the sections added at the end of the build (Phase 17).
+Deploy: `docs/DEPLOY.md`. Testing and install: `docs/TESTING.md`. Node version: `.nvmrc`.
 
 Licence: GPL-3.0-only (includes BOBBY). See `THIRD_PARTY_NOTICES.md`.
